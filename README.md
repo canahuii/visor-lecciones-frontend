@@ -45,7 +45,7 @@ Bienvenido a mi bitácora interactiva de aprendizaje web. Este proyecto fue desa
 ## Estructura del Proyecto
 
 ```text
-# Visor-Lecciones-Frontend
+Visor-Lecciones-Frontend
 ├── capturas/                     # Capturas de pantalla y GIFs de demostración
 ├── CSS/                          # Hojas de estilo organizadas por día
 │   ├── dia6_css/
