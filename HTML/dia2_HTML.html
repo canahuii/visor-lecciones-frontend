@@ -1,0 +1,67 @@
+<!doctype> <html>
+    <head>
+        <title>Dia dos aprendiendo a usar html</title>
+        <meta charset="UTF-8">
+        <style>
+            h1{color: white; background-color: black;
+            font-size: 40px;}
+            h2{color:aqua; background-color: blue;
+            font-size: 40px;}
+        </style>
+    </head>
+    <body>
+        <h1>aqui hablamos de hipervinculos haciendo refencia entre dos paginas que nosotros mismos hemos creado</h1>
+
+        <p>usaremos href= "dia 1.html" del elemento < a > <br>
+        el siguiente hipervinculo te llevara a la primera pagina que creamos el dia 1 <br>
+        <a href="dia 1.html">pagina creada el dia 1 aprendiendo a usar html </a>
+        </p>
+
+        <h2>este es un hipervinculo a una pagina de internet: <br></h2>
+        <p>
+            para hacer un hipervinculo a una pagina de internet es igual que al hacer un hipervinculo de una 
+            pagina que nosotros hayamos creado, solo que enves de darle la direccion del html que creamos,
+            le damos el url de internet. <br>
+            <a href="https://www.youtube.com/watch?v=kydM2Hk4fus&list=RDkydM2Hk4fus&start_radio=1"><strong>tears in heaven</strong> tutorial youtube.</a>
+        
+        </p>
+
+
+    </body>
+    <body>
+        <h1>hablemos de como inserta imagenes</h1>
+        <p>
+            usaremos la etiqueta < img > la cual  <Strong>no tiene etiqueta de cierre. </Strong> <br>
+            la imagen debe de estar almacenada en el mismo servidor que nuestra pagina <br>
+            acepta imagnes : gif , jpg y png <br>
+            la sintaxis es: < img src=" <strong>nombre de la imagen a insertar</strong> " alt = " <strong>texto que aparecera en ves de la imagen </strong> " > <br>
+            en cuanto a lo anterior cuando dice imagen que aparecera enves de la imagen se refiere que si el navegador <br>
+            no permite imagenes aparece ese texto como refencia, o si el usuario tiene configurado su navegador para no ver iagenes <br>
+            sera igual aparecera ese texto <br><br>
+            <img src = "tatuu 1.png" alt = "la imagen de una persona con tatuajes en el brazo.">
+        </p>
+        <h2>cuando la imagen se encuentra en una sub carpeta</h2>
+        <p>
+            cuando una imagen que queremos usar esta dentro de una carpeta debemos <br>
+            de colocar el nombre de la carpeta y luego de la imagen de la siguiente forma <br>
+            < img src=<Strong>"imagenes/foto1.jpg" </Strong> alt="Pintura geométrica" > <br>
+            en este caso de ejemplo foto1 se encientra en la sub carpeta <strong>imagenes</strong> <br>
+            <img src="imagenes/botella.jpg" alt="imagen de una botella de aceite entre preformas. ">
+        
+        </p>
+         <h2>cuando la imagen se encuentra en una carpeta padre</h2>
+        <p>
+            < img src="../foto1.jpg" alt="Pintura geométrica" ><br>
+            Es decir, le antecedemos .. y la barra / al nombre de la imagen <br><br>
+
+
+            Si queremos subir dos carpetas luego escribimos: <br><br>
+
+            < img src="../../foto1.jpg" alt="Pintura geométrica" > <br>
+            Por último, si queremos acceder a una imagen que se encuentra en una carpeta llamada imagenes pero que está al mismo nivel: <br><br>
+
+            < img src="../imagenes/foto1.jpg" alt="Pintura geométrica" > br
+            Primero le indicamos que subimos al directorio padre mediante los dos puntos .. y seguidamente indicamos el nombre de la carpeta y la imagen a mostrar. <br>
+        </p>
+    </body>
+</html>

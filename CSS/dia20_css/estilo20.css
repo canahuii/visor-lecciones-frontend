@@ -1,0 +1,50 @@
+h1
+{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+h2
+{
+    background-color: black;
+    color: violet;
+}
+em
+{
+    background-color: greenyellow;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 960px;
+    margin: 0 auto;
+}
+
+#cabecera
+{
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px;
+}
+#pie
+{
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px;
+    clear: both;
+}
+#col1, #col2 , #col3
+{
+    background-color: #eff;
+    width: 280px;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+}
+li{
+    display: inline;
+    padding: 5px;
+}

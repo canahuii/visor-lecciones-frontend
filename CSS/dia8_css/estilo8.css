@@ -1,0 +1,23 @@
+h1{
+    color: orange; 
+    background-color:black;
+    text-align: center;
+    border: yellow solid 5px;
+}
+h2{
+    color: aqua; 
+    background-color : black;
+}
+em{
+    color: purple; 
+    background-color: bisque;
+}
+body
+{
+    background-image: url(../dia7_css/blanco.jpg);
+}
+p,pre{
+    background-color: black;
+    color: white;
+    border: 5px solid grey;
+}

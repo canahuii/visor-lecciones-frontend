@@ -1,0 +1,142 @@
+<!DOCTYPE html> <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 7 aprendiendo a usar css</title>
+    <link rel ="stylesheet" href = "estilo7.css" type="text/css">
+</head>
+<body>
+    <h1>esta es la leccion 1 del dia: propiedades relaionadas con listas. </h1>
+    <p>
+        <em>para obtener mayor informacion puedes visitar : <a href="file:///C:/Aprendiendo%20a%20programar/CSS/dia7_css/dia7_css.html"> propiedades de as listas.</a></em> <br>
+        puedes darle estilo a las listas ordenadas o desordenadas. <br>
+        podemos configurar las listas por medio de tres propiedades. <br>
+        <pre>
+            list-style-type
+            list-style-position
+            list-style-image    
+
+            <em>a la list-style-type puedes agregarle alguno de estos valores:</em>
+            none
+            disc
+            circle
+            square
+            decimal
+            decimal-leading-zero
+            lower-roman
+            upper-roman
+            lower-alpha
+            upper-alpha
+
+            <em>Los valores de list-style-position:</em>
+            inside
+            outside
+
+            <em>Los valores de list-style-image:</em>
+            none
+            url
+        </pre>
+
+        <h2>ejemplos practicos</h2>
+
+        <em>le quita los simbolos para identificar cada item</em>
+        <ul class="vacio">
+            <li>guatema</li>
+            <li>el salvador</li>
+            <li>peru</li>
+        </ul>
+
+        <ul class="circulolleno">
+            <li>guatema</li>
+            <li>el salvador</li>
+            <li>peru</li>
+        </ul>
+
+        <ul class="circulovacio">
+            <li>guatema</li>
+            <li>el salvador</li>
+            <li>peru</li>
+        </ul>
+
+        <ul class="cuadrado">
+            <li>guatema</li>
+            <li>el salvador</li>
+            <li>peru</li>
+        </ul>
+
+        <ul class="decimal">
+            <li>guatema</li>
+            <li>el salvador</li>
+            <li>peru</li>
+        </ul>
+
+        <ul class="romanminuscula">
+            <li>guatema</li>
+            <li>el salvador</li>
+            <li>peru</li>
+        </ul>
+
+        <ul class="romanmayuscula">
+            <li>guatema</li>
+            <li>el salvador</li>
+            <li>peru</li>
+        </ul>
+        <ul class="letraminuscula">
+            <li>guatema</li>
+            <li>el salvador</li>
+            <li>peru</li>
+        </ul>
+        <ul class="letramayuscula">
+            <li>guatema</li>
+            <li>el salvador</li>
+            <li>peru</li>
+        </ul>
+    </p>
+
+    <h1>leccion 2 del dia: propiedades realcionadas con  el fonco (background)</h1>
+    <p>
+        <em>concidero que es necesario que veas la pagina para mas informacion: <a href="file:///C:/Aprendiendo%20a%20programar/CSS/dia7_css/dia7_css.html">propiedades del background</a></em>
+        <pre>
+            Hay otras propiedades relacionadas al fondo que nos permiten, entre otras cosas, disponer un archivo de imagen. Las propiedades relacionadas al background y sus valores son:
+
+            background-color
+            background-image
+                    por defecto el -image se inicializa en repeat (se repite la imagen una y otra vez en la pagina)
+            
+                background-repeat
+                    repeat -x (repite el patron de la imagen en el eje x)
+                    repeat -y (repite el patron de la imagen en el eje y)
+                    no repeat (en la pagina solo coloca una imagen, no se repite)
+
+            background-position
+                podemos indicar la posición de la imagen según los siguientes valores:
+                    ° top left 
+                    ° top center 
+                    ° top right 
+                    ° center left 
+                    ° center center 
+                    ° center right 
+                    ° bottom left 
+                    ° bottom center 
+                    ° bottom right 
+                    ° x-% y-% 
+                    ° x-pos y-pos
+                Para que tenga sentido esta propiedad debemos inicializar la propiedad background-repeat con el valor no-repeat. 
+            
+                background-attachment
+        </pre>
+
+        en el siguiente ejemplo vamos usar el codigo en la hoja de css:
+        <pre>
+            body 
+            {
+                background-image: url("blanco.jpg"); <em>coloca la imagen en la pagina</em>
+                background-repeat: no-repeat; <em>no permite que la imagen se repita </em>
+                background-position: 20% 50%; <em>coloca la imagen en 20 desde la izquierda y a 50% dedesde arriba</em>
+            }
+        </pre>
+        esto nos permite agregarle un fondo a la pagina que estamos creando
+    </p>
+</body>
+</html>

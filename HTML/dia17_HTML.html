@@ -1,0 +1,92 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 17 aprendiendo html</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>Leccion 1 del dia: orden del foco de los controles.</h1>
+        <div>
+            <p>
+                a cualquier control de un dormulario puedes agregarle la propiedad 
+                tanindex entre un avlo de 0 - 32767 
+            </p>
+            <h2>Ejemplo:</h2>
+            <form action="enviar.php" method="post" enctype="multipart/form-data">
+                <input type="text" name="text1" size="5" tabindex="1">
+                <input type="text" name="text2" size="5" tabindex="4">
+                <input type="text" name="text3" size="5" tabindex="7">
+                <br>
+                <input type="text" name="text4" size="5" tabindex="2">
+                <input type="text" name="text5" size="5" tabindex="5">
+                <input type="text" name="text6" size="5" tabindex="8">
+                <br>
+                <input type="text" name="text7" size="5" tabindex="3">
+                <input type="text" name="text8" size="5" tabindex="6">
+                <input type="text" name="text9" size="5" tabindex="9">
+                <br>
+                <input type="submit" tabindex="10">
+                <input type="reset" tabindex="11">
+            </form>
+        </div>
+        <h1>Leccion 2 del dia: Inhabilitar controles</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=32&cod=105&punto=42">Inhabilitar controles</a></em>
+                <br><br>
+                todos lo controles que hemos visto hasta ahora podemos hacer que aparacescan Inhabilitados 
+                <br><br>
+                Para deshabilitar el primer radio añadimos la propiedad disabled sin asignarle valor:
+                <br>
+                < input type="radio" name="seccion" value="1" disabled>Niños <br>
+                Los siguientes elementos pueden inhabilitarse: <br>
+                <br>
+                button, input, optgroup, option, select y textarea.
+            </p>
+            <form action="enviar.php" method="post" enctype="multipart/form-data">
+                seleccione la seccion donde desea ingresar: 
+                <br>
+                <input type="radio" name="seccion" value="1" disabled> niño 
+                <br>
+                <input type="radio" name="seccion" value="2" disabled> adolesente 
+                <br>
+                <input type="radio" name="seccion" value="3"> mayor de edad
+                <br>
+                <input type="submit"> 
+            </form>
+        </div>
+        <h1>Leccion 3 del dia: text / password y maxlenght</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=32&cod=107&punto=43"> text/ password y maxlenght</a></em>
+                <br><br>
+                los controles de tipo texto se les puede asignar una cantidad maxima de 
+                caracters que reciben no es lo mismo que size:
+            </p>
+            <div class="contenedor">
+                <form action="enviar.php" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Uso de maxlenght</legend>
+                        <label">Ingrese su nombre</label> 
+                        <br>
+                        <input type="text" name="nombre" id="nom" maxlength="15" size="20">
+                        <br>
+                        <label>Ingrese su clave: </label>
+                        <br>
+                        <input type="password" name="clave" maxlength="8" size="10">
+                        <br> <br>
+
+                        <input type="file">
+                        <br> <br>
+                        <input type="submit">
+                        <input type="reset">
+
+
+
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+    </body>
+</html>

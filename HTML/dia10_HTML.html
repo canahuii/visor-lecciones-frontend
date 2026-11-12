@@ -1,0 +1,102 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 10 aprendiendo HTML </title>
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>Leccion 1 del dia: Formulatio (INPUT)</h1>
+        <p>
+            <em>Para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=16&cod=93&punto=28">uso de Input</a></em>
+            <br><br>
+            Este elemento nos permite crear botones y cuadros de texto. y mas cosas que veremos en un momento<br> <br>
+            Actualmente cuando iniciamos algunos elementos los hacermos asi:
+            <br>
+            < form action="registrarDatos.php" method="post">< /form>  <em>se inicializa
+                con action y method</em>
+            <br><br>
+            < input type="text" name="nombre" size="20"> <em>iniclaizamos una caja de testo
+                usando type, nmae, size </em>
+            <br><br>
+            < input type="password" name="clave" size="15"> <em>pasa una contraseña 
+                usamos type, name y size </em>
+                <br><br>
+            < input type="submit" value="Enviar"> <em>inicalizamos un boton con type = submit
+                value (el valor que va denro del boton) </em>
+            <br><br>
+            < input type="reset" value="borrar"> <em>un boton para borrar todos los datos en las 
+                cajas de texto y password. Se inicializa con type= reset y value (valor dentro del boton) </em>
+            <br><br>    
+            <h2>codigo</h2>
+            <pre>
+                < form action="registrarDatos.php" method="post" style=" border-style: sold; border-color: black;">
+                    Ingrese su nombre < br>
+                    < input type="text" name="nombre" size="20">
+                    < br>< br>
+                    ingrese su clave <  br>
+                    < input type="password" name="clave" size="15">
+                    < br>< br>
+                    < input type="submit" value="Enviar">
+                    < input type="reset" value="Borrar">
+                < /form>
+            </pre>
+            <h2>resultado</h2>
+            <form action="registrarDatos.php" method="post" style=" border-style: sold; border-color: black;">
+                Ingrese su nombre <br>
+                <input type="text" name="nombre" size="20">
+                <br><br>
+                ingrese su clave <br>
+                <input type="password" name="clave" size="15">
+                <br><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+
+            </form>
+            
+        
+        </p>
+        <h1>LEccion 2 del dia: Formulario (TEXTAREA)</h1>
+        <p>
+            es como un cuadro de texto pero este contien varias lineas no solo una.
+            <br>
+            para declarar un textarea es asi: <br>
+            < textarea name="comentario" id="comentario" rows="5" cols="40">< /textarea> 
+            <br>
+            <em>no se usa input, rows se usa para decirle cuantas filas van a ser visible,
+                 cols se usa para indicar cuantas columnas seran visible, esto (rows, cols) 
+                 no limita el cuadro a esa cantidad de caracteres, solo afecta a la parte visual
+            </em>
+            <h2>codigo</h2>
+            <pre>
+                < form action="registrarDatos.php" method="post">
+                    Ingrese su nombre: < br>
+                    < input type="text" name="nombre" size="20">
+                    < br>< br>
+                    Ingrese su Email: < br>
+                    < input type="text" name="correo" size="20">
+                    < br>< br>
+                    Comentario < br>
+                    < textarea name="comentario" id="comentario" rows="5" cols="40">< /textarea>
+                    < br>
+                    < input type="submit" value="Enviar">
+                    < input type="reset">
+                < /form>
+            </pre>
+
+                <h2>resultado</h2>
+            <form action="registrarDatos.php" method="post">
+                Ingrese su nombre: <br>
+                <input type="text" name="nombre" size="20">
+                <br><br>
+                Ingrese su Email: <br>
+                <input type="text" name="correo" size="20">
+                <br><br>
+                Comentario <br>
+                <textarea name="comentario" id="comentario" rows="5" cols="40"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="reset">
+            </form>
+        </p>
+    </body>
+</html>

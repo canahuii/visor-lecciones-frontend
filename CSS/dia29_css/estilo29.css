@@ -1,0 +1,58 @@
+h1
+{
+    background-color: burlywood;
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2
+{
+    background-color: chartreuse;
+    color: brown;
+    text-transform: capitalize;
+}
+em
+{
+    background-color: greenyellow;
+}
+
+#contenedor1
+{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: black;
+    height: 400px;
+    color: white;
+    font-size: 2rem;
+}
+.item
+{
+    background-color: #0078A6;
+    width: 300px;
+    height: 150px;
+}
+
+/*-------------------------------------------------------------*/
+#contenedor2
+{
+    display: flex;
+    background-color: black;
+    height: 300px;
+    color: white;
+    font-size: 2rem;
+}
+#item11
+{
+    flex-grow: 1;
+    background-color: #0078A6;
+}
+#item12
+{
+    flex-grow: 3;
+    background-color: #0084b6;
+}
+#item13
+{
+    flex-grow: 1;
+    background-color: #008cc1;
+}

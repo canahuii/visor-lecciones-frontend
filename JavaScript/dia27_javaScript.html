@@ -1,0 +1,86 @@
+<!doctype html> <html>
+    <head>
+        <title>Dia 27 aprendiendo a usar javascript</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>leccion 1 del dia: metodos push y pop</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=40&cod=48" target="_blank">metodo push y pop</a></em>
+            </p>
+            <p>
+                <em>push</em> puede ser util para crear array densos ya que lo que hace es cagreagr un 
+                elemento al final de la cola del array. <br>
+                <em>pop</em> lo que hace es eliminar y recuperar el ultimo elemnto del vector.
+            </p>
+            <h2>ejemplo</h2>
+            <p>
+                <strong>Problema</strong> <br>
+                Realizar la carga de sueldos por teclado hasta que se ingrese el cero. Almacenar 
+                todos los valores ingresados en un vector empleando el método push. Mostrar la 
+                suma de sueldos ingresados.
+            </p>
+            <script>
+                let sueldo  = [];
+                let monto = 0;
+
+                do
+                {
+                    monto = parseInt(prompt("ingrese el monto: (0 para salir)"));
+                    if (monto != 0 )
+                    {
+                        sueldo.push(monto);
+                    }
+                }while (monto != 0);
+
+                let suma = 0;
+                for (let i = 0; i < sueldo.length ; i++)
+                {
+                    suma += sueldo[i];
+                }
+                document.write("el sueldo total ingresado es: " + suma);
+            </script>
+        </div>
+        <h1>Leccion 2 del dia: array metodos unshift y shift</h1>
+        <p>
+            <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=40&cod=49" target="_blank">array: metodos shift y unshift</a></em>
+        </p>
+        <p>
+            <em>unshift:</em> agrega un elemento al principio del vector <br>
+            <em>shift: </em> elimina el primer elemento del vector
+        </p>
+        <h2>ejemplo</h2>
+        <p>
+            <strong>Problema</strong> <br>
+            Ingresar valores por teclado. Los valores menores a 100 ingresarlos al principio 
+            del vector y los mayores o iguales a 100 ingresarlos al final. Se finaliza la 
+            carga de datos al ingresar el cero. Cuando sale del do/while extraer el último 
+            valor ingresado que es el cero del vector. Imprimir el vector en la página
+        </p>
+        <script>
+            let vect = [];
+            let val = 0;
+
+            do
+            {
+                val = parseInt(prompt("Ingresar un valor (0 para finalizar)"));
+                if (val < 100)
+                {
+                    vect.unshift(val);
+                }
+                else
+                {
+                    vect.push(val);
+                }
+
+            } while(val != 0)
+                vect.shift();
+            for(let f = 0; f <  vect.length; f++)
+                {
+                    document.write(vect[f] + "<br>")
+                }
+        </script>
+    </body>
+</html>

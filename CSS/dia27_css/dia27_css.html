@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dia 27 aprendiendo a usar css</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo27.css" type="text/css">
+    </head>
+    <body>
+        <h1>Leccion 1 del dia: flex direction aplicada a un contenedor</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=60&cod=65&punto=61" target="_blank">flex direction apicada al contenedor</a></em>
+            </p>
+            <p>
+                los valores que podemos asignarle al flex direction son:
+                <ul>
+                    <li><em>row</em> (los items se colocan uno al lado del otro de forma horizontal)</li>
+                    <li><em>column    (los objetos se colocan uno debajo del otro, de forma vertical)</em></li>
+                    <li><em>row-reverse</em> (se colocan de forma horizontal de derecha a izquierda)</li>
+                    <li><em>column-reverse</em> (los objetos se colocan de forma vertical de abajo hacia arriba)</li>
+                </ul>
+            </p>
+            <h2>ejemplo</h2>
+            <div id="contenedor1">
+                <div id="item1">
+                    caja 1
+                </div>
+                <div id="item2">
+                    caja 2
+                </div>
+                <div id="item3">
+                    caja3
+                </div>
+            </div>
+        </div>
+        <h1>Leccion 2 del dia: flex-justify-content aplicada al contenedor</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=60&cod=66&punto=62" target="_blank">flexbox- justity-content aplicada al contenedor</a></em>
+            </p>
+            <p>
+                La propiedad justity-content controla la distribucion de los items en el contenedor,
+                su valor por defecto es "flex-start" <br>
+                los valores qu podemos asignarle son:
+                <ul>
+                    <li><em>flex-start</em> (los items aparecen pegados al inicio)</li>
+                    <li><em>flex-end</em> (los items aparecen pegados al final  )</li>
+                    <li><em>center</em> (se agrupan todos e el centro) </li>
+                    <li><em>space-between </em> (se distribuyen los items ocupando todo el espacio disponible, con espacios iguales entre ellos,
+                                                pero sin dejar espacio al inicio y al final.)</li>
+                    <li><em>space-around</em> (se distribuyen los items ocupando todo el espacio disponible, con espacios iguales entre ellos, 
+                                                pero dejando espacio al inicio y al final.)</li>
+                </ul>
+            </p>
+        </div>
+        <h1>Leccion 3 del dia: align-items aplicada al contenedor</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=60&cod=67&punto=63" target="_blank">align-items aplica al contenedor</a></em>
+            </p>
+            <p>este afecta a los items en la linea transversal y no a la linea principal
+                como lo hacia flex-justify. <br>
+                los valores que podemos asignar son: 
+                <ul>
+                    <li><em>stretch</em> (los items ocupan todo el espacio disponiblle del eje secundario) </li>
+                    <li><em>flex-start</em> ( los items de ubican en la parte superior o izquiredo del eje secundario)</li>
+                    <li><em>flex-end</em> (los items se colocan el la parte inferior o derecha del eje secundario)</li>
+                    <li><em>center</em> (los items aparecen centrados en el eje transversal)</li>
+                    <li><em>baseline</em> (los items se alimeam sehun el eje transversal del contenedor, teniendo en cuenta
+                                            la linea base del item,esta define en base a los textos del item)</li>
+                </ul>
+            </p>
+        </div>
+    </body>
+</html>

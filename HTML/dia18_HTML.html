@@ -1,0 +1,91 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 18 aprendiendo a usar html</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css">
+    </head>
+    <body>
+        <h1>Leccion 1 del dia: readondly</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=32&cod=108&punto=44">uso de readondly</a></em>
+                <br><br>
+                si le aplicas <em>redondly</em> a un elemento html, este se vuelve solo de lectura y no podemos
+                modificar su contenido. la diferencia con <em>desabled</em> es qu este no puede tomar el foco 
+                en cambio redondly si, pero aun asi no se puede modificar,
+
+            </p>
+            <h2>ejemplo</h2>
+            <form action="enviar.php" method="post" enctype="multipart/form-data">
+                <label> ingres su nombre: </label>
+                <input type="text" name="nombre" size="30" value="interpolacion" readonly > <br>
+                <label> contrato</label>
+                <textarea name="cont" id="cont" rows="5" cols="60" readonly>
+                    por la presente .................
+                </textarea>
+                <br>
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </div>
+        <h1>Leccion 2 del dia: Envio de datos mediante e-mail</h1>
+        <div>
+            <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=32&cod=110&punto=45">Formulario- envio de datos mediante e-mail</a></em>
+            <br><br>
+            se puede enviar la infromacion pormedio de un email, enves de enviarlo hacia el servido 
+            mediante lenguaje php, este es la sintaxis para iniciar el form: 
+            <br>
+            < form action="mailto:pizzasya@gmail.com" method="post" enctype="text/plain">
+            <br>
+            tomar en cuenta que no se puede enviar archivos adjuntos.
+            <br><br>
+            si quieres que el email tenga un titulo debes de inicializar un subjecct, ejemplo: 
+            <br>
+            < form action="mailto:pedrohernandez99@gmail.com?subject=PEdido de reparacion" method="post" enctype="text/plain"></form>
+            <br>
+            la desbentaja es que si no tiene configurada tu computadora con un email predeterminado esto no va a funcionar.
+            <br><br>
+            <h2>ejemplo</h2><form action="mailto:pedrohernandez99@gmail.com?subject=PEdido de reparacion" method="post" enctype="text/plain">
+            
+                ingrese su nombre: <br>
+                <input type="text" name="nombre" size="20">
+                <br>
+                ingese su direccion: <br>
+                <input type="text" name="direc" id="direc" size="20">
+                <br>
+                informe del problema: <br>
+                <textarea name="comentario" id="coment" cols="20" rows="5"></textarea>
+                <br>
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </div>
+        <h2>Leccion 3 del dia: uso de label</h2>
+        <p>
+            <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=32&cod=126&punto=46"></a></em>
+            <br><br>
+            <em>label</em> nos permite asociar un texto con un control de formulario. <br>
+            esto es util si se ingresa desde un navegador no grafico o una persona ciega que utilice un
+            programa de lectura en voz  
+        </p>
+        <h2>ejemplo</h2>
+        <div class="contenedor">
+            <form action="mailto:pedro@gmial.com?subject=enviar datos" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend>Formulario de comentarios.</legend>
+                    <label for="nombre">Ingrese su comentario</label>
+                    <input type="text" name="nombre" size="30" id="nombre" > <br>
+
+                    <label for="email">Ingrese su email</label>
+                    <input type="text" name="email" id="email" size="50"> <br>
+
+                    <label for="comentario">Ingrese su comentario</label> <br>
+                    <textarea name="comentario" id="comentario" cols="60" rows="5"></textarea> <br>
+
+                    <input type="submit">
+                    <input type="reset">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

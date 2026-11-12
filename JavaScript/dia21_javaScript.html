@@ -1,0 +1,54 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>
+            dia 21 aprendiendo javaScript
+        </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>leccion 1 del dia: repaso de poo</h1>
+        <div>
+            reolver el problema: 
+            <pre>
+                Confeccionar una clase llamada suma, que contenga dos atributos (valor1, valor2) y tres métodos: cargarvalor1, cargarvalor2 y retornarresultado. Implementar la clase suma.
+                La definición de un objeto de la clase que deben plantear es:
+                let s=new suma();
+                s.primerValor(10);
+                s.segundoValor(20);
+                document.write('La suma de los dos valores es:'+s.retornarResultado());
+            </pre>
+            <script>
+                function random() 
+                {
+                    return (Math.floor( Math.random() * 100) +1)
+                }
+
+                function sumaa(valor1 , valor2)
+                {
+                    this.valor1 = valor1;
+                    this.valor2 = valor2;
+                    this.primerValor = function(valor1)
+                    {
+                        this.valor1 = valor1;
+                    }
+                    this.segundoValor = function(valor2)
+                    {
+                        this.valor2 = valor2;
+                    }
+                    this.retornarResultado = function()
+                    {
+                        return this.valor1 + this.valor2;
+                    }
+                }
+
+                let suma ;
+                suma = new sumaa(random(), random());
+                document.write("la suma de los numeros: " + suma.valor1 + " + " + suma.valor2 + " = " + suma.retornarResultado()  + "<br>");
+                suma.primerValor(random());
+                suma.segundoValor(random());
+                document.write("la suma de los numeros: " + suma.valor1 + " + " + suma.valor2 + " = " + suma.retornarResultado()  + "<br>");
+            </script>
+        </div>
+    </body>
+</html>

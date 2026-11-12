@@ -1,0 +1,130 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>
+            Dia 6 aprendiendo html 
+        </title>
+        <meta charset="utf-8">
+        <style>
+            h1{color: white; background-color: black; text-align: center; border-style: groove; border-width: 5px; border-color: blueviolet; text-transform: uppercase;}
+            h2{color: aqua;background-color: black; text-align: center; border-style: solid; border-color: violet;}
+            em{color: violet;}
+
+        </style>
+    </head> 
+    <body>
+        <h1>Este es un reapso de la ultima leccion del dia 5, listas de texto</h1>
+        <em>para pbtener mas informacion de la leccion visita: <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=16&cod=81&punto=17" target="_blank">tabla de definicion</a></em>
+        <dl>
+            <dt>definicion</dt>
+            <dd>aquiva la definicon del temino </dd>
+
+            <dt>aqui se usa laetiqueta dt </dt>
+            <dd>aqui se usa la etiqueta dd para agreagr la definicion del termino</dd>
+        </dl>
+        <h1>esta es lal leccion 1 del dia: listas anidadas</h1>
+        <p>
+            <dl>
+                <dt>listas anidadas</dt>
+                <dd>esto se refiere a una lista que esta dentro de otra lista.</dd>
+                
+            </dl>
+            <em>link de la leccion <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=16&cod=82&punto=18" target="_blank">Listas anidadas</a></em>
+            <pre>
+                se utilizara la siguiente estructura para el codigo:
+
+                < ol > <em>apertura  de la lista ordenada </em>
+                    < li > <em>apertura del primer item  de la lista ordenada</em>
+                        < ul > <em>apertura de la lista desordenada</em> 
+                            < li></ li> <em> agregar el item de la lista desordenada</em>
+                        < /ul >
+                    < /li >
+                < /ol >
+            </pre>
+                <ol>
+                    <li>cosas de cocina
+                        <ul> 
+                            <li>tazas</li>
+                            <li>platos</li>
+                            <li>cuchillos</li>
+                        </ul>
+                    </li>
+
+                    <li>cosas de la sala
+                        <ul>
+                            <li>sofa</li>
+                            <li>tv</li>
+                            <li>almohada</li>
+                        </ul>
+                    </li>
+
+                    <li> cosas el jardin
+                        <ul>
+                            <li>silla</li>
+                            <li>flores</li>
+                            <li>cesped</li>
+                        </ul>
+                    </li>
+                </ol>
+        </p>
+        <h1>esta es la leccion 2 del dia: tablas (tr, tr , td)</h1>
+        <p>
+            <em>si quieres mas informacion del tema visita: </em> <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=16&cod=83&punto=19" target="_blank" target="_blank">tablas</a>
+            la sintaxis basica de la tabla es:
+            <pre>
+                < table border="1";  > <em>esta es la apertura de la tabla y el atributo border le asigna un borde de tamaño 1</em>
+                    < tr> <em>significa "table row" celda de la tabla</em>
+                        < td >< /td > <em>significa "table data" hace referencia a la celda.</em>
+                    < /tr >
+                < /table >
+            < /pre >
+            <h2>ejemplo</h2>
+            <table border="1">
+                <tr>
+                    <td>china</td>
+                    <td>1300 millones</td>
+                </tr>
+                <tr>
+                    <td>india</td>
+                    <td>1080 millones</td>
+                </tr>
+                <tr>
+                    <td>estados unidos</td>
+                    <td>295 millones</td>
+                </tr>
+            </table>
+        </p>
+        <h1>leccion 3 del dia : tabla con encabezado "th"</h1>
+        <p> <em>para obtener mas informacion visitar: <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=16&cod=84&punto=20" target="_blank">tablas con encabezado</a></em> 
+            <pre>
+                <em>la sintaxis es:</em>
+                < table border="2" > <em>inicializar la tabla</em>
+                < tr> <em>se inicializa la fila </em>
+                < th >< /th > <em> se agrega a celda con el ancabezado</em>
+                < /tr> <em>se cierra la primera fila</em>
+                < tr>
+                    < tr> <em>se inicializa la segunda fila</em>
+                        < td>< /td> <em>se agrega la la celda normal</em>
+                    < /tr>
+                < /tr>
+                < /table >
+            </pre>
+            <table border="2">
+                <tr>
+                    <th>nombre</th>
+                    <th>apellido</th>
+                    <th>edad</th>
+                </tr>
+                <tr>
+                    <td>pedro</td>
+                    <td>olalla</td>
+                    <td>34</td>
+                </tr>       
+                <tr>
+                    <td>maria</td>
+                    <td>maritza</td>
+                    <td>45</td>
+                </tr>         
+            </table>
+        </p>
+    </body>
+</html>

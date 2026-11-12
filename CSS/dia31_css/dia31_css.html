@@ -1,0 +1,68 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 31 aprendiendo a usar css</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo31.css" type="text/css"> 
+    </head>
+    <body>
+        <h1>Leccion 1 del dia: propiedad order aplicada a los items</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=70&cod=75&punto=71" target="_blank" >Flex: order aplicado a los items</a> </em>
+            </p>
+            <p>
+                Esta propiedad: <em>order</em>, nos permite decidir en que orden apareceran los 
+                items en el contenedor.
+                <br><br>
+                pordefecto el valor de order es cero "0", los items aparecen en el mismo 
+                orden en el que los agregamos.
+            </p>
+            <h2>ejemplo: </h2>
+            <p>
+                <strong>Problema:</strong> Definir un Flexbox con tres items. Mediante la propiedad "order" 
+                cambiar hacer que aparezcan en forma inversa a como se los dispuso en el archivo HTML.
+            </p>
+            <div id="contenedor1">
+                <div id="item1">Caja 1</div>
+                <div id="item2">Caja 2</div>
+                <div id="item3">Caja 3</div>
+            </div>
+        </div>
+
+        <h1>Leccion 2 del dia: Align-self aplicado a los items</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=70&cod=76&punto=72" target="_blank">align-self aplicado a los items</a></em>
+            </p>
+            <p>
+                La propiedad <em>align-self</em> nos permite especificar la alineacion dentro del contenedor 
+                flexible respecto al eje transversal.
+                <br><br>
+                los valores que podemos asignarle son: 
+                <ol>
+                    <li>auto</li>
+                    <li>flex-satart</li>
+                    <li>flex-end</li>
+                    <li>center</li>
+                    <li>stretch</li>
+                    <li>baseline</li>
+                </ol>
+                por defecto almacena el valor "auto"
+            </p>
+            <h2>ejemplo</h2>
+            <p>
+                Problema: Definir un Flexbox con 6 items. 
+                Especificar un valor distinto para cada uno de los items en la 
+                propiedad "align-self".
+            </p>
+            <div id="contenedor2">
+                <div id="item21">Caja 1</div>
+                <div id="item22">Caja 2</div>
+                <div id="item23">Caja 3</div>
+                <div id="item24">Caja 4</div>
+                <div id="item25">Caja 5</div>
+                <div id="item26">Caja 6</div>
+            </div>
+        </div>
+    </body>
+</html>

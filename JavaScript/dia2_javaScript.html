@@ -1,0 +1,85 @@
+<docType html> <html>
+    <head>
+        <title>Dia dos aprendiendo JavaScript</title>
+        <meta charset="UTF-8">
+        <style>
+            h1{color: aqua; background-color: brown; font-size : 40px; text-align: center;}
+            h2{color: bisque; background-color: violet; font-family: 'Times New Roman', Times, serif; font-size: 30px;text-align: center;}
+        </style>
+    
+    </head>
+
+    <body>
+        <script>
+            let nombre = prompt("Por favor ingresa tu nombre", "eduardo");
+            document.write(`<h1><strong> hola bienvenido: ${nombre }</strong></h1>`); 
+        </script>
+
+        <h1>leccion 1 del dia: condicionales simples </h1>
+
+        <script>
+            let nomb;
+            let nota;
+
+            nomb = prompt("ingrese el nombre del alumno", "pedro");
+            nota = parseInt(prompt("ingrese la nota" , 5));
+
+            if(nota >= 4 )
+            {
+                document.write(`el alumno ${nomb} ha ganado la materia con una nota de  ${nota}`);
+            }
+        </script>
+        <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=0&cod=6">revisar <strong>css ya</strong> condicionales simples</a>
+        <h1>Leccion 2 del dia, condicionales compuestas</h1>
+        <p>para las condiconales compuestas se le deben dar instrucciones tanto para <br>
+        cuando la condicion se evalue como verdadero o como falso</p>
+        <script>
+            let num1,num2;
+            num1 = parseInt(prompt("ingrese el primer numero : ", 10));
+            num2 = parseInt(prompt("ingrese el segundo numero: " , 20));
+
+            if (num1 > num2)
+            {
+                document.write(`el numero ${num1} es el numero mas grande.`);           
+            }
+            else
+            {
+                document.write(`EL numero ${num2} es numero mas grande`);
+            }
+        </script>
+        <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=0&cod=7">revisar <strong>condisionales compuestos, css ya</strong></a> <br><br>
+
+        <h1>leccion 3 del dia, concionales anidadas</h1>
+        <p>decimos que una estructura condicional es anidad cuando dentro de alguna de las ramas <br>
+        (falso / verdades) se encuentra otro condicional</p>
+        <script>
+            let nota1, nota2, nota3;
+
+            nota1 = parseInt(prompt("Ingrese la primera nota: ", 7));
+            nota2 = parseInt(prompt("Ingrese la segunda nota: ", 8));
+            nota3 = parseInt(prompt("Ingrese la tercera nota: ", 4));
+
+            let prom= (nota1 + nota2 + nota3)/ 3;
+
+            if (prom >= 7)
+            {   
+                document.write("ha ganado el curso");
+            }
+            else
+            {
+                if (prom >= 4)
+                {
+                    document.write("ha obtenido una nota regular");
+                }
+                else
+                {
+                    document.write("usted a perdido el curso");
+                }
+            }
+        </script>
+        <p>si quieres agregar comentarios a tu codigo puedes hacerlo usando "//" o "/*...*/" <br>
+        si <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=0&cod=8">revisar <strong>condicionales anidados en css ya</strong></a></p>
+    <br><br>
+        ir a la pagina del dia anterior <a href="dia1_javaScript.html">este es la pagina realizada el dia anterior, dia 1</a>
+    </body>
+</html>

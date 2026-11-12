@@ -1,0 +1,87 @@
+<!doctype html>  <html>
+    <head>
+        <title>dia 4 aprendiendo java script </title>
+        <meta charset="utf-8">
+        <style>
+            h1{color: aqua ; background-color: black;text-align: center; font-size: 40px;}
+            h2{color: rgb(247, 247, 247); background-color: blueviolet; text-align: center; font-size: 30 px;}
+             pre strong {color: violet;}
+            span{display: inline; width: 50px;margin: 5px; border: 2px solid black;}
+        </style>
+    </head>
+    <body>
+        <h1>seccion 1 del dia: uso de switch</h1>
+        <pre>
+            <h2>hoy veremos la sintaxis de switch </h2><br>
+            switch ( <strong>variable a usar</strong> )
+            { <br>
+                case <strong>caso a evaluar</strong> : <br>
+                    <strong>codigo a ejecutar</strong>  ;<br> 
+                    break;  <br>
+                dafault: <br>
+                    <strong>codigo a ejecutarse si no se encuentra el cado dado</strong> ; 
+            } <br>
+        </pre>
+
+        <script>
+            let valor = parseInt(prompt("ingrese un numero entero que se encuentre entre 1 - 5", 1));
+
+            switch (valor)
+            {
+                case 1:
+                    document.writeln('uno')
+                    break;
+                case 2:
+                    document.write('dos');
+                    breK;
+                case 3:
+                    document.write('tres');
+                    break;
+                case 4:
+                    document.write('cuatro');
+                    break;
+                default:
+                    document.write('El numero ingresado no es valido :(')
+            }
+        </script>
+        
+        <h1>leccion 2 del dia: uso de while</h1>
+        <pre>
+            usaremos el siguiente codigo y el resultado aparecera despues, aqui se utilizo scc utilizando 
+            espan para usarlo como contenedor y crear pequeños bloques donde se coloco cada numero.
+            se modifico el span para que se crearan pequeñas celdas:
+            <strong>span{display: inline; width: 50px;margin: 5px; border: 2px solid black;}</strong>
+
+            let n = 0;
+            let c = 0;
+            while (n <= 100)
+            {   
+                c++;
+                document.writeln("< span style= 'display:inline-block; width:50px;'>" + n + "< /span>");
+                n++;   
+                if (c == 6)
+                {
+                 document.writeln("< br >");
+                 c= 1;   
+                }
+            }
+        </pre>
+        <h2>resultado</h2>
+        <script>
+            let n = 0;
+            let c = 0;
+            while (n <= 100)
+            {   
+                c++;
+                document.writeln("<span style= 'display:inline-block; width:50px;  '>" + n + "</span>");
+                n++;   
+                if (c == 6)
+                {
+                 document.writeln("<br>");
+                 c= 1;   
+                }
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html> <html>
+    <head>
+        <title>Dia 9 aprendiendo HTML </title>
+        <meta charset="utf-8">
+        <meta name="keyword" content="html, programacion, aprendizaje ">
+        <link rel = "stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>leccion 1 de dia: uso de FORM </h1>
+        <p>
+            <em>para mayor informacion y mas claridad visita: </em> <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=16&cod=92&punto=27" target="_blank"> uso de form</a> <br><br>
+            un form permite que el usuario agrege datos en un form y estos sean evnviados al servidor <br>
+            <br>
+            html no agrega los datos al servidor,  de esa tarea se encargan otros lenguajes: 
+            (PHP, ASP, ASP.Net, JSP,NodeJS etc.) 
+            <br><br>
+            primero hay que abrir el <em>FORM</em> donde es necesario iniciar dos propiedades:
+            <em>accion y method  </em> por ejemplo:
+            <br>
+            < form action="registrardatos.php" method="post">< /form>
+            <br>
+            la propiedad accion se inicializa con el nombre de la pagina que contiene
+            el programa que procesara los datos en el servidor. <em>por temas de aprendizaje
+                todos los formularios se inicializaran con el accion "/registrarDatos.php".</em>
+                <br>
+                <br> 
+                <em>propiedad method </em> este metodo solo puede almacenar dos valores 
+                <em>post / get</em> <br>
+                Normalmente un formulario se envía mediante post (los datos se envían 
+                con el cuerpo del formulario) En caso de utilizar get los datos se 
+                envían en la cabecera de la petición de la página, utilizando el método 
+                get estamos limitados en la cantidad de datos a enviar, no asi con el 
+                método post.
+            <br><br> ahora vesmos el cuadro de texto: <br><br>
+            Ingrese su nombre: <br>
+            <   input type="text" name="nombre" size="20"> <br><br>
+
+            El elemento <em>input</em> permite definir un cuadro de texto, y le agregamos
+            la porpiedad text. <br>
+            el elemento name se debe inicializar con el nombre del cuadro del texto, nos 
+            sirve para recuperar los datos luego.
+            <br>
+            por ultimo inicializamos el elemento size con un valor ejemplo "20" esto limitaria 
+            la cantidad de caracateres que e usuario puede ver en el cuadro a la vez
+            <br>
+            <br>
+            por utimo veamos el codigo:
+            <br> <br>
+            < input type="submit" value="enviar">
+            <br><br>
+            cuando poner type = "submit" lo que hace es crear un boton, y con value colocas
+            cual es texto que se vera dentro del boton 
+
+            <h2>codigo completo:</h2>
+            <pre>
+                < form action="registrarDatos.php" method="post">
+                Ingrese su nombre: 
+                < input type="text" name="nombre" size="20">
+                < br>
+                < input type="submit" value="enviar">
+                < /form>
+            </pre>
+            <h2>el resultado es: </h2>
+            
+            <form action="registrarDatos.php" method="post">
+                Ingrese su nombre: 
+                <input type="text" name="nombre" size="20">
+                <br>
+                <input type="submit" value="enviar">
+            </form>
+            <br>
+            
+        </p>
+    </body>
+</html>

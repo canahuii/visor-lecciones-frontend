@@ -1,0 +1,97 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>dia 25 aprendiendo a usar jaavScript</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css">
+    </head>
+    <body>
+        <h1>Leccion 1 del dia: diferentes formas de crear arrays</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=40&cod=45" target="_blank">diferentes formas de crear arrays</a></em>
+            </p>
+            <p>
+                <pre>
+                    Creación de un array sin elementos:
+                    let vector1=new Array();
+
+                    Otra sintaxis para crear un array sin elementos:
+                    let vector2=[];
+                    
+                    Creación de un array indicando la cantidad de componentes iniciales que podrá almacenar:
+                    let vector3=new Array(5);
+
+                    Creación e inicialización llamando al constructor Array y pasando como parámetros los valores a almacenar en las componentes:
+                    let vector4=new Array(1,70,'juan');  
+
+                    Creación e inicialización de un array utilizando los corchetes:
+                    let vector5=[1,70,'juan'];  
+                </pre>
+                <h2>ejemplo</h2>
+                <script>
+                    let vector1 = new Array();
+                    vector1[0] = 1;
+                    
+                    let vector2 = [];
+                    vector2[0]  = 2;
+
+                    let vector3 = new Array(5);
+                    vector3[0]  = 3;
+
+                    let vector4 = new Array(1, 70, "juan");
+
+                    let vector5 = [2,140, "maria"];
+
+                    document.writeln(vector1[0] + "<br>")
+                    document.writeln(vector2[0] + "<br>")
+                    document.writeln(vector3[0] + "<br>")
+                    document.writeln(vector4[2] + "<br>")
+                    document.writeln(vector5[2] + "<br>")
+
+                </script>
+            </p>
+        </div>
+        <h1>
+            leccion 2 del dia: Array densos
+        </h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=40&cod=46" target="_blank">Aray densos</a></em>
+            </p>
+            <p>
+                los vectores donde almacenamos en forma continua todos los elementos  son llamados array densos
+            </p>
+            <h2>ejemplo</h2>
+            <p>
+                <em>problema: </em> Crear un vector vacío. Mediante una estructura repetitiva solicitar la 
+                carga de elementos por teclado hasta que se ingrese el cero. No almacenar dicho valor en el vector. 
+                Luego sumar todas las componentes del vector, mostrar dicha suma y el tamaño del vector.
+            </p>
+            <script>
+                let vector = [];
+                let entrada = 1000000000000;
+                let contador = 0;
+                do
+                {
+                    entrada = parseInt(prompt("ingrese un numero entero: " , 10));
+
+                        if (entrada != 0)
+                        {
+                            vector[contador] = entrada;
+                            contador++;
+                        }
+                } while (entrada != 0)
+
+                let suma =0;
+                for(let i = 0; i < vector.length; i++ )
+                {
+                    suma += parseInt(vector[i]); 
+                }
+
+                document.write(`La cantidad de elementos dentro del array es: ${vector.length} y la suma de sus componentes es: ${suma}`)
+
+            </script>
+        </div>
+
+    </body>
+</html>

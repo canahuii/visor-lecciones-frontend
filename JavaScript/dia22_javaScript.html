@@ -1,0 +1,119 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 22 apendiendo javaScript </title>
+        <meta charset="utf-8" >
+        <link rel="stylesheet" href="estilo_html.css">    
+    </head>
+    <body>
+        <h1>Leccion 1 del dia: definicion de varias clases</h1>
+        <div>
+            <script>
+                //clase numero quiniela ************************
+                function numeroQuiniela(nombre) 
+                {
+                    this.nombre = nombre;
+                    this.cargarNumero = function()
+                    {
+                        this.numero = parseInt(prompt("que numero de quiniela quiere "+ this.nombre + " ? " ))
+                    }
+                    this.verificarSiGano = function(num)
+                    {
+                        if(this.numero == num)
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+
+                //Clase bolillero
+                function Bolillero()
+                {
+                    this.numero = -1;
+                    this.sortear = function()
+                    {
+                        this.numero = parseInt(Math.random() * 10 )  +1;
+                    }
+                }
+
+                //bloque principal
+                let numeroquiniela1;
+                numeroquiniela1 = new numeroQuiniela("juan");
+                numeroquiniela1.cargarNumero();
+                let numeroquiniela2 = new numeroQuiniela("ana");
+                numeroquiniela2.cargarNumero();
+                
+                let bolillero = new Bolillero()
+                bolillero.sortear();
+
+                document.writeln("numero sorteado: " + bolillero.numero + "<br>");
+                document.writeln(numeroquiniela1.nombre+" eligio "+numeroquiniela1.numero +"<br>");
+                document.writeln(numeroquiniela2.nombre + " eligio el numero " + numeroquiniela2.numero+"<br>");
+                if(numeroquiniela1.verificarSiGano(bolillero.numero))
+                {
+                    document.writeln(numeroquiniela1.nombre +" ha ganado" + "<br>")
+                }
+
+                if (numeroquiniela2.verificarSiGano(bolillero.numero))
+                {
+                    document.writeln(numeroquiniela2.nombre + " ha ganado <br>");
+                }
+            </script>
+        </div>
+        <h2>ejecicio</h2>
+        <div>
+            <script>
+                function persona()
+                {
+                    this.nombre = prompt("ingrese su nombre por favor", "marta");
+                    this.edad = parseInt(prompt(this.nombre + ", ingrese su edad por favor",61));
+                }
+
+                function empresa(nombreEmp)
+                {
+                    this.nombreEmp = nombreEmp;
+                    this.loAceptamos = function(edad)
+                    {
+                        if( edad > 60)
+                        {
+                            return false;
+                        }
+                        else
+                        {
+                            return true;
+                        }
+                    }
+                }
+
+                function mensaje(candidato, emp)
+                {
+                    let text ;
+                    if(emp.loAceptamos(candidato.edad))
+                    {
+                        text = " si puede trabajar con nosotros :)"
+                    }
+                    else
+                    {
+                        text = " no puede trabajar con nosotros :( "
+                    }
+                    document.write(candidato.nombre + " que tiene " + candidato.edad +" años " + text + "<br>");
+                }
+
+                    let p1 = new persona();
+                    let p2 = new persona();
+                    let p3 = new persona();
+                    let em = new empresa("olmeca S.A.");
+
+                    mensaje(p1, em);
+                    mensaje(p2, em);
+                    mensaje(p3, em);
+
+
+
+            </script>
+        </div>
+    </body>
+</html>

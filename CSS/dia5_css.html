@@ -1,0 +1,105 @@
+<!doctype html> <html>
+    <head>
+        <title>Dia 5 aprendiendo css</title>
+        <meta charset="utf-8">
+        <style>
+            h1{color: aqua; background-color: black; text-align: center;}
+            h2{color: cornsilk; background-color: black; text-align: center;}
+            p em{color: violet;}
+            .resaltar
+            {
+                color: orange;
+                background-color: rgb(47, 0, 255);
+                font-family: cursive;
+                font-style: italic;
+            }
+            #cabecera
+            {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 15px;
+                text-align: center;
+                color: aliceblue;
+                background-color: brown;
+            }
+            .pregunta
+            {
+                background-color: #ffff00;
+                border-width: 10px;
+                border-style: outset;
+                border-color: #000000;
+            }
+            .respuesta
+            {
+                border-width: 1px;
+                border-style: dashed;
+                border-color: black;
+            }
+            em{color: violet;}
+        </style>
+        <body>
+            <h1>leccion 1 del dia: definicion de estilos por medio de clases</h1>
+            <p>
+                En muchas situaciones una regla de estilo puede ser igual para un conjunto de elementos HTML, en esos casos conviene plantear una regla de estilo con un nombre genérico que posteriormente se puede aplicar a varios elementos de HTML. <br> <br>
+                Para el planteo de una regla de estilo por medio de una clase creamos un nombre de clase y le antecedemos el caracter punto: <br>
+                <pre class="resaltar">
+                    .resaltado
+                    {
+                        color:#000000;
+                        background-color:#ffff00;
+                        font-style:italic;
+                    }
+                </pre>
+                Luego para asignar dicha regla a un elemento HTML definimos la propiedad class al elemento que necesitamos fijarle este estilo:
+                <br><br>
+                < h1 class="resaltado">Este elemento h1 aparece con la clase resaltado< /h1>
+                <h3 class ="resaltar">esta es una etiqueta h3 al que se le aplico la regla de resaltadopor medio de clases</h3>
+            </p>
+
+            <h1>leccion 2 del dia: definicion de estilos por medio de ID</h1>
+            <p>
+                la diferencia entre la definicion por clases es que por demio de 
+                id solo se le puede agregar estilo a un solo elemento.
+                <br>
+                ejemplo de codigo:
+                <pre>
+                    #cabecera 
+                    {
+                        font-family:Times New Roman;
+                        font-size:30px;
+                        text-align:center;
+                        color:#0000ff;
+                        background-color:#bbbbbb;
+                    }
+                </pre>
+                <h3 id="cabecera">esta es una etiqueta h3 que se aplico estilo por medio de id</h3>
+                <h4 id="cabecera">esta es una etiqueta h4 </h4>
+                <p id="cabecera"> esta es una etiqueta p </p>
+            </p>
+            <h1>leccion 3 del dia: propiedades relacionadas con el borde de un elemento </h1>
+            <p>
+                todo elemento en html tiene un borde, los elementos mas importantes son:
+                <ol>
+                    <li>border-width</li>
+                    <li>border-style</li>
+                    <li>border-color</li>
+                </ol>
+                <p class="pregunta">¿quien descubrio america?</p>
+                <p class="respuesta"> colon en 1492</p>
+                estos son algunos estilos de borde que puedes usar
+                <ol>
+                    <li>none ( <em>sin borde</em> )</li>
+                    <li>hidden ( <em>invisible</em> )</li>
+                    <li>dotted ( <em>borde de puntos</em> )</li>
+                    <li>dashed ( <em>borde de guines</em> )</li>
+                    <li>solid ( <em>linea continua</em> )</li>
+                    <li>double ( <em>dos lineas paralelas</em> )</li>
+                    <li>groove ( <em> borde con efecto 3d undido </em> )</li>
+                    <li>ridge ( <em>borde con efecto 3d elevado</em> )</li>
+                    <li>inset ( <em>hace que el borde parezca incrustado en la pagina</em> )</li>
+                    <li>outset ( <em>hace que el borde parezca sobre salir</em> )</li>
+
+                </ol>
+            </p>
+        </body>
+    </head>
+</html>

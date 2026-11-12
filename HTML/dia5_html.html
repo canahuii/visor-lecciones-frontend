@@ -1,0 +1,110 @@
+<!doctype html> <html>
+    <head>
+        <title>
+            Dia 5 aprendiendo html
+        </title>
+        <meta charset = "UTF-8">
+        <style>
+            h1 span{display: inline; width: 50px; margin: 5px; border: 2px solid orange}
+            h1{color: aliceblue;background-color: blue; text-align: center;}
+            h2{color: yellow; background-color: wheat; text-align: center;}
+            p em{color: violet;}
+            span{display:inline ;width: 50px; margin: 5px; border: 2px solid black;}
+        </style>    
+    </head>
+    <body>
+        <h1><span>leccion  1 del  dia:  listas ordenadas</span></h1>
+        <p>
+            se utiliza la marca < ol > ( <em>order list</em> ) para crear la lista ordenada 
+            y se usa la etiqueta < li > ( <em>list item</em> )para agregarle los items
+            <br>se utilizo el siguiente codigo
+            <pre>
+                < ol >
+                    < li>Rodriguez Pablo< /li>
+                    < li>Gonzalez Raul< /li>
+                    < li>Lopez Hector< /li>
+                < /ol >
+            </pre>
+            <h3>resultado</h3>
+            <ol>
+                <li>Rodriguez pablo</li>
+                <li>gonzales Raul</li>
+                <li>Lopez Hector</li>
+            </ol>
+        </p>
+        <h1>leccion 2 del dia: listas no ordenadas </h1>
+        <p>
+            una lista ordenada tiene numeros en cada elemento en cambio
+            la lista no ordenada no tiene esos numeros. <br>
+            se utliza la etiqueta < ul > ( <em>unorder list</em> ) para crear la lista
+            y la etiqueta < li > ( <em>list item</em> ) 
+            <pre>
+                < ul>
+                    < li>C< /li>
+                    < li>C++< /li>
+                    < li>Java< /li>
+                    < li>C#< /li>
+                < /ul>
+            </pre>
+            <h3>resultado</h3>
+            <ul>
+                <li>c</li>
+                <li>c++</li>
+                <li>java</li>
+                <li>c#</li>
+            </ul>
+
+        </p>
+        <h1>leccion 3 del dia: lista de definiciones</h1>
+        <p>
+            se utiliza para asociar un termino y la definicion del mismo
+            <br>
+            se utiliza la etiqueta < dl > (<em> definition list</em>)
+            <br>
+            ponemos en pares lo siguientes terminos < dt > (<em></em>definition term </em>)
+            y < dd > ( <em>defition description</em> ) <br><br>
+            se usara el siguiente codigo:
+            <pre>
+                < dl>
+                    < dt>C++< /dt>
+                    < dd>
+                        Es un lenguaje de programación, diseñado a mediados de 
+                        los años 1980, por Bjarne Stroustrup, como extensión del lenguaje 
+                        de programación C.
+                    < /dd>
+                    < dt>Java< /dt>
+                    < dd>
+                        Es un lenguaje de programación orientado a objetos desarrollado 
+                        por Sun Microsystems a principios de los 90.< /dd>
+                    < dt>JavaScript< /dt>
+                    < dd>
+                        Es un lenguaje interpretado, es decir, que no requiere compilación, 
+                        utilizado principalmente en páginas web, con una sintaxis semejante a la 
+                        del lenguaje C.
+                    < /dd>
+                < /dl>
+            </pre>
+            <h3>resultado</h3>
+            <dl>
+                <dt>c++</dt>
+                <dd>es un lenguaje de programcion diseñado a mediados 
+                    de los años 1980
+                </dd>
+                <dt>java</dt>
+                <dd>
+                    es un lenguaje de programacion orientado a objetos 
+                    desarrollado por <em>sun Microsystems</em>
+                </dd>
+                <dt>JavaScript</dt>
+                <dd>
+                    es un lenguaje interpretado, es decir no requiere compiladores
+                    utilizado principalmente en paginas web
+                </dd>
+
+            </dl>
+        
+        </p>
+    </body>
+
+
+</html>

@@ -1,0 +1,58 @@
+<!doctype html> <html>
+    <head>
+        <title>Dia 3 tratando de aprender html </title>
+        <meta charset="UTF-8">
+        <style>
+            h1{color: tomato;background-color: blue;text-align: center;}
+            h2{color: aliceblue;background-color: green; text-align: center;}
+        </style>
+    </head>
+    <body>
+        <a name="leccion1"></a>
+        <h1>leccion 1 del dia: hipervinculo a una pagina y usando imagen</h1>
+        <p>
+            en lugar de texto para redirrecionar a una pagina como lo veniamos haciendo <br>
+            puedes usar una imagen, cuendo se oprima en la imagen  lo redirija.
+
+            <br>
+            <br>
+            <a href="https://www.umg.edu.gt/"><img src="imagenes/umg.png" alt="logo de la universidad UMG"></a>
+        </p>
+        <a name ="leccion2"></a>
+        <h1>leccion 2 del dia: abrir una pagina en otra pestaña</h1>
+        <p>
+            actualmente cuando abrimos un hipervinculo se abre en la misma pestaña que estamos usando <br>
+            pero usando la propiedad target y le asignamos "_blank" se abrira en otra pestaña: <br>
+            < a href=" <strong>url</strong>"  <strong>target= "_blank" </strong>> <strong>texto o imagen </strong> < /a >
+            <br> ejemplo <br>
+            <a href="https://www.umg.edu.gt/" target="_blank"><img src="imagenes/umg.png" alt="Logo de universidad UMG"></a>
+        </p>
+
+        <a name="leccion3"></a>
+        <h1>leccion 3 del dia: abiri un hipervinculo a un correo</h1>
+        <p>
+            Cuando se presiona el enlace se abre el programa de envío de correos que tiene configurado 
+            el equipo y dispone como receptor del mensaje la dirección que configuramos en el propio 
+            enlace seguido de la palabra mailto: ejemplo; <br>
+            < a href="mailto:diegoestevanes@gmail.com" >Enviar mail.< /a >
+
+            <a href="mailto:eduardo.canahui99@gmail.com">Enviar mail.</a>
+        </p>
+        <h2>disponer un título  y un cuerpo de mensaje </h2>
+        <p>
+            La sintaxis para disponer un título por defecto y un cuerpo de mensaje es: <br>
+            luego de especificar el destinatario del mail disponemos un caracter de interrogación '?'  <br>
+            seguido la palabra subject, un igual y el título por defecto <br>
+             Por último separamos con un ampersand '&' la inicialización de subject y el body (es decir el cuerpo del mensaje) <br>
+
+            < a href="mailto:diegoestevanes@gmail.com?subject=título del mensaje&body=cuerpo del mensaje"> Enviar mail.< /a ><br>
+            <a href="mailto:eiegoestevanes@gmail.com ? sibject = titulo del mensaje & body = cuerpo del mensaje"> Enviar email </a>
+            
+        </p>
+
+        <h1>referenci a la pagina anterior</h1>
+        <a href="dia2_HTML.html" target="_blank">pagina creada el dia 2 </a> <br>
+        <a href="dia4_HTML.html" target="_blank">pagina creada el dia 4</a>
+
+    </body>
+</html> 

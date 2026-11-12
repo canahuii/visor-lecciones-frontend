@@ -1,0 +1,85 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>dia 23 aprendiendo a usar html</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>Leccion 1 del dia: vectores con componentes tipo objeto. </h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=40&cod=43">vectores con objetos</a></em>
+            </p>
+            <p>
+                Podemos crear vectores con componente de tipo objeto.
+                <br> <br>
+                Con un ejemplo veremos la sintaxis para trabajar con los mismos. Desarrollaremos una clase que represente un hipervínculo y luego definiremos un vector con componentes de tipo hipervinculo.
+                <br> <br>
+                La clase hipervínculo y donde definimos objetos de dicha clase:
+            </p>
+            <script>
+                function hipervinculo(direccion, titulo)
+                {
+                    this.direccion = direccion;
+                    this.titulo = titulo;
+                    this.retornarHipervinculo = function()
+                    {
+                        let cadena = '<a href=' + this.direccion + '>' + this.titulo + '</a>'
+                        return cadena;
+                    }                    
+                }
+                let vector = new Array(3);
+                vector[0] = new hipervinculo('https://www.google.com', 'google');
+                vector[1] = new hipervinculo('https://www.msn.com', 'msn');
+                vector[2] = new hipervinculo('https://www.yahoo.com', 'yahoo');
+
+                for (let i = 0; i < vector.length; i++)
+                {
+                    document.writeln(vector[i].retornarHipervinculo());
+                    document.writeln("<br>")
+                }
+            </script>
+            <h2>ejercicio</h2>
+            <p>
+                Confeccionar una clase persona que permita almacenar el nombre 
+                y la edad. Luego definir un vector de 4 componentes de tipo persona. 
+                Imprimir el nombre de la persona de mayor edad; decir también si hay 
+                más de una persona con la edad mayor.
+            </p>
+            <script>
+                function persona(nombre , edad)
+                {
+                    this.nombre = nombre;
+                    this.edad = edad;
+                    this.getEdad = function()
+                    {
+                        return this.edad
+                    }
+                    this.getNombre = function() 
+                    {
+                        return this.nombre    
+                    }
+                }
+
+                let content = new Array(4);
+
+                content[0]  = new persona("maria",22)
+                content[1] = new persona("ana" , 17)
+                content[2] = new persona("fernanda" , 65)
+                content[3] = new persona("pedro" , 13) 
+                let contador = 0;
+                for(let i  = 0; i < content.length ; i++)
+                {
+                    
+                    if(content[i].getEdad() >= 18 )
+                    {
+                        document.writeln(content[i].getNombre() + "<br>");
+                        contador++;
+                    }
+                } 
+                document.write("los mayores de edad son " + contador + " personas");
+
+            </script>
+        </div>
+    </body>
+</html>

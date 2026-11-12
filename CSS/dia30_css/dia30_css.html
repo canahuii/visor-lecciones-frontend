@@ -1,0 +1,80 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 30 aprendiendo a usar css</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo30.css" type="text/css">
+    </head>
+    <body>
+        <h1>Leccion 1 del dia: flex-shrink aplicado a los items</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=60&cod=72&punto=68" target="_blank">uso deflex-shrink</a></em>
+            </p>
+            <p>
+                <em>flex-shrink</em> almace un valor entero no negativo
+                este representa un valor de encogimiento <br><br>
+                cuando ya no hay mas espacio el flex box los items comienzan
+                a contraerse para ajustarse al flex box
+                <br><br>
+                el valor por defecto de flex-shrink es 1, es decir que 
+                los items se encogen proporcionalmente, so no quieres que 
+                un item se encoja le asignas el valor cero 0
+            </p>
+            <div id="contenedor1">
+                <div id="item1">Caja 1<br>Esto es una prueba de la propiedad flex-shrink</div>
+                <div id="item2">Caja 2<br>Esto es una prueba de la propiedad flex-shrink</div>
+                <div id="item3">Caja 3<br>Esto es una prueba de la propiedad flex-shrink</div>
+            </div>
+        </div>
+
+        <h1>Leccion 2 del dia: flex-basis aplicada a los items</h1>
+        <div>
+            <p>
+                <em>para as informacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=60&cod=73&punto=69" target="_blank">uso de flex-basis aplicado a los items</a></em>
+            </p>
+            <p>
+                <em>Flex-basis</em> define el ancho con respecto al eje principal
+                <br>
+                el valor por defecto de <em>Flex-basis</em> es "auto" 
+            </p>
+            <div id="contenedor2">
+                <div id="item21">Caja 1</div>
+                <div id="item22">Caja 2</div>
+                <div id="item23">Caja 3</div>
+            </div>
+        </div>
+
+        <h1>Leccion 3 del dia: flex aplicado a los items</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=60&cod=74&punto=70" target="_blank">flex aplicada a los items</a></em>
+            </p>
+            <p>
+                <em>la propiedad flex</em> es elformato resumido de flex-grow, flex-shrink, flex-basis 
+                <br><br>
+                el orden de los valores en caso de querer aplicar los tres es: flex: <em>valor flex-grom</em> <em>valor flex-shrink</em> <em>valor flex-basis</em>
+                <br>
+                ejemplo:
+                <br><br>
+                flex: 1 0 60%;
+                <br>
+                estamos cargado 1 en flex-grow, 0 en flex-shrink y 60% en flex-basis
+                <br>
+                <pre>
+                    Hay posibilidades de inicializar la propiedad flex con menos de tres valores y que los otros queden con valores por defecto:
+                            
+                    flex: 1 2;   /* flex-basis queda con su valor por defecto */
+                    flex: 1 20%; /* flex-shrink queda con su valor por defecto */
+                    flex: none;  /* se almacenan los valores 0 0 auto*/
+                    flex: auto; /* Especificamos los valores por defecto de cada propiedad */
+                </pre>
+            </p>
+            <h2>ejemplo</h2>
+            <div id="contenedor3">
+                <div id="item31">Caja 1</div>
+                <div id="item32">Caja 2</div>
+                <div id="item33">Caja 3</div>
+            </div>
+        </div>
+    </body>
+</html>

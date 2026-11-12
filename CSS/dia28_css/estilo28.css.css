@@ -1,0 +1,32 @@
+h1
+{
+    background-color: antiquewhite;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2{
+    background-color: aquamarine;
+    text-transform: capitalize;
+}
+em
+{
+    background-color: greenyellow;
+}
+
+#contenedor1
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background-color: black;
+    height: 300px;
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+}
+.item
+{
+    background-color: rgb(170, 99, 5);
+    width: 300px;
+    height: 100px;
+}

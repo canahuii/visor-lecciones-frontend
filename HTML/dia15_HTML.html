@@ -1,0 +1,90 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 15 aprendiendo a usar HTML </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+
+    </head>
+    <body>
+        <h1>Leccion 1 del dia, input(hidden)</h1>
+            <div>
+                <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=32&cod=101&punto=38">< input type="hidden"></a></em>
+                este tipo de control se denomina control oculto. Este control nomuestra nada en 
+                el  formulario. su utilidad es guardar un dato oculto que luego se pueda
+                rescatar y nviar a  un servidor
+            </p>
+            <h2>codigo</h2>
+            <pre>
+                < form action="enviar.php" method="post" enctype="multipart/form-data">
+                        < input type="hidden" value="10:20" name="hora">
+                        ingrese su nombre < br>
+                        < input type="text" name="nombre" size="30"> < br>
+                        suba una foto < br>
+                        < input type="file" name="foto">
+                        < br>
+                        < input type="submit">
+                        < input type="reset">        
+                < /form>
+            </pre>
+            <h2>ejemplo</h2>
+            <div class="contenedor" >
+                <form action="enviar.php" method="post" enctype="multipart/form-data">
+                        <input type="hidden" value="10:20" name="hora">
+                        ingrese su nombre <br>
+                        <input type="text" name="nombre" size="30"> <br>
+                        suba una foto <br>
+                        <input type="file" name="foto">
+                        <br>
+                        <input type="submit">
+                        <input type="reset">        
+                </form>
+                    <p>
+                        como puedes observar el input hidden no aparece en el formulario, permanece oculto
+                    </p>
+            </div>
+        </div>
+        <h1>Leccion 2 del dia: Agrupamiento de controles</h1>
+        <div>
+            <p>
+            <em>par mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=32&cod=102&punto=39">Agrupamiento de controles.</a></em>
+            <br><br>
+            El HTML dipone de una propiedad llamado fildset que tiene como onhjetivo
+            recuadrar y agrupar un conjunto de controles en un formulario
+            <br> <br>
+            se debe de agrupar todos los elementos dentro de las etiquetas de apertura y cierre de fildset
+            y para ponerle un titulo devemos de usar la etiqueta <em>fildset</em>
+            </p>
+            <div class="contenedor">
+                <form action="enviar.php" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        Apellidosy nombre <br>
+                        <input type="text" size="30" name="nombre" placeholder="escribe tu nombre"> <br>
+
+                        documento de indentidad <br>
+                        <input type="text" size="15" name="dpi" placeholder="ecribe tu dpi"> <br>
+
+                        fecha de nacimiento <br>
+                        <input type="text" size="15" name="nacimiento" placeholder="¿Cuando naciste?"> <br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos laborales</legend>
+                            nombre de la empresa <br>
+                            <input type="text" name="nomEmpresa" size="30"> <br>
+
+                            actividad <br>
+                            <input type="text" name="actividad" size="30"> <br>
+
+                            direccion de la empresa; <br>
+                            <input type="text" name="dirEmpresa" size="30">
+                    </fieldset>                    
+                    <br>
+                    <input type="submit">
+                    <input type="reset">
+                </form>
+                
+            </div>
+        </div>
+    </body>
+</html>

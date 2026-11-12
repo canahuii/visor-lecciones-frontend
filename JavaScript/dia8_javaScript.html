@@ -1,0 +1,114 @@
+<!doctype html> <html>
+    <head>
+        <title>
+            dia 8 aprendiendo html
+        </title>
+        <meta charset="utf-8">
+        <meta name="keyword" content="javaScript, programcion">
+        <link rel="stylesheet" href ="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>leccion uno del dia: uso de la clase "math"</h1>
+        <p>
+            <em>para mayor informacion visita: </em> <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=20&cod=21">Clase Marh()</a>
+            <h2>estos son algunos metodos que puedes usar:</h2>
+            <img src="imagenes/Math.png">
+            <h2>ejempl usando math.random()</h2>
+                Para generar un valor aleatorio comprendido entre 1 y 10 debemos plantear lo siguiente:
+                <br><br>
+                let num = parseInt(Math.random() * 10) + 1;
+            <script>
+                let entero = prompt("ingrese un numero entero",10);
+                let aleatorio = parseInt(Math.random() * entero) +1;
+
+                document.write("Se a generado un numero aleatorio entre 1 y "+
+                    entero + " = " + aleatorio
+                )
+
+
+            </script>
+        </p>
+        <h1>leccion 2 del dia: uso de la clase "String" </h1>
+        <p>
+            <em>para mayor informacion visita la pagina: </em> <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=20&cod=22">Clase String</a> <br>
+            un string es una cadena compueta por 1 o mas caracteres encerrados
+            en comilla simples o dobles <br>
+            puedes concatenar cadenas de caracteres usando el sifno <em>+</em>
+            <br>
+            <h2>propiedad length</h2>
+            devuelve la cantidad de caracteres de un String
+            <br>
+            <em>ejemplo</em>
+            <br>
+            let nom='Juan';
+            document.write(nom.length); //Resultado 4
+            <br><br>
+            <em>ejemplo pactico</em> <br>
+            <script>
+                let cadena = prompt("Ingresa una cadena de caracteres:", "hola mi nombre es eduardo.")
+                document.write("el texto ..." + cadena +" ... tiene una cantidad de " + cadena.length+ " caracteres." );
+            </script>
+            <h2>metodos: charAt(pos)</h2>
+            retorna el caracter de la posicion indicada(pos) comienzan a enumerarse desde la posicion 0: <br>
+            <br>
+            <em>codigo</em> <br>
+            <br>    let nombre= prompt("ingrese una cadena de texto: " ,"juan");
+            <br>    let caracterPrimero=nombre.charAt(0);
+            <br>    document.write("la posicion 1 de la cadena " + nombre + " es: " + caracterPrimero);
+            <br>    document.write("la penultima poscion de la  cadena " + nombre + " es: " + nombre.charAt(nombre.length-2));
+            <br>    document.write("la antepenultima posicion de la cadena " + nombre + " es: " + nombre.charAt(nombre.length-3));
+            <br><em>resultado</em> <br><br>
+            <script>
+                let nombre= prompt("ingrese una cadena de texto: " ,"juan");
+                let caracterPrimero=nombre.charAt(0);
+                document.write("la posicion 1 de la cadena " + nombre + " es: " + caracterPrimero + " <br> ");
+                document.write("la penultima poscion de la  cadena " + nombre + " es: " + nombre.charAt(nombre.length-2) + " <br> ");
+                document.write("la antepenultima posicion de la cadena " + nombre + " es: " + nombre.charAt(nombre.length-3) + " <br> ");
+            </script>
+            <h2>substring(posInicial, posFinal)</h2>
+            devuelve una cadena de caracteres que se encuentra entre las posiciones indicadas.
+            <br> las posiciones comienzan a contarse desde la posicion 0.
+            <br><br>
+            <em>codigo</em>
+            <br>        let hola = "Hola mundo cruel"
+            <br>        document.write("se extraen de la cadena de texto ...hola mundo cruel... desde la poscion 2,6" + hola.substring(2,6));
+            <br><em>resultado</em> <br><br>
+            <script>
+                let hola = "Hola mundo cruel"
+                document.write("se extraen de la cadena de texto ...hola mundo cruel... desde la poscion 2,6" + hola.substring(2,6));
+            </script>
+
+            <br>
+            <h2>uso de indexOf</h2>
+            <br>
+                Devuelve la posición de la subcadena dentro de la cadena, o -1 en caso de no estar.
+                <br><br>
+                Tener en cuenta que puede retornar 0 si la subcadena coincide desde el primer carácter.
+                <br><br>
+                <em>codigo</em>
+                <br><br>
+                                    let nom='Rodriguez Pablo'; <br>
+                    let pos=nom.indexOf('Pablo');<br>
+                    if (pos!=-1) <br>
+                    document.write ('Está el nombre Pablo en la variable nombre y comienza en la posicion: '  + pos); <br>
+                    <br><br>
+                <em>resultado</em>
+                <br><br>
+                <script>
+                    let nom='Rodriguez Pablo';
+                    let pos=nom.indexOf('Pablo');
+                    if (pos!=-1)
+                    document.write ('Está el nombre Pablo en la variable nombre y comienza en la posicion: '  + pos);
+
+                </script>
+            <h2> uso de : toUpperCase() y toLowerCase()</h2>
+            convierten cadenas de texto en minuscula o mayusculas <br> 
+            <br>
+            <em>ejemplos de uso</em>
+            <br><br>
+            cadena1=cadena1.toUpperCase();
+            <br>
+            cadena1=cadena1.toLowerCase();
+        </p>
+    </body>
+</html>

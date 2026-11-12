@@ -1,0 +1,77 @@
+<!doctype html> <html>
+    <head>
+        <title>Dia tres aprendiendo java Script</title>
+        <meta charset="UTF-8">
+        <style>
+            h1{color: white; background-color: black; text-align: center; text-transform: uppercase;}
+            h2{color: aqua; background-color: brown; text-align: center; text-transform: capitalize;}
+        </style>
+    </head>
+    <body>
+        <h1>Leccion 1 del dia: operadores logicos : &&</h1>
+        <p>
+            
+            El operador &&, traducido se lo lee como "Y". Se emplea cuando en una estructura condicional se disponen 
+            dos condiciones.
+            <br> <br>
+            Cuando vinculamos dos o más condiciones con el operador "&&" las dos condiciones deben ser verdaderas 
+            para que el resultado de la condición compuesta de Verdadero y continúe por la rama del verdadero de 
+            la estructura condicional.
+        </p>
+
+        <script>
+            let num1,num2, num3;
+
+            num1 = parseInt(prompt("ingrese el primer valor: ", 30));
+            num2 = parseInt(prompt("Ingrese el segundo valor: ", 20));
+            num3 = parseInt(prompt("Ingrese el tercer valor: ", 10));
+
+            if(num1 > num2 && num1 > num3)
+            {
+                document.write(`el numero mas gander es: ${num1}`)
+            }
+            else
+            {
+                if(num2 > num3)
+                {
+                    document.write(`El numero mas gande es: ${num2}`);   
+                }
+                else
+                {
+                    document.write(`EL numero mas gande es: ${num3}`)
+                }
+            }
+        </script>
+
+        <h1>Leccion 2 del dia: operadores logicos: ||</h1>
+        <p>
+            Traducido se lo lee como "O". Si la condición 1 es Verdadera 
+            o la condición 2 es Verdadera, luego ejecutar la rama del 
+            Verdadero.
+            <br><br>
+            Cuando vinculamos dos o más condiciones con el operador "O",
+            con que una de las dos condiciones sea Verdadera alcanza 
+            para que el resultado de la condición compuesta sea 
+            Verdadero.
+        </p>
+
+        <script>
+            let  dia, mes, año;
+
+            dia = parseInt(prompt("ingrese el dia: "), 20);
+            mes = parseInt(prompt("ingrese el mes: " , '06'));
+            año = parseInt(prompt("ingrese el año" , 1999));
+
+            if(mes == 6 || mes == 7 || mes == 8)
+            {
+                document.write("el mes pertenece al tercer trimestre. ");
+            }
+        </script>
+
+        <h1>refencia a mis otras paginas </h1>
+        <p>
+            <a href="dia2_javaScript.html" target="_blank">ir a la pagina creada el dia anterior</a> <br>
+            <a href="dia4_javaScript.html" target="_blank">i a la pagina creada el dia siguiente</a> <br>
+        </p>
+    </body>
+</html>

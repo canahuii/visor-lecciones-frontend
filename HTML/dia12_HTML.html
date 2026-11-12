@@ -1,0 +1,74 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 12 aprendiendo HTML</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>leccion 1 del dia: uso de select</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=16&cod=97&punto=32">uso de select</a></em>
+                <br><br>
+                si a select le das un size de 5, cambia en cuadro envez de visualizar un solo elemento 
+                en el cuadro veras 5 elementos a la vez, es solo cambio estetico:
+            </p>
+            <form action="registroDatos.php" method="post">
+                ingrese su nobre: <br>
+                <input type="text" name="nombre" size="20">
+                <br><br>
+                <select name="pais" id="pais" size="5">
+                    <option value="1">Argentina</option>
+                    <option value="2"> España</option>
+                    <option value="3">Mexico</option>
+                    <option value="4">Guatemala</option>
+                    <option value="5">honduras</option>
+                    <option value="6">El salvador</option>
+                    <option value="7">Venezuela</option>
+                    <option value="8">Colombia</option>
+                    <option value="10">Cuba</option>
+                    <option value="11">Bolivia</option>
+                    <option value="12">japon</option>
+                    <option value="13">Peru</option>
+                    <option value="14">Ecuador</option>
+                    <option value="15">paraguay</option>
+                    <option value="16">Uruguay</option>
+                    <option value="17">Chile</option>
+                </select>
+                <br><br>
+                <input type="radio" name="hola">canahui
+                <input type="radio" name="hola">pedro
+                <input type="radio" name="hola">hernandez <br>
+                <input type="radio" name="aidos"> bye
+                <br><br>
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </div>
+        <h2>leccion 2 del dia: uso de select (opcion multiple) </h2>
+        <p>
+            <em>para mas informacion puedes visitar: <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=32&cod=98&punto=33">cuadro de seleccion mutiple(select)</a></em>
+            <br><br>
+            en el ejemplo anterior solo podias escoger una de las opciones de cuadro
+            pero ahora haremos que se pueda seleccionar mas de una opcion.
+        </p>
+        <form action="ingresarDato.php" method="post">
+            selecciona uno o varios colores (presione control para seleciciona varios colores)
+            <br>
+            <select name="colores[]" id="colores" size="4" multiple>
+                <option value="1">rojo</option>
+                <option value="2">verde</option>
+                <option value="3">azul</option>
+                <option value="4">Amarrillo</option>
+                <option value="5">Blanco</option>
+                <option value="6">Negro</option>
+                <option value="7">Naranja</option>
+                <option value="8">Violet</option>
+            </select>
+            <br> <br>
+            <input type="checkbox" name="color"> morado <br>
+            <input type="checkbox" name="color2"> azul
+            <input type="submit">
+        </form>
+    </body>
+</html>

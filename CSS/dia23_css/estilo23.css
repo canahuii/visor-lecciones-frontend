@@ -1,0 +1,75 @@
+h1
+{
+    background-color: azure;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2
+{
+    background-color: antiquewhite;
+    text-transform: capitalize;
+}
+em
+{
+    background-color: greenyellow;
+}
+ul li:first-child
+{
+    color: green;
+}
+ul li:last-child
+{
+    color: red;
+}
+
+/* diseño de la tabla */
+tr:nth-child(odd)
+{
+    background-color: aqua;
+}
+tr:nth-child(even)
+{
+    background-color: antiquewhite;
+}
+table
+{
+
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+td
+{
+    border: 1px solid black;
+    text-align: center;
+    padding: 0.5rem; 
+}
+td:hover
+{
+    background-color: black;
+    color: white;
+}
+caption
+{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+
+
+/*tabla 2*/
+.tabla2 tr:nth-last-child(3n+1) {
+  background-color:red;
+}
+
+.tabla2 table {
+  border-collapse: collapse;
+  width:80%;
+  margin:0 auto;
+}
+
+.tabla2 td {
+  border: 1px solid #000;
+  text-align:center;
+  padding:0.5rem;
+}

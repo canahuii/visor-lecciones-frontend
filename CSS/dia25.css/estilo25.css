@@ -1,0 +1,42 @@
+h1
+{
+    background-color:blanchedalmond;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2
+{
+    background-color: burlywood;
+    text-transform: capitalize;
+}
+em
+{
+    background-color: greenyellow;
+}
+div:empty
+{
+    width: 80%;
+    margin: 0 auto;
+    height: 50px;
+    background-color: yellow;
+}
+p::first-line
+{
+    background-color: rgb(221, 244, 255);
+}
+p::first-letter
+{
+    color: red;
+    font-size: 20px;
+}
+strong::before
+{
+        font-size: 30px;
+    color: blue;
+    content: "¡";
+}
+strong::after{
+    font-size: 30px;
+    color: blue;
+    content: "!";
+}

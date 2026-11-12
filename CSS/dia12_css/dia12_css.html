@@ -1,0 +1,63 @@
+<!doctype html> <html>
+    <head>
+        <title>Dia 12 aprendiendo HTML </title>
+        <meta charset="utf-8">
+        <meta name="keyword" content="css, aprender, programacion">
+        <link rel="stylesheet" href="estilo12.css" type="text/css"> 
+    </head>
+    <body>
+        <h1>leccion del dia: como cambiar de cursor </h1>
+        <div>
+            <p>
+                disponemos de una propiedad llamada cursor, con el cual podemos 
+                hacer que el cursor cambie de aspecto cuando se coloca sobre
+                un elemento dentro de la pagina.
+            </p>
+            <pre>
+                Los valores que podemos asignarle a esta propiedad cursor son:
+
+                    crosshair → Muestra una cruz (+), útil en editores gráficos o mapas.
+                    default → El cursor por defecto del sistema (generalmente una flecha).
+                    pointer → Una mano señalando, comúnmente usada en enlaces.
+                    move → Un cursor con flechas en todas direcciones, indica que el elemento se puede mover.
+                    e-resize → Flecha hacia la derecha (este), indica que se puede redimensionar horizontalmente.
+                    ne-resize → Flecha hacia arriba a la derecha (noreste).
+                    nw-resize → Flecha hacia arriba a la izquierda (noroeste).
+                    n-resize → Flecha hacia arriba (norte).
+                    se-resize → Flecha hacia abajo a la derecha (sureste).
+                    sw-resize → Flecha hacia abajo a la izquierda (suroeste).
+                    s-resize → Flecha hacia abajo (sur).
+                    w-resize → Flecha hacia la izquierda (oeste).
+                    text → Un cursor en forma de “I” (barra vertical), usado en áreas de texto.
+                    wait → Un reloj de arena o círculo girando, indica que hay que esperar.
+                    help → Un signo de interrogación, indica ayuda disponible.
+                    auto → El navegador decide automáticamente el cursor más apropiado según el contexto.
+            </pre>
+            <a href="http://www.google.com">google.com</a><br>
+            <a href="http://www.yahoo.com">yahoo.com</a><br>
+            <a href="http://www.bing.com">bing.com</a>
+        </div>
+        <h1>leccion 2 del dia: aplicar estilo a un formualario</h1>
+        <div>
+            <p>
+            <em>para mas  informacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=30&cod=45&punto=34">estilo un formulaio</a></em> 
+            <br><br>
+        </p>
+        <div class="contenedor">
+        <form action="ingesoDato.php" method="post">
+            <label>ingrese su nombre:</label> 
+            <input type="text"name="nombre" size="30">
+            <br>
+            <label>Ingrese su email</label> 
+            <input type="text" name="correo" size="30"> 
+
+            <br><br>
+            <label>Ingrese un comentario:</label><br>
+            <textarea name="comentario" id="coment" cols="60" rows="5"></textarea>
+            <br>
+            <input type="submit" class="boton">
+        </form>
+        </div>
+        </div>
+    </body>
+</html>

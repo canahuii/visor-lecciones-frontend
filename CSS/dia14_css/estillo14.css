@@ -1,0 +1,35 @@
+h1{
+    color: white;
+    background-color: black;
+    border: 5px solid blue;
+    text-align: center;
+}
+h2
+{
+    color: violet;
+    background-color: black;
+}
+em{
+    background-color: greenyellow;
+}
+
+#caja1, #caja2, #caja3, #caja4, #caja6
+ {
+    background-color: #f99;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+}
+#caja2
+{
+    position: relative;
+    left: 150px;
+    top: 50px;
+}
+#caja5
+{
+    background-color: #ff0;
+    font-size: 1.4rem;
+    position: absolute;
+    left: 40px;
+    top: 30px;
+}

@@ -1,0 +1,48 @@
+<!doctype html> <html>
+    <head>
+        <title>Dia 4 aprendiendo a programar en css</title>
+        <style>
+            h1{color: blanchedalmond; background-color: black; text-align: center;}
+            h2{color: aqua;background-color: chocolate; text-align: center;}
+            p{color: blue;}
+            p strong{color: red;}
+            h1 strong{color: purple;}
+            div h1 em {color: yellow;}
+        </style>
+        <link rel="StyleSheet" href="dia4_css.css" type="text/css">
+    </head>
+    <body>
+        <h1>leccion 1 del dia: definicion de un estilo en base al contexto</h1>
+        <p>
+            Supongamos que queremos que cuando disponemos un texto encerrado por el elemento strong dentro de un párrafo el color del mismo sea verde. Pero si el elemento strong está contenida por el elemento h1 el color debe ser rojo, luego la sintaxis del problema es:
+            <br> deberiamos de declararlo asi: <br>
+            p strong{ color:#0000ff;} <br>
+            h1 strong{color:#ff0000;} <br>
+            <p>
+                este es un parafo encerrado dentro de una etiqueta p 
+                <strong>y esto esta dentro de un strong dentro de una etiqueta p </strong>
+            </p>
+            <h1>esto solo esta encerrado dentro de un h1 <strong>y esto entan en un strong dentro de un h1 </strong></h1>
+        </p>
+        <h2>se puede ser un poco mas preciso con las declaraciones:</h2>
+        <p>
+            si delcaramos: <br> <br>
+            <strong>div h1 em {color:yellow;} </strong><br> <br>
+            Con esto estamos diciendo que se debe pintar de color amarillo el texto contenido por el elemento em siempre y cuando esté contenida en un elemento h1 y esta a su vez dentro de un div.
+            <br>
+            <div><h1><em>este texto esta dendro de un "div", dentro de un "h1", dentro de un "em"</em></h1></div>
+        </p>
+        <br>
+        <h1>leccion 2 del dia: definicon de hoja en un archivo externo</h1>
+        <p>
+            se puede crear un archico .css para dar las reglas de la pagina <br>
+            esto permite reutilizar las configuraciones en una pagina y otra <br>
+            <div>
+                <p>
+                    estes es un texto escrito en "p" dendro de un "div" que se le dio <br>
+                    formato desde una archivo .css
+                </p>
+            </div>
+        </p>
+    </body>
+</html>

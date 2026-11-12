@@ -1,0 +1,86 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>dia 6 aprendiendo javaScript</title>
+        <meta charset="utf-8">
+        <style>
+            h1{color: violet; background-color: black; border: blue solid ; text-align: center;}
+            h2{color: aqua; background-color: black ;}
+            em{color: blue;}
+        </style>
+    </head>
+    <body>
+        <h1>leccion 1 del dia: Funciones con parametros</h1>
+        <p>
+            <em>para mayor informacion ve a: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=10&cod=16"> funciones con paramtros.</a></em>
+            <br> <br>
+            en el siguiente ejemplo crearemos una funcion que mande a imprimir cualquier dato que se le envie
+            usando tan solo im( <em>valor a imprimir</em> );  
+            <pre>
+            function im (mensaje)
+            {
+                document.write(mensaje);
+            }    
+            </pre>
+            <em>para llamar a la funcion: </em>
+            <pre>
+                im("hola como estas ")
+        </p>
+        <h2>resultado de la ejecucion del programa</h2>
+        <script>
+            function im (mensaje)
+            {
+                document.write(mensaje);
+            }
+
+            im("hola como estas ");
+        </script>
+        <h1>leccion 2 del dia: funciones que retornan un valor</h1>
+        <p>
+            <em>para mayor informacion visitar: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=10&cod=17" target="_blank" >funciones que retornan un valor</a> </em>
+            <br>
+            para que una funcion retorne un valor se hace atravez de la palabra reservada return <em>valor a devolver</em>;
+            <pre>
+                usaremos el siguiente codigo para motrarel fucionamiento: 
+
+                function multiplicar (val1, val2)
+                {
+                    return val1 * val2;
+                }
+                im( multiplicar(parseInt(prompt("ingrese un numer entero: ", 10)), parseInt(prompt("ingrese otro numero entero: ", 20 )))); 
+            </pre>
+            <script>
+                function multiplicar (val1, val2)
+                {
+                    return val1 * val2;
+                }
+
+                im( multiplicar(parseInt(prompt("ingrese un numer entero: ", 10)), parseInt(prompt("ingrese otro numero entero: ", 20 )))); 
+                
+                </script>
+        </p>
+
+        <h1>leccion 3 del dia: hablemos de programacion orientada a objetos.</h1>
+        <p>
+            esto practicamente es pura teoria, si tienes alguna duda visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=10&cod=18" target="_blank">teoria de POO</a>
+
+            <dl>
+                <td>propiedades y metodos</td>
+                <dd>para acceder a los metodos y propiedades de una clase se usa:
+                    <br>
+                    objec.propiedad 
+                    objec.metodo(parametro)
+                </dd>
+                <td>clases</td>
+                <dd>
+                    son moldes con propiedades y acciones a realiza.
+                    las clases estan definidas por: 
+
+                    	- Atributos (Propiedades),
+                        - Comportamiento (operaciones o métodos) y
+                        - Relaciones con otros objetos.
+                </dd>
+            </dl>
+
+        </p>
+    </body>
+</html>

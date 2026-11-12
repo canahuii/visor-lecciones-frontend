@@ -1,0 +1,78 @@
+<!doctype html> <html>
+    <head>
+        <title>
+            dia 9 aprendiendo a usar css
+        </title>
+        <meta charset="utf-8">
+        <meta name="keyword" content="css, programar">
+        <link rel="stylesheet" href="estilo9.css" type="text/css">
+    </head>
+    <body>
+        <h1>leccion 1 del dia: Selector universal *</h1>
+        <p>
+            <em>si necesitas mas informacion puedes visitar: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=20&cod=29&punto=25">selector universal</a> </em><br><br>
+            si queremos inicializar las propiedades de todos los elementos de html 
+            puedes utilizar el selector universal *
+            <br>
+            ejemplo:
+            <pre>
+                * {
+                    margin:0;
+                    padding:0;
+                    color:#ff0000;
+                }
+            </pre>
+            con el selector universal le indicamos que todos los elementos tendas 
+            esas mismas caracteristicas.
+        </p>
+        <h1>leccion 2 del dia. pseudoclases</h1>
+        <p>
+            <em>para mayor infromacion puedes visitar: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=20&cod=30&punto=26">PseudoClases</a></em>
+            <br><br>
+            pseudoclases: son clases especiales, se refiere a algunos estados de elementos de html 
+            pricipalmente se usan con < a > 
+            <br>
+            la base de la sintaxis es:
+            <br> <br>
+            a:pseudoclase { <br>
+            propiedad: valor; <br>
+            }
+            <br><br>
+            Para el elemento HTML <a> tenemos 4 pseudoclases fundamentales:
+            <pre>
+                link - Enlace sin ingresar
+                visited - Enlace presionado
+                hover - Enlace que tiene la flecha del mouse encima
+                active - Es la que tiene foco en ese momento (pruebe de tocar la tecla tab)
+            
+                Es importante hacer notar que el orden en que definimos las pseudoclases es fundamental para su funcionamiento (debe respetarse el orden: link-visited-hover-active)
+            </pre>
+
+            <h2> ejemplo</h2>
+            <a href="http://www.google.com">Google</a> <br>
+            <a href="http://www.yahoo.com">Yahoo</a> <br>
+            <a href="http://www.bing.com">Bing</a> <br>
+
+            <h1>leccion 2 del dia: elimnar el subrayado de un link</h1>
+            <p>
+                <em>-par mayor informacion visita:  <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=20&cod=31&punto=27" target="_blank">eliminacion del subrayado de un link</a> </em>
+                <br><br>
+                para eliminar el subrayado de un link < a > usaremos pseudoclases
+                <br><br>
+                para ello se utiliza el codido:
+                <pre>
+                    a:link {
+                         text-decoration:none;
+                        }
+
+                    a:visited {
+                        text-decoration:none;
+                        }
+                </pre>
+                <h6>
+                    este teexto se escribio en una etiqueta h6, usando pseudoclases para hacerlo dinamico
+                </h6>
+            </p>
+        </p>
+    </body>
+</html>

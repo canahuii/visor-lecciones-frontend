@@ -1,0 +1,102 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>dia 8 aprendiendo css</title>
+        <meta charset="utf-8">
+        <meta name="keyword" content="css, programacion">
+        <link rel="stylesheet" href="estilo8.css" type="text/css">
+    </head>
+    <body>
+        <h1>leccion 1 del dia: formato resumido(fuentes)</h1>
+        <p>
+            <em>las lecciones del dia de hoy pedes verlos en: </em> <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=20&cod=28&punto=24">formatos resumidos</a> <br>
+            a la hora de declara propiedades a una etiqueta puedes hacerlo 
+            en una sola linea, en ves de declarar border-color y luego borde-style 
+            puedes hacerlo todo en una sola linea ejemplo: <br>
+            border: black solid;
+
+            <br><br>
+            Es importante recordar que font-size y font-family deben ser los últimos valores inicializados y en ese orden. No debemos separar por coma.
+        </p>
+        <h1>leccion 2 del dia: formato resumido (border)</h1>
+        <p>
+            podemos inicializar toda las propiedades del borde con una sola palabra <em>border</em> <br>
+
+            <pre>
+                Debemos indicar el border-width border-style border-color
+
+                No debemos separarlas por coma y deben estar especificados en ese orden.
+
+                Por ejemplo:
+
+                h1 {
+                border:1px solid #ff0000;
+                }
+
+                Por otro lado podemos inicializar cada borde con:
+
+                border-top
+                border-right
+                border-bottom
+                border-left
+                
+                Debemos indicar el border-(top/right/bottom/left): width border-style border-color
+                <em>ejemplo: </em> 
+
+                border-bottom:1px solid #ffff00;
+            </pre>
+        </p>
+        <h1>leccion 3 del dia: formato resumido (padding)</h1>
+        <p>
+            se puede inicializar el padding de manera resumida con la palabra: <br>
+            <em>padding</em>
+            <br><br>
+            <pre>
+                padding:padding-top padding-right padding-bottom padding-left
+                <em>Un ejemplo:</em>
+                padding: 5px 10px 12px 3px;
+                
+                si indicamos un único valor se aplica a los cuatro lados:
+                padding: 1px;
+
+                Si indicamos dos valores, el primero se aplica a la parte superior e inferior y el segundo valor a los lados izquierdo y derecho:
+                padding: 5px 10px;
+            </pre>
+        </p>
+        <h1>leccion 4 del dia: (margin)</h1>
+        <p>
+            <pre>
+                El funcionamiento y sintaxis es similar al visto para el padding:
+
+                margin: margin-top margin-right margin-bottom margin-left
+                <em>Ejemplo:</em>
+
+                p {
+                    margin:5px 2px 4px 10px;
+                }
+                si indicamos un único valor se aplica a los cuatro lados:
+                margin: 1px
+
+                si indicamos dos valores, el primero se aplica a la parte superior e inferior y el segundo valor a los lados izquierdo y derecho.
+            </pre>
+        </p>
+        <h1>leccion 5 del dia: formato resumido (back-ground)</h1>
+        <pre>
+            Se puede inicializar una o varias de las propiedades referentes al fondo (es indistinto el orden en que indicamos los valores)
+
+                <em>Ejemplos:</em>
+
+                p {
+                background: #cccccc url(fondo.jpg) repeat;
+                }
+
+                ul {
+                background url(fondo.png) no-repeat fixed #0000ff;
+                }
+
+                div {
+                background: top repeat-y scroll url(fondo.png);
+                }
+                Un ejemplo que inicializa esta propiedad con algunos valores en forma simultánea:
+        </pre>
+    </body>
+</html>

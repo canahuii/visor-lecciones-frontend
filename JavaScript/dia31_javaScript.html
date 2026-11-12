@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dia 31 aprendiendo a usar javaScript</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>Leccion 1 del dia: metodo splice</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=50&cod=52" target="_blank">Metodo splice</a></em>
+            </p>
+            <p>
+                el motodo <em>splice</em> permite elimiar componentes o insertar componentes,
+                o insertar y eliminar componentes al mismo tiempo.
+                <br><br>
+                <strong>Borrar</strong>
+                <br>
+                para borrar elementos debemos de ingresar dos parametros al splice
+                <br>
+                primer paramtro: indicar apartir de que posicion rocedemos a borar componentes
+                y el segundo parametro indica cuantos componentes vamos a eliminar.
+            </p>
+            <h2>ejemplo de codigo</h2>
+            <pre>
+                let vec = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+                document.write('Vector inicial< br>');
+                for (let f = 0; f < vec.length; f++) {
+                    document.write(vec[f] + '< br>');
+                }
+                vec.splice(1, 3);
+                document.write('Vector luego de borrar< br>');
+                for (let f = 0; f < vec.length; f++) {
+                document.write(vec[f] + '< br>');
+            </pre>
+            <h3>resultado</h3>
+            <script>
+                function iv(vec)
+                {
+                    for  (let v of vec)
+                    {
+                        document.write(v + "<br>");
+                    }
+                }
+                let vec1 = [0,1,2,3,4,5,6,7,8,9];
+                document.write("vector inicial <br>");
+                iv(vec1);
+
+                vec1.splice(1,3);
+                document.write("vector despues de eliminar 3  eelementos desde la posicion 1 <br>");
+                iv(vec1);
+            </script>
+
+            <p>Es bueno recordar que el metodo splice tambien devuelve los elementos eliminados
+                por ejemplo:
+                <pre>
+                    let vec = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+                    document.write('Vector inicial< br>');
+                    for (let f = 0; f < vec.length; f++) {
+                        document.write(vec[f] + '< br>');
+                    }
+                    let vec2 = vec.splice(1, 3);
+                    document.write('Elementos extraídos< br>');
+                    for (let f = 0; f < vec2.length; f++) {
+                        document.write(vec2[f] + '< br>');
+                    }
+                </pre>
+            </p>
+            <script>
+                let vec2 = [0,1,2,3,4,5,6,7,8,9];
+                document.write("vector inicial: <br>");
+                iv(vec2);
+                let vecAux = vec2.splice(1,3);
+                document.write("los elementos eliminados son: <br>");
+                iv(vecAux);
+                document.write("el vector modificado es: ");
+                iv(vec2);
+            </script>
+            <br>
+            podemos indicar un valor negativo y elposicionamiento se cuenta desde el
+             final del vector, es til si quieres eliminar los ultimos dos elemntos 
+             del vector:
+
+             <pre>
+                let vec = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+                document.write('Vector inicial< br>');
+                for (let f = 0; f < vec.length; f++) {
+                    document.write(vec[f] + '< br>');
+                }
+                vec.splice(-2, 2);
+                document.write('Eliminados los dos últimos elementos< br>');
+                for (let f = 0; f < vec.length; f++) {
+            document.write(vec[f] + '< br>');
+             </pre>
+
+             <script>
+                let vec3 = [0,1,2,3,4,5,6,7,8,9];
+                document.write("vector inicial: <br>");
+                iv(vec3);
+
+                vec3.splice(-2,2);
+                document.write("Eliminamos los ultimos dos elementos del vector: <br>");
+                iv(vec3);
+             </script>
+
+             <h2>insertar</h2>
+                ahora veamos como insertar elementos: se deben de ingresar por lo
+                menos tres parametros, los primeros dos cumplen el mismo funcionamiento
+                que cuando eliminamos y el tercero en adelante indica los valores a insertar:
+                <br>
+                el primer parametro indica donde se comenzaran a insertar los elementos y 
+                el segundo paramtro se deja en ceo "0" para evitar que elimine datos:
+                <br><br>
+                <h3>codigo</h3>
+                <pre>
+                    let vec = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+                    document.write('Vector inicial< br>');
+                    for (let f = 0; f < vec.length; f++) {
+                        document.write(vec[f] + '< br>');
+                    }
+                    vec.splice(1, 0, 10, 20, 30, 40);
+                    document.write('Vector luego insertar 4 valores< br>');
+                    for (let f = 0; f < vec.length; f++) {
+                        document.write(vec[f] + '< br>');
+                    }
+                </pre>
+             <script>
+                let vec4 = [0,1,2,3,4,5,6,7,8,9];
+                document.write("vector inicial: <br>");
+                iv(vec4);
+
+                vec4.splice(1,0,10,20,30,40,50);
+                document.write("vector con elementos insertados: <br>")
+                iv(vec4);
+             </script>
+
+             <h3>Borrar e insertar al mismo tiempo</h3>
+             <p>
+                Para probar el borrar e insertar en forma simultánea 
+                confeccionaremos un programa que borre desde la posición 
+                1 tres elementos e inserte otros cinco elementos:
+             </p>
+             <strong>codigo</strong>
+             <pre>
+                let vec = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+                document.write('Vector inicial< br>');
+                for (let f = 0; f < vec.length; f++) {
+                    document.write(vec[f] + '< br>');
+                }
+                vec.splice(1, 3, 10, 20, 30, 40, 50);
+                document.write('Vector luego de borrar 3 elementos e insertar otros 5 valores< br>');
+                for (let f = 0; f < vec.length; f++) {
+                    document.write(vec[f] + '< br>');
+                }
+             </pre>
+             <script>
+                let vec5 = [0,1,2,3,4,5,6,7,8,9];
+                document.write("vector inicial: <br>");
+
+                iv(vec5);
+
+                vec5.splice(1,3,10,20,30,40,50);
+
+                document.write("vector con elementos eliminados e insertados al mismo tiempo <br>")
+                iv(vec5);
+             </script>
+        </div>
+    </body>
+</html>

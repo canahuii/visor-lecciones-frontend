@@ -1,0 +1,102 @@
+<!doctype html> <html>
+    <head>
+        <title>Dia 24 aprendiendo a usar javaScript</title>
+        <meta charset="utf-8">
+        <link rel ="stylesheet" href = "estilo_html.css" type= "text/css">
+    </head>
+    <h1>Leccion 1 del dia: creacion de objetos literales.</h1>
+    <div>
+        <p>
+            <em>para mas informacion visita: <a target="_blank" href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=40&cod=44">objetos literales</a> </em>
+        </p>
+            <script>
+                let cliente1 = 
+                {
+                    nombre : "juan",
+                    deposito : 0,
+                    imprimir : function()
+                    {
+                        document.writeln(this.nombre + "<br>");
+                        document.writeln(this.deposito  + "<br>")
+                    },
+                    depositar : function(monto)
+                    {
+                        this.deposito +=  monto;
+                    },
+                    extraer: function(monto)
+                    {
+                        this.deposito -= monto;
+                    } 
+                };
+
+                cliente1.imprimir();
+                cliente1.depositar(1000)
+                document.writeln("estado de cuenta despues de depositar 1000 unidades monetarias <br>" );
+                cliente1.imprimir();
+                cliente1.extraer(200);
+                document.writeln("estado de cuenta despues de extraer 200 unidades monetarias <br>");
+                cliente1.imprimir();
+
+            </script>
+            <h2>ejercicio</h2>
+            <p>
+                problema: <br>
+                <pre>
+                    Crear un objeto que represente los datos de un participante de un juego. Definir las propiedades
+                    nombre
+                    puntos
+                    y los métodos:
+                    imprimir (mostrar el nombre de jugador y los puntos actuales)
+                    aumentarPuntos (permite incrementar la cantidad de puntos actuales del jugador)
+                    verificarSiGano (mostrar un mensaje si los puntos superan a 1000)
+                </pre>
+            </p>
+            <script>
+                let jugador1 = 
+                {
+                    nombre : "juan",
+                    puntos : 500,
+                    imprimir: function()
+                    {
+                        document.write("Estos son los puntos del jugador " + this.nombre + ", tiene en total " + this.puntos +  " puntos <br>" );
+                    },
+                    masPuntos : function(cantidad)
+                    {
+                        this.puntos += cantidad; 
+                    } ,
+                    menosPuntos : function(cantidad)
+                    {
+                        this.puntos -= cantidad;
+                    },
+                    verificar: function()
+                    {
+                        if(this.puntos > 1000)
+                        {
+                            document.write("FELICIDADES HAS GANADO :) <br>")
+                        }
+                        else
+                        {
+                            document.write("Aun te faltan: " + (1000 - parseInt(this.puntos)) + " para ganar, sigue acumulando puntos <br>");
+                        }
+                    }
+                };
+
+                jugador1.imprimir();
+                document.write("sumemos 200 puntos y comprobemos si gano <br>");
+                jugador1.masPuntos(200);
+                jugador1.imprimir();
+                jugador1.verificar();
+                document.write("sumemos 500 puntos y comprobemos si gano <br>");
+                jugador1.masPuntos(500);
+                jugador1.imprimir();
+                jugador1.verificar();
+                document.write("restemos 300 puntos y comprobemos si gano <br>");
+                jugador1.menosPuntos(300);
+                jugador1.imprimir();
+                jugador1.verificar();
+                
+
+            </script>
+        
+    </div>
+</html>

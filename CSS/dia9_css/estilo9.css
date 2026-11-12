@@ -1,0 +1,55 @@
+h1{
+    color: violet; background-color: black; text-align: center;
+}
+h2
+{
+    color: greenyellow;
+    background-color: black;
+    text-align: center;
+}
+em{
+    color: purple;
+    background-color: aqua;
+}
+body
+{
+    background-image: url(../dia7_css/blanco.jpg);
+
+}
+p,pre {
+    background-color: blue;
+    color: white;
+}
+
+a:link{
+    color: black;
+    background-color: aqua;
+    text-decoration: none;
+}
+a:visited
+{
+    color: yellowgreen;
+    background-color: beige;
+    text-decoration: none;
+}
+
+a:hover{
+    color: aqua;
+    background-color: blue;
+    text-decoration: none;
+}
+a:active{
+    color: violet;
+    background-color: tomato;
+}
+h6
+{
+    transition: all 3s ease;
+}
+h6:hover
+{
+    color: aqua;
+    background-color: blueviolet;
+    font-size: 30px;
+    transform: scale(1,2);  
+}

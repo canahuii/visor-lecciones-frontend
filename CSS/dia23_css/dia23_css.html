@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dia 23 aprendiendo a usar html</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo23.css" type="text/css">       
+    </head>
+    <body>
+        <h1>leccion 1 del dia: first-child , last-child</h1>
+        <div>
+            <p>
+                <em>para mas informacio visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=50&cod=56&punto=52" target="_blank">first-child, last-child</a></em>
+            </p>
+            <p>
+                la pseudoclase <em>first-child</em> nos permite seleccionar el primer elemento hijo 
+                de otro elemento padre y de manera similar la pseudoclase <em>last-child</em>
+                selecciona el ultimo elemento hijo.
+
+                <pre>
+                    ol li:first-child {
+                    color:green;
+                    }
+
+                    ol li:last-child {
+                    color:red;
+                    }
+                </pre>
+            </p>
+            <h2>ejemplo</h2>
+            <div>
+                <ul>
+                    <li>opcion 1</li>
+                    <li>opcion 2</li>
+                    <li>opcion 3</li>
+                    <li>opcion 4</li>
+                </ul>
+            </div>
+        </div>
+        <h1>leccion 2 del dia: nth-child y nth-last-child</h1>
+        <div>
+            <p>
+                <em>para mas unformacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=50&cod=57&punto=53">nth-child y nth-last-child</a></em>
+            </p>
+            <p>
+                selecciona uno o mas valores que le pasemos como parametro  esta pseudoclase
+                <br>
+                pasando lo valores <em>odd</em> (impar) y <em>even</em> (par) <br>
+                <pre>
+                    tr:nth-child(odd) {
+                    background-color:red;
+                    }
+                </pre>  
+            </p>
+            <h2>ejemplo</h2>
+            <div>
+                <table border = "1">
+                    <caption>tabla de prueba </caption>
+                    <tr>
+                        <td>fila 1</td>
+                        <td>fila 1</td>
+                    </tr>
+                    <tr>
+                        <td>fila 2</td>
+                        <td>fila 2</td>
+                    </tr>
+                    <tr>
+                        <td>fila 3</td>
+                        <td>fila 3</td>
+                    </tr>
+                    <tr>
+                        <td>fila 4</td>
+                        <td>fila 4</td>
+                    </tr>
+                </table>
+            </div>
+            <h2>hablando de nth-last-child</h2>
+            <p>hace lo mismo que nth-child solo que invertirdo, empezando desde el ultimo 
+                elemento al primero
+            </p>
+            <h2>ejemplo</h2>
+            <div>
+                <table class="tabla2">
+                    <tr>
+                        <td>fila 1</td><td>fila 1</td>
+                    </tr>
+                    <tr>
+                        <td>fila 2</td><td>fila 2</td>
+                    </tr>
+                    <tr>
+                        <td>fila 3</td><td>fila 3</td>
+                    </tr>
+                    <tr>
+                        <td>fila 4</td><td>fila 4</td>
+                    </tr>
+                    <tr>
+                        <td>fila 5</td><td>fila 5</td>
+                    </tr>
+                    <tr>
+                        <td>fila 6</td><td>fila 6</td>
+                    </tr>
+                    <tr>
+                        <td>fila 7</td><td>fila 7</td>
+                    </tr>
+                    <tr>
+                        <td>fila 8</td><td>fila 8</td>
+                    </tr>
+                    </table>
+            </div>
+        </div>
+    </body>
+</html>

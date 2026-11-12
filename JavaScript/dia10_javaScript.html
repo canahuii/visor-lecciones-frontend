@@ -1,0 +1,88 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 10 aprendiendo a usar javaScript</title>
+        <meta charset="utf-8">
+        <meta name="keyword" content="javaScript, programacion, aprendisaje">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>leccion 1 del dia: control password </h1>
+        <div>
+            ahora usaremos el elemento password: <em>si quieres mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=20&cod=25" target="_blank" > uso de password</a></em>
+            <br><br>
+            <form action="ingresarDatos.php" method="post">
+                Ingrese su contraseña: <br>
+                <input type="password" id="clave" size ="15">
+                <input type="button" value="confirmar" onclick="verificar()">
+            </form>
+            <script>
+                function verificar()
+                {
+                    let clave = document.getElementById("clave").value;
+                    if(clave.length < 5)
+                {
+                    alert("la clave no puede tener menos de 5 caracteres. ")
+                } else 
+                {
+                    alert("longitud de la contraseña correcto. ")
+                }
+                }
+            </script>
+        </div>
+        <h1>Leccion2 del dia: control select</h1>
+        <div>
+            <p>
+                <em>para entender mejor visita:  <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=20&cod=26" target="_blank" > uso de control select</a></em>
+                Este otro objeto visual que podemos disponer en un FORM permite realizar la selección de un string de una lista y tener asociado al mismo un valor no visible. El objetivo fundamental en JavaScript es determinar qué elemento está seleccionado y qué valor tiene asociado. Esto lo hacemos cuando ocurre el evento onChange.
+                <br>
+                Para determinar la posición del índice seleccionado en la lista:
+                <br>
+                document.getElementById('select1').selectedIndex;
+                <br>
+                la numeracion del indice comienza en cero.
+                <br><br>
+                Para determinar el string seleccionado:
+                <br>
+                document.getElementById('select1').options[document.getElementById('select1').selectedIndex].text;
+                <br><br>
+                Y por último con esta expresión accedemos al valor asociado al string:
+                   <br> 
+                document.getElementById('select1').options[document.getElementById('select1').selectedIndex].value;
+                <br>
+            </p>
+            <form action="ingresarDatos.php" method="post">
+                <p>
+                    <select name="datos" id="select1" onchange="cambiarColor()">
+                        <option value="ff0000">rojo</option>
+                        <option value="00ff00">verde</option>
+                        <option value="0000ff">azul</option>
+                    </select>
+                </p>
+                <input type="text" id="cambio" onchange="modificar()" size="20">
+                <p>
+                    numero de indice seleccionado del objeto SELECT: <input type="text" id="texto1">
+                </p>
+                <p>
+                    Testo seleccionado: <input type="text" id="texto2">
+                </p>
+                <p>
+                    valor asociado : <input type="text" id="texto3">
+                </p>
+            </form>
+
+            <script>
+                function cambiarColor()
+                {
+                    let seleccion = getElementById("select1");
+                    document.getElementById("texto1").value = seleccion.selectedIndex;
+                    documento.getElementById("texto2").value = seleccion.option[seleccion.selectedIndex].txt;
+                    document.getElementById("texto3").value = seleccion.option[seleccion.selectedIndex].value
+                }
+                function modificar()
+                {
+                    alert("uns a escrito: " + document.getElementById("cambio").value)
+                }
+            </script>
+        </div>
+    </body>
+</html>

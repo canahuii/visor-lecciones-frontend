@@ -1,0 +1,46 @@
+<!doctype html> <html>
+    <head>
+        <title>
+            Primer dia usando java script 
+        </title>
+        <meta charset=" UTF-8">
+
+        <style>
+            h1{color: white; background-color: black; 
+            font-size: 40;}
+            h2{color: purple; background-color: black;
+            font-size: 30;}
+        </style>
+    </head>
+    <body>
+        
+        <script> 
+        let nombre = 'juan';
+        let edad = 20;
+        let altura = 1.80;
+
+            nombre = prompt('ingrese su nombre ' , 'eduard0');
+            edad = prompt('ingrese su edad: ', '34');
+            altura = prompt ('ingrese su altura: ', '1.70');
+
+            document.write('hola '+ nombre + ' asi que tienes ' + edad + ' y mides ' + altura + ' que interesante!! :) ');
+        </script>
+        <h1>este es el segundo script </h1>
+        
+        <script>
+            let valor1;
+            let valor2;
+
+            valor1 = prompt('ingrese el primer numeri' , 10);
+            valor2 = prompt('ingrese el segundo numero: ', 20);
+
+            let suma = parseInt(valor1) + parseInt(valor2);
+            let producto = parseInt(valor1) * parseInt(valor2);
+
+            document.write(`<p>el resultado de suma ${valor1} con el valor ${valor2} es : ${suma}. </p>`)
+            document.write(`El resultado de multiplicar ${valor1} por ${valor2} es : ${producto} `); 
+        </script>
+
+    </body>
+
+</html>

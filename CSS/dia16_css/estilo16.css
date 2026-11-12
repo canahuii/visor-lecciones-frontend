@@ -1,0 +1,46 @@
+h1
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+h2
+{
+    background-color: bisque;
+}
+em{
+    background-color: greenyellow;
+}
+
+body{padding-top: 30px ;}
+
+#cabecera
+{
+    display: block;
+    width: 100%;
+    height: 32px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#derecho
+{
+    margin-left: 200px;
+    margin-right: 20px;
+    margin-top: 10px;
+    background-color:aqua;
+}
+
+#izquierdo
+{
+    position: absolute;
+    top: 143px;
+    left: 0px;
+    width: 200px;
+    margin-top: 10px;
+    background-color:antiquewhite;
+}

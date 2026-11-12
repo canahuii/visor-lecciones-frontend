@@ -1,0 +1,41 @@
+h1{color: aqua; background-color: black; text-align: center; }
+h2{color: violet; background-color: black; text-align: center;}
+em{color: red;} 
+
+.tituloPagina{
+    color: brown; background-color: aqua; font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /* manipular el tañ de los cuatro bordes por separado*/
+    border-top-width: 10px;
+    border-bottom-width: 8px;
+    border-left-width: 5px;
+    border-right-width: 2px;
+
+    /* manipilar cada estilo de cada borde*/
+    border-top-style: dotted;
+    border-bottom-style:dashed;
+    border-left-style: inset;
+    border-right-style: solid;
+
+    border-top-color: blue;
+    border-bottom-color: greenyellow;
+    border-left-color:red;
+    border-right-color: violet;
+}
+
+.codigoFuente{
+    color: aqua; 
+    background-color: black; 
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;  
+}
+
+.margen
+{
+     background-color:#ffffaa;
+  margin:30px;
+  border-width:1px;
+  border-style:solid;
+  border-color:#ff0000;
+}

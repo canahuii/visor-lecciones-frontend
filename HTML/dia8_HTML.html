@@ -1,0 +1,65 @@
+<!doctype html> <html>
+    <head>
+        <title>dia 8 aprendiendo html</title>
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" href = "estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>esta es la leccion 1 del dia: uso de title </h1>
+        <p>
+            <em>si quieres mas informacion puedes visitar: </em> <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=16&cod=90&punto=23">uso de title</a> <br> <br>
+            es el titulo que le das a la pagina y aparece en la arte superior
+            de la ventana del navegador: <br>
+            si empre busca ponerle un titulo lo sufuciete mente signficativo 
+            sobre lo que muestra la pagina
+        </p>
+        <h1>leccion 2 del dia: uso de meta</h1>
+        <p>
+            <em>si quieres mas informacion visita:</em> <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=16&cod=91&punto=24">uso de meta</a>
+            <br><br>
+            hasta ahora siempre usamos: < meta charset="utf-8" >, <br>
+            pero ahora veremos otra propiedades de meta: <br>
+            < meta name=" <em> nombre de la propiedad</em> " content=" <em>valor de la propiedad</em> ">
+            <dl>
+                <dt>name</dt>
+                <dd>almacena el nombre de la propiedad</dd>
+                <dt>content</dt>
+                <dd>almacena el valor de la propiedad</dd>
+            </dl>
+            <br>
+            No existe ninguna especificación de la W3C que defina los valores posibles para el atributo name, si bien existen algunos que son estandares de facto (description, keywords, author etc.)
+            <br> <br> 
+            Veamos las propiedades y valores más comunes: 
+            <br><br>
+            <meta name= "kerwords" content="html,programacion,webmaster">
+            <br><br>
+            Los buscadores tienen en cuenta los metadatos. Si en la página inicializamos la propiedad name del elemento meta con el valor keywords luego buscará en la propiedad content las distintas palabras claves más representativas para dicha página. Esto es muy útil para posicionar nuestra página según el contenido que provee.
+            <br><br>
+            Veamos otras inicializaciones del elemento meta:
+            <br><br>
+            < meta name="description" content="El objetivo de este tutorial 
+            es presentar los conceptos básicos de HTML. Es objetivo prioritario respetar 
+            los estándares del W3C">
+            <br>
+            En este caso especificamos una descripción de la página, pudiendo ser del sitio si se trata de la página principal.
+            <br><br>
+            < meta name="author" content="Diego Rodriguez"> <br>
+            < meta name="copyright" content="Interpolacion inc.">
+        </p>
+        <h1>leccion 3 del dia: uso de comentarios</h1>
+        <p>
+            <em>para mas imformacion visita: </em> <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=16&cod=125&punto=25">uso de comentarios</a><br>
+            la sintaxis para colocar un comentario es: <br>
+            <br>
+            < !-- estes es un comentario--> <br><br>
+            <em>tomar en cuenta que:</em><br>
+            De todos modos hay que tener en cuenta que cuando un navegador pide la página a un sitio el servidor envía el archivo HTML completo, es decir con los comentarios. Los comentarios consumen ancho de banda en la transferencia, ya que el archivo es más grande.
+        </p>
+        <h1>Leccion 4 del dia: sintaxis para caracteres especiales.</h1>
+        <p>
+            en html hay caracteres que no puedes usar directamente ya que el navegador lo confundira
+            con algun caracter del lenguaje por ejemplo <em>&lt;</em> y <em> &gt;</em> <br>
+                <img src="imagenes/carcteresEspeciales.png" alt="muestra de los caracateres especiales mas usados. ">
+        </p>
+    </body>
+</html>

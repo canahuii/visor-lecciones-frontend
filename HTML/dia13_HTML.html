@@ -1,0 +1,88 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Este es el dia 13 aprendiendo HTML </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>leccion 1 del dia: Select Agrupamiento de opciones</h1>
+        <div>
+            <em>puedes visitar: <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=32&cod=99&punto=34">uso de optGroup</a></em> 
+            <br><br>
+            <form action="ingresar.php" method="post">
+                slecciones frutas o verduras: <br>
+                <select name="frutasVerduras" multiple>
+                    <optgroup label="Frutas">
+                        <option value="1">naranja</option>
+                        <option value="2">Manzana</option>
+                        <option value="3">sandia</option>
+                        <option value="4">Frutilla</option>
+                        <option value="5">Durazno</option>
+                        <option value="6">ciruela</option>
+                    </optgroup>
+                    <optgroup label="verduras">
+                        <option value="7">Lechuga</option>
+                        <option value="8">Acelga</option>
+                        <option value="9">Zapallo</option>
+                        <option value="10">Papas</option>
+                        <option value="11">Batatas</option>
+                        <option value="12">aselga</option>
+                        <option value="13">Zanahoria</option>
+                        <option value="14">Rabanitos</option>
+                        <option value="15">Calabaza</option>
+                    </optgroup>
+                </select>
+                <br>
+                <input type="submit">
+                <input type="reset">
+                <h2>Ejercicio</h2>
+                <form action="ingre.php" method="post">
+                    <label>Escoja una opcion o varias</label> <br>
+                    <select name="paises" id="paises" multiple>
+                        <optgroup label="Latino America">
+                            <option value="1">mexico</option>
+                            <option value="2">guatemala</option>
+                            <option value="3">El salvador</option>
+                            <option value="4">hoduras</option>
+                            <option value="5">peru</option>
+                        </optgroup>
+                        <optgroup label="No latinos">
+                            <option value="6">españa</option>
+                            <option value="7">inglaterra</option>
+                            <option value="8">Alemania</option>
+                            <option value="9">Rusia</option>
+                            <option value="10">Australia</option>
+                        </optgroup>
+                    </select>
+                </form>
+            </form>
+        </div>
+        <h1>Leccion 2 del dia: uso de BUTTON</h1>
+        <div>
+            <p>
+                <em>Para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=32&cod=104&punto=35" target="_blank">Uso de button</a></em>
+                <br>
+                podemos agregar imagnes dentro de lo botones
+                <br>
+                la sinntaxis de la declaracion de los botones es:
+                <pre>
+                    < button type="submit">
+                        Texto a mostrar dentro del botón.
+                    < /button>
+                </pre>
+                La propiedad type se puede inicializar con alguno de estos tres valores: "submit", "reset" y "button"
+            </p>
+            <form action="enviar.php" method="post">
+                ingrese su nombre:
+                <br>
+                <input type="text" name="nombe" id="nombre" size="20" placeholder="Ingrese su nombre">
+                <br>
+                <button type="submit">Enviar <img src="imagenes/botella.jpg" alt="botellas" width="30px" height="20px" style="cursor: pointer;"></button>
+                <button type="reset"> Borrar <img src="imagenes/umg.png" alt="umg"  width="30px" height="20px"></button>
+                <input type="button">
+                <button type="button"></button>
+            </form>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dia 14 aprendiendo a usar css</title>
+        <meta charset="utf-8">
+        <meta name="kwyword" content="html , aprender, programar">
+        <link rel="stylesheet" href="estillo14.css" type="text/css">
+    </head>
+    <body>
+        <h1>leccon 1 del dia: posicionamineto relativo (position:relative)</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita:  <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=30&cod=37&punto=36">posicionamiento relativo</a></em>
+                <br><br>
+                <em>position</em> indica el lugar donde se encuentra cada elemento de html 
+                su valor por defecto <em>static</em> con static cada elemento de coloca de izquierda a derecha y de arriba hacia abajo
+                <br><br>
+                con el valor <em>relative</em> podemos modificar la posicion por defecto del objeto, modificando los
+                valores <em>left y top </em> colocandole valorres <em>positivos e incluso negativos </em>
+            </p>
+            <h2>ejemplo</h2>
+            <div id="caja1">
+                <p>esta es la caja 1</p>
+                <p>no se desplaza</p>
+            </div>
+            <div id="caja2">
+                <p>esta es la segunda caja </p>
+                <p>se desplaza 15 pixes a la derecha y 5 havia abajo de la posicion original</p>
+            </div>
+            <div id="caja3">
+                <p>esta es la tercera caja</p>
+                <p>no se desplaza</p>
+            </div>        
+        </div>
+        <h1>leccion2 del dia> posicionamiento absoluto (position = "absolute")</h1>
+        <div>
+            <p>
+                <em>para mas informacionvisita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=30&cod=38&punto=37">posicionamiento absoluto</a></em>
+                <br><br>
+                posicionaminto absoluto dispone un objeto en un ugar diferente del flujo de trabajo</p>
+                <br>
+            
+                <div id="caja4">
+                <p>Esta es la cuarta caja.</p>
+                <p>No se desplaza.</p>
+                </div>
+                <div id="caja5">
+                <p>Esta es la quinta caja.</p>
+                <p>Se desplaza a la coordenada de pantalla 40 en columna y 30 en fila (en 
+                píxeles).</p>
+                </div>
+                <div id="caja6">
+                <p>Esta es la sexta caja.</p>
+                <p>No se desplaza.</p>
+                </div>
+
+                    <div style="position: relative; width: 300px; height: 200px; background: lightgray;">
+                        <div style="position: absolute; top: 20px; left: 30px; background: lightblue; padding: 10px;">
+                            Caja absoluta
+                        </div>
+                    </div>
+
+        </div>
+    </body>
+</html>

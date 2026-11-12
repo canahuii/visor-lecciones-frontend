@@ -1,0 +1,79 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 13 aprendiendo javaScript</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+
+        <h1>Repaso del dia anterior</h1>
+        <p><em> para mayor informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=30&cod=30" target="_blank">uso de onFocus y onBluer </a> </em></p>
+        <form"><
+            <input type="text" id="nombre" onfocus="cambiar(this)" value="cual es tu nombre" onblur="confirmar(this)">
+            <input type="text" id="correo" onfocus="cambiar(this)" value="Ingresa tu correo" onblur="confirmar(this)">
+            <br>
+            <input type="button" value="confirmar">
+            <script>
+                function cambiar(control)
+                {
+                    control.value = "";
+                }
+                function confirmar(control)
+                {
+                    alert("usted a ingresado el valor: " + control.value);
+                }
+            </script>
+
+        </form>
+        <h1>LEccion 1 del dia: onMouseOver y onMouseOut</h1>
+        <div>
+            <p>
+                <em>para mayor informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=30&cod=31">uso de onMouseOver y onMouseOver</a></em>
+            </p>
+            <dl>
+                <dt>onMouseEver</dt>
+                <dd>se activa cuando el mouse se encuentra sobre un elemento HTML</dd>
+                <dt>onMouseOut</dt>
+                <dd>Se activa cuando el mouse abandona el elemento html</dd>
+            </dl>
+            <p>
+                Para probar estos eventos implementaremos una página que cambie el color de un cuadrado de 200px de ancho y 200px de alto.
+                <br><br>
+                Implementaremos una función que cambie el color con un valor que llegue como parámetro. Cuando retiramos la flecha del mouse volvemos a pintar de negro el fondo de cuadrado:
+                <br>
+            </p>
+            <h2>ejemplo 1 de su uso </h2>
+            <div
+                id="cuadro1"
+                style="background-color: black;
+                    width: 200px;
+                    height:200px"
+            ></div>
+            <a href="#" onmouseover="pintar('#f00')" onmouseout="pintar('#000')">Rojo</a>
+            <a href="#" onmouseover="pintar('#0f0')" onMouseOut=" pintar('#000')">verde</a>
+            <a href="#"onMouseOver="pintar('#00f')" onMouseOut="pintar('#000')">Azul</a>
+            <script>
+                function pintar(color)
+                {
+                    document.getElementById('cuadro1').style.backgroundColor = color;
+                }
+            </script>
+            <h2>ejemplo numero 2</h2>
+            <div>
+                <table border="5">
+                    <tr>
+                        <td onmouseover="pinta(this,'#f00')" onmouseout="pinta(this,'#fff')"> rojo   </td>
+                        <td onmouseover="pinta(this,'#0f0')" onmouseout="pinta(this,'#fff')"> verde   </td>
+                        <td onmouseover="pinta(this,'#00f')" onmouseout="pinta(this,'#fff')"> azul  </td>
+                    </tr>
+                </table>
+                <script>
+                    function pinta(objeto,color)
+                    {
+                        objeto.style.backgroundColor = color;
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>

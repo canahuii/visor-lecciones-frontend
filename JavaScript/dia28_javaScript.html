@@ -1,0 +1,70 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 28 aprendiendo a usar javaScript</title>
+    </head>
+    <body>
+        <h1>Leccion 1 del dia: ARray: instruccion delete </h1>
+        <div>
+            <p>
+                <em>Para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=40&cod=50" target="_blank">Array: instruccion delete</a></em>
+            </p>
+            <p>
+                <em>Delete</em> es una instruccion que elimina un elemento del vector, no modifica el tamanño (length)
+                cuando usas delete el vector se vuelve un vector disperso   
+                <br><br>
+                delete vect[3]
+            </p>
+            <h2>ejemplo</h2>
+            <h3>problema</h3>
+            Crear un vector de 10 elementos y almacenar valores aleatorios en el mismo. Luego borrar los elementos 
+            de las posiciones pares e imprimir el vector antes y después de borrar las componentes, inclusive tratar 
+            de acceder a las componentes que acabamos de borrar.
+
+            <script>
+                let vec = [];
+
+                for (let i = 0; i < 10; i++)
+                {
+                    let numero = parseInt(Math.random() * 1000);
+                    vec.push(numero);
+                }
+
+                document.write("vector antes de borrar: <br>");
+                document.write("el vector tiene una longitud de: " + vec.length + "<br>");
+
+                for(let v in vec)
+                {
+                    document.write(vec[v] + "<br>");
+                }
+
+                for (let i = 0; i < vec.length; i += 2)
+                {
+                    delete vec[i];
+                }
+                document
+
+                document.write("vector despues de borrar los elementos: <br>");
+                document.write("el vector tiene una longitud de: " + vec.length + "<br>");
+
+                for(let v of vec)
+                {
+                    document.write(v + "<br>");
+                }
+                
+            </script>
+        </div>
+
+        <h1>Leccio 2 del dia: uso de sort y reverse</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=40&cod=51" target="_blank">Array: uso de sort y reverse</a></em>
+            </p>
+            <p>
+                <em>sort </em> ordena los elementos de un vector de menor a mayor.
+
+                <em>ve al dia siguiente para teminar de aprender.</em>
+            </p>
+
+        </div>
+    </body>
+</html>

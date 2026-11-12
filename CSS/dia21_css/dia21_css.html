@@ -1,0 +1,117 @@
+<!DOCTYPE html>  <html>
+    <head>
+        <title>Dia 21 apreiedo css</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo21.css" type="text/css">
+    </head>
+    <body>
+        <h1>leccion 1 del dia: Diseño de ancho liquido</h1>
+        <div>
+            <p><em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=40&cod=52&punto=48">Diseño liquido</a></em></p>
+            <p>
+                con un diseño liquido los elementos se contraen o expanden 
+                segun el ancho del navegador.
+                <br><br>
+                este tipo de diseño empela porcentajes para permitir el cambio d tamaño 
+            </p>
+            <h2>Ejemplo</h2>
+            <div class="contenedor" >
+                <div id="cabecera">
+                   <ul>
+                    <li>opcion 1</li>
+                    <li>opcion 2</li>
+                    <li>opcion 3</li>
+                   </ul>
+                </div>
+                <div id="col1">
+                    contenido de la columna 1, contenido de la columna 1, contenido de la columna 1, contenido de la columna 1, contenido de la columna 1, 
+                    contenido de la columna 1, contenido de la columna 1, contenido de la columna 1, contenido de la columna 1, contenido de la columna 1, 
+                    contenido de la columna 1, contenido de la columna 1, contenido de la columna 1, contenido de la columna 1, contenido de la columna 1, 
+                    contenido de la columna 1, contenido de la columna 1, contenido de la columna 1, contenido de la columna 1, contenido de la columna 1, 
+                    contenido de la columna 1, contenido de la columna 1, contenido de la columna 1, contenido de la columna 1, contenido de la columna 1, 
+                </div>
+                <div id="col2">
+                    contenido de la columna 2, contenido de la columna 2, contenido de la columna 2, contenido de la columna 2, contenido de la columna 2, 
+                    contenido de la columna 2, contenido de la columna 2, contenido de la columna 2, contenido de la columna 2, contenido de la columna 2, 
+                    contenido de la columna 2, contenido de la columna 2, contenido de la columna 2, contenido de la columna 2, contenido de la columna 2, 
+                    contenido de la columna 2, contenido de la columna 2, contenido de la columna 2, contenido de la columna 2, contenido de la columna 2, 
+                    contenido de la columna 2, contenido de la columna 2, contenido de la columna 2, contenido de la columna 2, contenido de la columna 2,  
+                </div>
+                <div id="col3">
+                    contenido de la columna 3, contenido de la columna 3, contenido de la columna 3, contenido de la columna 3, contenido de la columna 3, 
+                    contenido de la columna 3, contenido de la columna 3, contenido de la columna 3, contenido de la columna 3, contenido de la columna 3, 
+                    contenido de la columna 3, contenido de la columna 3, contenido de la columna 3, contenido de la columna 3, contenido de la columna 3, 
+                    contenido de la columna 3, contenido de la columna 3, contenido de la columna 3, contenido de la columna 3, contenido de la columna 3, 
+                    contenido de la columna 3, contenido de la columna 3, contenido de la columna 3, contenido de la columna 3, contenido de la columna 3,  
+                </div>
+                <div id="pie">
+                    <p>copiright</p>
+                </div>
+            </div>
+        </div>
+        <h1>Leccion 2 del dia: selector de hijos</h1>
+        <div>
+            <p>
+                <em>
+                    para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=40&cod=53&punto=49">Selector de hijos</a>
+                </em>
+            </p>
+            <p>
+                <dl>
+                    <td>
+                        Se aplica el tipo de fuente Arial a todos los elementos h1 de la página sin excepción.
+                    </td>
+                    <dd>
+                        <pre>
+                            h1 
+                            {
+                                font-family:Arial;
+                            }
+                        </pre>
+                    </dd>
+
+                    <td>
+                        Se aplica el tipo de fuente Arial a todos los elementos h1 que tienen definida la clase "principal"
+                    </td>
+                    <dd>
+                        <pre>
+                            h1.principal {
+                                font-family:Arial;
+                            }
+                        </pre>
+                    </dd>
+
+                    <td>
+                        Se aplica el tipo de fuente Arial al elementos h1 que tiene definidida la propiedad id con el valor "titulo1".
+                    </td>
+                    <dd>
+                        <pre>
+                            h1#titulo1 {
+                                font-family:Arial;
+                            }
+                        </pre>
+                    </dd>
+                </dl>
+            </p>
+            <h1>ejemplo de uso</h1>
+            <div>
+                <h2>esto es una <em>prueba</em> de selector de descendientes</h2>
+                <ul>
+                    <li>opcion 1 (esta es la mas <em>facil</em> )</li>
+                    <li>opcion 2 (es de dificultad <em>media</em> )</li>
+                    <li>opcion 3 (muy <em>compleja</em> )</li>
+                </ul>
+                <h2>selector de descendientes</h2>
+                <div>
+                    <p>primer parrafo</p>
+                    <p>segundo parrafo</p>
+                    <ul>
+                        <li><p>opcion 1</p></li>
+                        <li><p>opcion 2</p></li>
+                        <li><p>opcion 3</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

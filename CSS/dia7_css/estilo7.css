@@ -1,0 +1,54 @@
+h1{
+    color: violet;
+    background-color: black;
+    text-align: center;
+    border: rgb(94, 255, 0) groove 5px;
+}
+h2{
+    color: aqua;
+    background-color: black;
+    text-align: center; 
+}
+em{color: rgb(33, 1, 214);}     
+.vacio
+{
+        list-style-type: none;
+}
+.decimal
+{
+    list-style-type: decimal;
+}
+.romanminuscula
+{
+    list-style-type:lower-roman
+}
+.romanmayuscula
+{
+    list-style-type: upper-roman;
+}
+.circulolleno
+{
+    list-style-type:disc;
+}
+.circulovacio
+{
+    list-style-type :circle;
+}
+.cuadrado
+{
+    list-style-type :square;
+}
+.letraminuscula
+{
+    list-style-type: lower-alpha;
+}
+.letramayuscula
+{
+    list-style:type = upper-alpha;
+}
+body
+{
+    background-image: url("blanco.jpg");
+    background-repeat: no-repeat;
+     background-position: 20% 50%; 
+}

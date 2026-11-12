@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>este es el dia 9 aprendiendo javascript</title>
+        <meta charset="utf-8">
+        <meta name="keyword" content="javascript, programacion" >
+        <link rel="styleSheet" href = "estilo_html.css" type="text/css">
+    </head>
+
+    <body>
+        <h1>Leccion 1 del dia: Formulario y eventos</h1>
+        <p>
+            <em>para mayor informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=20&cod=23">formulario y eventos</a></em>
+            <br><br>
+            Esta imagen es una guia rapida de como crear elementos en un form: <br>
+            <img src="imagenes/elemtosFormulario.png" alt="como crear objetos en un formulario">
+            <br><br>
+            <em>creamos un form</em>
+            <h2>codigo</h2>
+            <pre>
+                < form>
+                    < input type="button" onclick="incremetar()" value="Incrementar">
+                < /form>
+            </pre>
+            <br><br>
+            <em>despues crear el scrip:</em>
+            <br><br>
+            <pre>
+                let contador= 0;
+
+                function incrementar()
+                {
+                    contador++;
+
+                    alert("El contador ahora vale : " + contador);
+                }
+            </pre>
+
+            <h2>resultado</h2>
+            <form>
+                <input type="button" onclick="incrementar()" value="Incrementar">
+            </form>
+            <script>
+                let contador= 0;
+
+                function incrementar()
+                {
+                    contador++;
+
+                    alert("El contador ahora vale : " + contador);
+                }
+            </script>
+
+        </p>
+        <h1>Leccion 2 del dia: Form, button y text</h1>
+        <p>
+            <em>para mayor informacion visitar: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=20&cod=24">form,text, y button</a></em>
+            <br><br>
+            <h2>codigo</h2>
+            <pre>
+                <em>creacion del formulario</em>
+                el codigo que se utilizara para este ejercicio es:
+
+                < form>
+                < p>Ingrese su nombre: < input type="text" id="nombre">< /p>
+                < p>Ingrese su edad: < input type="text" id="edad">< /p>
+                < p>< input type="button" value="confirmar" onclick="mostrar()">< /p>
+                < /form>
+
+            <em>inicia el script</em>
+                function mostrar()
+                {
+                    let nom = document.getElementById("nombre").value;
+                    let ed = document.getElementById("edad").value;
+                    alert("usted a ingresado el nombre: " + nom);
+                    alert(" y la edad de : " + ed);
+                    alert("este nombre se mando a llamar sin pasarlo po una variable: " + document.getElementById("nombre").value);
+                }
+
+
+            </pre>
+            <h2>resultado</h2>
+            <form>
+                <p>Ingrese su nombre: <input type="text" id="nombre"></p>
+                <p>Ingrese su edad: <input type="text" id="edad"></p>
+                <p><input type="button" value="confirmar" onclick="mostrar()"></p>
+            </form>
+
+            <script>
+                function mostrar()
+                {
+                    let nom = document.getElementById("nombre").value;
+                    let ed = document.getElementById("edad").value;
+                    alert("usted a ingresado el nombre: " + nom);
+                    alert(" y la edad de : " + ed);
+                    alert("este nombre se mando a llamar sin pasarlo po una variable: " + document.getElementById("nombre").value);
+                }
+            </script>
+        </p>
+    </body>
+</html>

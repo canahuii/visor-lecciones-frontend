@@ -1,0 +1,43 @@
+/* Animacion de cambio en la etiqueta principal */
+.cambio1
+{
+    transition: all 1.5s ease;
+    animation: parpadeo 2s infinite ease;
+}
+.cambio1:hover
+{
+    font-size: 2.5rem;
+    -webkit-text-stroke: 1px #ffffff;
+    text-shadow: 0 0 15px #ffffff;
+    text-shadow: 0 0 20px rgb(0, 243, 255);
+    text-shadow: 0 0 30px rgb(189, 0, 255);
+    color: #ffffff;
+}
+@keyframes parpadeo
+{
+    0% 
+        {
+            -webkit-text-stroke: 1px #00f3ff;
+            text-shadow: 0 0 15px #00f3ff;
+            text-shadow: 0 0 20px rgb(0, 243, 255);
+            text-shadow: 0 0 30px rgb(189, 0, 255);
+            color: #ffffff;
+
+        }
+    50% 
+        {
+            -webkit-text-stroke: 1px #bd00ff;
+            text-shadow: 0 0 20px #bd00ff;
+            text-shadow: 0 0 20px rgb(189, 0, 255);
+            text-shadow: 0 0 20px rgb(0, 243, 255);
+            color: #38bdf8;
+        }
+    100% 
+        {
+            -webkit-text-stroke: 1px #00f3ff;
+            text-shadow: 0 0 15px #00f3ff;
+            text-shadow: 0 0 20px rgb(0, 243, 255);
+            text-shadow: 0 0 30px rgb(189, 0, 255);
+            color: #ffffff;
+        }
+}

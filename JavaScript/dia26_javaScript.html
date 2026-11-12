@@ -1,0 +1,72 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 16 aprendiendo a usar javaScript</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>Leccion 1: Array no densos, o dispersos</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=40&cod=47" target="_blank">array no densos o dispersos</a>>array densos</a></em>
+            </p>
+            <p>
+                java script permite crear array e inicializar componentes no contiguos.
+            </p>
+            <h2>ejemplo de codigo:</h2>
+            <pre>
+                    let vec = [];   
+                    vec[5] = 100;
+                    vec[10] = 200;
+
+                    document.write('atributo length: ' + vec.length +  "< br>")
+                    for(let i = 0; i < vec.length  ; i++ )
+                    {
+                        document.write(vec[i] + "< br>")
+                    }
+            </pre>
+            <h2>ejemplo de ejecucion</h2>
+            <script>
+                let vec = [];
+                 vec[5] = 100;
+                 vec[10] = 200;
+
+                 document.write('atributo length: ' + vec.length +  "<br>")
+                 for(let i = 0; i < vec.length  ; i++ )
+                 {
+                    document.write(vec[i] + "<br>")
+                 }
+            </script>
+            <h2>ejemplo # 2</h2>
+            <script>
+                let deposito = [];
+                let nro, monto;
+
+                do
+                {
+                    nro = parseInt(prompt("ingrese el nro del cliente (0 finalizar)"));
+                    if (nro != 0 )
+                    {
+                        monto = parseInt(prompt("ingrese el monto a depositar"));
+                        deposito[nro] = monto;
+                    }
+                }while(nro != 0);
+
+                let suma = 0;
+                let canti = 0;
+
+                for(let i = 0; i < deposito.length; i++)
+                {
+                    if(deposito[i] != undefined)
+                    {   
+                        suma = suma + deposito[i];
+                        canti++;
+                    }
+                }
+
+                document.writeln("catidad de depositos: " +  canti + "<br>");
+                document.writeln("Total depositado por todos los clientes: " + suma +" <br> ");
+            </script>
+        </div>
+    </body>
+</html>

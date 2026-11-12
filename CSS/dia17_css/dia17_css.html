@@ -1,0 +1,134 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 17 aprendiendo a usar css</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo17.css" type="text/css">
+    </head>
+    <body>
+        <h1>leccion 1 del dia: Propiedad float aplicada a una imagen</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=40&cod=40&punto=41">Float aplicado a una imagen</a></em>
+                <br><br>
+                la propiedad <em>float</em> permite sacar un objeto del flujo de la pagina, puede 
+                tener estos tres valores: 
+                <br>
+                <pre>
+                    left
+                    right
+                    none
+                </pre>  
+                cuando usamos esta propiedad podemos hacer que el texto envuelva a la 
+                imagen.
+            </p>
+            <img src="../../HTML/imagenes/botella.jpg" alt="imagen de botella sobre preformas" width="500px" height="350px">
+            <script>
+                for(let i = 0; i < 100; i++)
+                {
+                    document.write("Aqui va el contenido de la pagina ");
+                }
+            </script>
+        </div>
+        <h1>Leccion 2 del dia: propiedad float aplicada a otros elementos</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita : <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=40&cod=49&punto=42">float aplica a otros elementos</a></em>
+                <br>
+                se puede flotar cualquier elemento html, pero afecta que es lo que lo 
+                reodea si es texto, una etiqueta o un contenedor
+            </p>
+            <h2>ejemplo</h2>
+            <p>
+                <span class="letra">A</span>qui me pongo a cantar <br>
+                Al compas de la viguela; <br>
+                que el hombre que lo devela <br>
+                Una pena extraordinaria, <br>
+                como la ave solitaria <br>
+                con el cantar se consuela. 
+            </p>
+            <p>
+                <span class="letra">P</span>ido a los santos de cielo <br>
+                que ayuden mi pensamiento. <br>
+                Les pido este momento <br>
+                Que voy a cantar esta historia, <br>
+                Me refresquen la memoria <br>
+                y aclaren mi entendimiento.  
+            </p>
+            <p>
+                <span class="letra">V</span>engan, santos milagrosos,<br>  
+                Vengan todos en mi ayuda,<br>  
+                Que la lengua se me añuda <br> 
+                Y se me turba la vista. <br> 
+                Pido a mi Dios que me asista<br>  
+                En una ocasión tan ruda.  
+            </p>
+        </div>
+        <h1>leccion 3 del dia: aplicaremos la propiedad clear</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=40&cod=50&punto=43">uso de clear</a></em>
+                <br><br>
+                se emplea en elementos que ya se les haya asignado el valor float 
+                <em>clear</em   > no permite que el elemento flote en un dado caso que se haya definido 
+                dicho elemento con esa propiedad anteriormente:
+                <br>
+                los valores que podemos asignarle a clear son:
+                <br>
+                both <br>
+                left <br>
+                right <br>
+                none
+            </p>
+                <div id="caja1">
+                <p>caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 
+                caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 
+                caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 
+                caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 
+                caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 
+                caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 
+                caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 
+                caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 
+                caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 
+                caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 
+                caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 
+                caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 
+                caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 caja1 
+                </p>
+                </div>
+                <div id="caja2">
+                <p>
+                caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2
+                caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 
+                caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 
+                caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 
+                caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 
+                caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 
+                caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 
+                caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 caja2 
+                caja2 caja2 caja2 caja2 caja2 caja2 </p>
+                </div>
+                <div id="caja3">
+                <p>
+                caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3
+                caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3
+                caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3
+                caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3
+                caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3
+                caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3 caja3
+                </p>
+                </div>
+                <div id="caja4">
+                <p>
+                caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4
+                caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4
+                caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4
+                caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4
+                caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4
+                caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4
+                caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4 caja4
+                </p>
+                </div>
+
+        </div>
+    </body>
+</html>

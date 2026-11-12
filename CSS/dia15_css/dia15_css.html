@@ -1,0 +1,260 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>dia 15 aprendiendo a usar css</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo15.css" type="text/css">
+    </head>
+    <body>
+        <h1>leccion 1 del dia: posicionamiento absoluto y propiedad z-index</h1>
+        <p><em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=30&cod=47&punto=38">posicionamiento absoluto y propiedad z-index</a></em></p>
+        
+        <p>
+            Ahora veamos que pasa si disponemos una serie de elementos con 
+            posición absoluta y se superponen. En esta situación debemos 
+            inicializar la propiedad z-index con un valor entero, el mismo 
+            indica cual tiene prioridad para visualizarse. El valor más grande 
+            indica cual tiene prioridad para visualizarse. Es decir que el 
+            navegador imprime los elementos con posición absoluta del valor 
+            más bajo al más alto.
+        </p>
+
+        <div id="caja1">
+            <p>Esta es la primera caja</p>
+        </div>
+        <div id="caja2">
+            <p>Esta es la segunda caja</p>
+        </div>
+        <div id="caja3">
+            <p>esta es la tercera caja</p>
+        </div>
+        <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1>leccion 2 del dia: position:fixed</h1>
+        <div>
+            <p><em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=30&cod=48&punto=39">poisition:fixed</a></em></p>
+            <p>
+                con <em>fixed</em> colocas un elemento en la pantalla, aunque hagas scroll 
+                el objeto permanece en la pantalla con las cordenadas que le diste
+            </p>
+
+            <h2>ejemplo</h2>
+            <div id="superior">Esto permanecera en la parte de arriba</div>
+            <div id="lateral"> Esta es la barra lateral de la pagina</div>
+            <div id="contenido">
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+                    Aquí el contenido - Aquí el contenido - 
+                    Aquí el contenido - Aquí el contenido -
+
+                </div>
+            
+        </div>
+    </body>
+</html>

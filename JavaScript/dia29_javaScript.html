@@ -1,0 +1,104 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 29 aprendiendo a usar javaScript</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>leccion 1 del dia:segunda parte del uso de sort y reverse</h1>
+        <div>
+            <p>
+                <em>PAra mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=40&cod=51" target="_blank">Uso de sort y reverse</a></em>
+            </p>
+            <p>
+                la forma mas sencilla de usar sort es con datos con contendido alfabetico 
+                <br>
+                ejemplo:
+                <pre>
+                    let nombres = ['marcos', 'ana', 'luis', 'jorge', 'carlos'];
+                    document.write('Vector antes de ordenarlo< br>');
+                    for (let f = 0; f < nombres.length; f++) {
+                        document.write(nombres[f] + '< br>');
+                    }
+                    nombres.sort();
+                    document.write('Vector después de ordenarlo< br>');
+                    for (let f = 0; f < nombres.length; f++) {
+                        document.write(nombres[f] + '< br>');
+                    }
+                </pre>
+                en este caso se ordenaran los de datos de forma alfabetica de menor a mayor
+            </p>
+            <script>
+                let nombres =  ["marco", "ana", "jua", "luis", "carlos"];
+                document.write("Lista antes de ordenar : <br>");
+                for(let n of nombres)
+                {
+                    document.write(n + "<br>")
+                }
+                nombres.sort();
+                document.write("<br>lista despues ser ordenada. <br>");
+                for(let n of nombres)
+                {
+                    document.write(n + "<br>")
+                }
+            </script>
+            <h2>Caso #2 ordenar numeros</h2>
+            <p>
+                En este caso se vuelve mas complicaso ordenar los datos, ya que hay 
+                que asignarle un metodo para que el programa sepa como ordenar los datos.
+                <pre>
+                    let vec = [100, 5, 60, 3, 90];
+                    document.write('Vector antes de ordenarlo< br>');
+                    for (let f = 0; f < vec.length; f++) {
+                        document.write(vec[f] + '< br>');
+                    }
+                   <em>vec.sort(function(v1, v2) {
+                        if (v1 < v2)
+                            return -1; // v1 es menor que v2
+                        else
+                            return 1; // v1 es mayor que v2
+                    });</em>
+                    document.write('Vector después de ordenarlo< br>');
+                    for (let f = 0; f < vec.length; f++) {
+                        document.write(vec[f] + '< br>');
+                    }
+                </pre>
+            </p>
+            <script>
+                    let vec2 = new Array(10);
+
+                    for (let i = 0; i < vec2.length; i++  )
+                    {
+                        vec2[i] = parseInt(Math.random() * 100);
+                    }
+                vec2.sort(
+                    function(v1 , v2)
+                    {
+                        if(v1 > v2)
+                        {
+                            return 1;
+                        }
+                        else
+                        {
+                            return -1
+                        }
+                    }
+                );
+                document.write("vector ordenado <br>");
+                for(let v of vec2)
+                {
+                    document.write(v + "<br>")
+                }
+            </script>
+            <h2>metodo reverse</h2>
+            <p>
+                este metodo lo qu hace es invertir el orden de un verctor.
+                <br>
+                si se encuentra ordenado y aplicamos reverse, el vector estara ordenado de 
+                manera descendente
+
+                <em>ver el dia siguiente para mas informacion</em>
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>dia 24 aprendiendo a usar css</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo24.css" type="text/css">
+    </head>
+    <body>
+        <h1>leccion 1 del dia: nth-of-type, nth-last-of-type, first-of-type y last-of-type</h1>
+        <div>
+            <p>
+                <em>para mas infomacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=50&cod=58&punto=54" target="_blank">Pseudo-clases: nth-of-type, nth-last-of-type, first-of-type y last-of-type</a></em>
+
+                <dl>
+                    <dt>:nth-of-type(n)</dt>
+                    <dd>
+                        <em>Qué hace:</em> Selecciona el hijo número n pero solo contando elementos del mismo tipo.
+                    </dd>
+
+                    <dt>:nth-last-of-type(n)</dt>
+                    <dd>
+                        <em>Qué hace:</em> Igual que :nth-of-type, pero cuenta desde el final.
+                    </dd>
+
+                    <dt>:first-of-type</dt>
+                    <dd>
+                        <em>Qué hace:</em> Selecciona el primer hijo de un tipo específico dentro del padre.
+                    </dd>
+
+                    <dt>:last-of-type</dt>
+                    <dd>
+                        <em>Qué hace:</em> Selecciona el último hijo de un tipo específico dentro del padre.
+                    </dd>
+
+                </dl>
+            </p>
+            <div id="contenido">
+                <h3>titulo</h3>
+                <p>parrafo 1</p>
+                <p>parrafo 2</p>
+                <p>parrafo 3</p>
+            </div>
+        </div>
+        <h1>leccion 2 del dia: only-child y only-of-type</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=50&cod=59&punto=55">only-child y only-of-type</a></em>
+            </p>
+            <p>
+                la clase <em>only-child</em> se aplica cuando en dicho nivel hay un solo elemento.
+                <br><br>
+                ahora la clase <em>only-of-type</em> se aplica cuando en dicho nivel hay un solo elemento de ese tipo 
+                (no importa cuantos otros elementos hay de otro tipo en el mismo) 
+            </p>
+            <h2>ejemplo</h2>
+            <div>
+                <h1>Fecha de inicio.</h1>
+                <ul id="fechainicio">
+                    <li>10/10/2015</li>
+                </ul>
+                <h1>Fechas finales.</h1>
+                <ul id="fechafin">
+                    <li>10/12/2015</li>
+                    <li>24/12/2015</li>
+                </ul>
+                <div id="equipo1">
+                    <h1>Participantes</h1>
+                    <p>Pablo Martinez.</p>  
+                </div>
+                <div id="equipo2">
+                    <h1>Participantes</h1>
+                    <p>Ana Luz.</p>  
+                    <p>Pedro Rodriguez.</p>  
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

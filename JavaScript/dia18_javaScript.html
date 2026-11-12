@@ -1,0 +1,70 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 18 aprendiendo a usar javaScript</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css">
+
+    </head>
+    <body>
+        <h1>Leccion 1 del dia: propiedad navigator del objeto window</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=30&cod=37">navigator del objeto window</a></em>
+                <br><br>
+                <em>navigator</em> contiene informacion sobre el navegador, las propiedades
+                mas comunes de navigator son: 
+                <pre>
+                    appName: <em>almacena el nombre oficial del navegador</em>
+                    appVersion: <em>almacena la version del navegador</em>
+                    cookieEnabled: <em>almacena si las cookies estan activas en el navegador</em>
+                    platform: <em>almacena la plataforma donde el navegador se esta ejecutando</em>
+                    plugins: <em>almacena un array de los plugins cargados en el navegador</em>
+                </pre>
+            </p>
+            <h2>ejemplo </h2>
+            <script>
+                function imp(entrada)
+                {
+                    document.write(entrada + "<br>");
+                }
+
+                imp("valor de las propiedades del objeto navigator");
+                imp("appName: " + navigator.appName);
+                imp("appVersion: " + navigator.appVersion);
+                /*imp("cookieEnabled: " +navigator.cookieEnabled )*/
+                imp("plugins: " + navigator.plugins);
+                imp("platform: " + navigator.platform);
+                imp("permisions: " + navigator.permissions );
+            </script>
+        </div>
+
+        <h1>Eccion 2 del dia: archivo javaScript externo</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=30&cod=40">javaScript externo</a></em>
+                <br><br>
+                puedes agrupar funciones y disponerlas en un archivo javaScript separado
+                esto tiene beneficios como: <br>
+                <ul>
+                    <li>
+                        <em>reutilizacion de funciones de uso comun: </em> ntenemos que copiar y pegar sucesivamente las 
+                        funciones en las paginas que necesitemos.
+                    </li>
+                    <li>
+                        <em>facilita el mantenimiento</em> es facil darle mantenimiento a las 
+                        funciones al encontrarse en un archivo aparte
+                    </li>
+                    <li>
+                        <em>ser ordenados</em>: nos obliga a ser mas ordenados con el codigo
+                    </li>
+                </ul>
+            </p>
+            <h2>ejemplo</h2>
+            <script src="funciones.js"></script>
+            <script>
+                imp("la feha de hoy es: " + retornarFecha())
+                imp("La hora es: " + retornarHora());
+            </script>
+        </div>
+    </body>
+</html>

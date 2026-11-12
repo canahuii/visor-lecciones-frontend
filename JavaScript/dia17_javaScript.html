@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>este es el dia 17 aprendiendo javaScript</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    
+    </head>
+    <body>
+        <h1>leccion 1 del dia: propiedad history de window</h1>
+        <div>
+            <p>
+                <em>puedes visitar: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=30&cod=35">propiedad history de window</a></em>
+                <br><br>
+                el objeto history almacena todas las paginas que visitamos. <br>
+                luego con algunas instrucciones podemos estraerlas de la memoria de la computadora 
+                sin necesidad de pedirlas de nuevo al servidor. 
+                <br>
+                contamos con las siguientes funciones.
+                <br>
+                <pre>
+                    window.history.back(); <em>retrocede a la pagina anterior</em>
+                    window.history.forward(); <em>avanza a la pagina siguiente almacenada en el cache de la maquina</em>
+                    window.history.go(); <em>avanza o retrocede en la lista de las paginas visitadas</em>
+                </pre>
+                 llamar a la funcion back tiene el mismo resultado que presionar el boton <em>atras</em> en el navegador.
+            </p>
+            <h2>ejemplos</h2>
+            <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=32&cod=107&punto=43" target="_blank">html</a>
+            <br><br>
+            <a href="javaScript:avanzar()">Extrae del cache la segunda pagina.</a>
+
+            <script>
+                function avanzar()
+                {
+                    window.history.go(1);
+                }
+                function avanzarr()
+                {
+                    if (window.history.length > 0)
+                    {
+                        window.history.go(1);
+                    }
+                    else
+                    {
+                        alert("no hay paginas en el cache de la memoria hacia adelante");
+                    }
+                }
+            </script>
+        </div>
+        <h1>leccion 2 del dia: propiedad screen del objeto window</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=30&cod=36">uso de screen </a></em>
+                <br><br>
+                la propiedad <em>screen</em> ofrece informacion acerca del monitor en donde se esta ejecutando el navegador.
+                <br>
+                las propiedades principales son:
+                <pre>
+                    availheight  <em>el altoo de la pantalla en pixeles disponible para el navegador</em>
+                    availwidth <em>El ancho de la pantalla en pixelesdisponible para el navegador </em>
+                    colorDepth <em>representa el numero de bits usados para representar los colores</em>
+                    height <em>el alto de la pantalla en pixeles </em>
+                    width <em>el ancho de la pantalla en pixes</em>
+                </pre>
+            </p>
+            <h2>ejemplo</h2>
+            <script>
+                function imp(entrada)
+                {
+                    document.write(entrada + "<br>")
+                }
+
+                imp("valores de las propiedades del objeto screen ");
+                imp("availheight:" + screen.availHeight);
+                imp("availwidth: " + screen.availWidth);
+                imp("height: " + screen.height);
+                imp("width: " + screen.width);
+                imp("colordepth: " + screen.colorDepth);
+
+
+            </script>
+        </div>
+    </body>
+</html>

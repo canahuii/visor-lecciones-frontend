@@ -1,0 +1,77 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 7 aprendiendo html</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <h1>Esta es la leccion 1 del dia: uso de caption</h1>
+        <dl>
+            <dt>caption</dt>
+            <dd>esto es un titulo que se coloca sobre la tabla que se va a crear <br>
+            el caption se coloca inmediatamente despues de colocar las etiquetas de table </dd>
+        </dl>
+
+        <table border="2">
+            <caption>tabla de datos</caption>
+            <tr>
+                <th>nombre</th>
+                <th>apellido</th>
+                <th>edad</th>
+            </tr>
+            <tr>
+                <td>pedro</td>
+                <td>hernandez</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>maria</td>
+                <td>martinez</td>
+                <td>56</td>
+            </tr>
+        </table>
+
+        <h1>leccion 2 del dia: tabla y conbinacion de celdas</h1>
+        <p>
+            <em>si necesitas mas indformacion visita: <a href="file:///C:/Aprendiendo%20a%20programar/HTML/dia7_HTML.html">combinar celdas</a></em>
+           <dl>
+            <dt>rowspan</dt>
+            <dd>se utiliza para combinar cendas de manera horizontal.</dd>
+
+            <dt>colspan</dt>
+            <dd>se utiliza para combinar comlumnas de manera vertical</dd>
+           </dl> 
+            a estas propiedades se les debe de inicializar con un valor de 2 o mas. <br>
+            ejemplos:
+            <pre>
+                Si queremos que una celda ocupe tres columnas luego inicializamos la propiedad colspan con el valor 3:
+                <td colspan="3">Facturación de los últimos tres meses</td>
+                
+                Si por el contrario queremos que una celda se extienda a nivel de filas luego hacemos:
+                <td rowspan="3">Secciones</td>
+            </pre>
+
+            <h2>ejemplo practico</h2>
+            <table border="2">
+                <caption>combinar celdas</caption>
+                <tr>
+                    <th colspan="2">nombre completo</th>
+                    <th rowspan="2">edad</th>
+                </tr>
+                <tr>
+                    <th>nombre</th>
+                    <th>apellido</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>pedro</td>
+                    <td>hernandez</td>
+                    <td>34 años</td>
+                </tr>
+                <tr>
+                    <td>maria</td>
+                    <td>hernandez</td>
+                    <td>34 años</td>
+                </tr>
+            </table>
+        </p>
+</html>

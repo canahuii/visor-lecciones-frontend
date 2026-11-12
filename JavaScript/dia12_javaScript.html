@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dia 12 aprendiendo java script</title>
+        <meta charset="utf-8">
+        <meta name="keyword" content="javaScript, aprender, programar">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>leccion 1 del dia: check box</h1>
+        <div>
+            <em>si quieres ma informacion de lo que se hizo aqui, puedes visitar: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=20&cod=27">uso de checkbox</a></em>
+            <form>
+                <input type="checkbox" id="chb1">javaScript
+                <br>
+                <input type="checkbox" id="chb2">PHP
+                <br>
+                <input type="checkbox" id="chb3">jSP 
+                <br>
+                <input type="checkbox" id="chb4">VB.net
+                <br>
+                <input type="button" value="mostrar" onclick="contar()">
+            </form>
+            <script>
+                function contar() 
+                {
+                    let cantidad = 0;
+                    if (document.getElementById("chb1").checked)
+                        {
+                            cantidad++;
+                        }
+                    if (document.getElementById("chb2").checked )
+                        {
+                            cantidad++;
+                        }
+                    if(document.getElementById("chb3").checked)
+                        {
+                            cantidad++;
+                        }
+                    if(document.getElementById("chb4").checked)
+                        {
+                            cantidad++;
+                        }
+                        alert("la cantidad de elementos seleccionados fue: " + cantidad);
+                }
+            </script>
+        </div>
+        <h1>Leccion 2 del dia: uso de Radio</h1>
+        <div>
+            <form >
+                <input type="radio" id="r1" name="estudios">Sin estudios
+                <br>
+                <input type="radio" id="r2" name="estudios">primaria
+                <br>
+                <input type="radio" id="r3" name="estudios">secundaria
+                <br>
+                <input type="radio" id="r4" name="estudios">Univeridad
+                <br>
+                <input type="button" value="Mostrar" onclick="seleccion()">
+            </form>
+
+            <script>
+                function seleccion()
+                {
+                        if(document.getElementById("r1").checked)
+                        {
+                            alert("no tiene estudios");
+                        }
+                    if (document.getElementById("r2").checked)
+                        {
+                            alert("su grado academico es primaria");
+                        }
+                    if(document.getElementById("r3").checked)
+                        {
+                            alert("su grado academico es secundario");
+                        }
+                    if(document.getElementById("r4").checked)
+                        {
+                            alert("Su grado academico es universitario")
+                        }
+                }
+            </script>
+        </div>
+        <h1>Leccion 3 del dia: TextArea</h1>
+        <div>
+            <em>para mas informacion puedes visitar: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=20&cod=29">uso de text area</a></em>
+            <br>
+            <form >
+                <textarea name="comentario" id="coment" cols="60" rows="5"></textarea>
+                <input type="button" value="Mostrar" onclick="caracteres()">
+            </form>
+            <script>
+                function caracteres()
+                {
+                    if(document.getElementById("coment").value.length > 10)
+                    {
+                        alert("comentario demasiado largo")
+                    }
+                    else
+                    {
+                        alert("EL largo del comentario es correcto")
+                    }
+                }
+            </script>
+        </div>
+        <h1>Leccion 4 del dia: OnFocus y OnBlur</h1>
+        <div>
+            <form>
+
+                <input type="text" name="nombre" id="nombre" value="ingrese su nombre" onfocus="vaciar(this)" onblur="verificarEntrada(this)">
+                <input type="text" name="correo" id="correo" value="ingrese su correo" onfocus="vaciar(this)">
+            </form>
+            <script>
+                function vaciar(control) 
+                {
+                    control.value = "";
+                }
+                function verificarEntrada(control)
+                {
+                    alert("ingreso " + control.value)
+                }
+            </script>
+        
+        </div>
+    </body>
+</html>

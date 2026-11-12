@@ -1,0 +1,56 @@
+h1
+{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+h2
+{
+    background-color: black;
+    color: violet;
+}
+em
+{
+    background-color: greenyellow;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#col1
+{
+    float: left;
+    width: 200px;
+    background-color: aqua;
+    border: 1px solid #555;
+}
+#col2
+{
+    margin-left: 230px;
+    background-color: #ffb;
+    border: 1px solid #666;
+}
+
+#contenedor
+{
+    clear: left;
+    width: 100%;
+    border: 2px solid black;
+    line-height: 130%;
+    background-color: antiquewhite;
+}
+#pie
+{
+    padding: 10px;
+    color: #fff;
+    background-color: #becdfe;
+    clear: left;
+}
+#cabecera
+{
+    padding: 10px;
+    color: #fff;
+    clear: left;
+}

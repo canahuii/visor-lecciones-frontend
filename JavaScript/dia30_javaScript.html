@@ -1,0 +1,57 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>dia 30 aprendiendo a usar javaSCript</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css">
+    </head>
+    <body>
+        <h1>Leccion 1 del dia: Metodo reverse.</h1>
+        <div>
+            <p>
+                <em>
+                    Para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=40&cod=51" target="_blank">Metodo reverse</a>
+                </em>
+            </p>
+            <p>
+                este Metodo: <em>Reverse</em>, invierte el orden de los elementos del vector
+            </p>
+            <script>
+                let vec = new Array(10);
+                for (let i = 0; i < vec.length; i++)
+                {
+                    vec[i] = parseInt(Math.random()*100);
+                }
+                document.write("Vector antes de ordenar; <br>")
+                for(let v of vec)
+                {
+                    document.write(v + "<br>");
+                }
+                vec.sort(
+                    function(val1 , val2)
+                    {
+                        if(val1 > val2)
+                        {
+                            return 1
+                        }
+                        else
+                        {
+                            return -1
+                        }
+                    }
+                );
+                document.write("Vector despues  de ordenar; <br>")
+                for(let v of vec)
+                {
+                    document.write(v + "<br>");
+                }
+
+                vec.reverse();
+                document.write("Vector despues  de ordenar de manera descendente con reverse:  <br>")
+                for(let v of vec)
+                {
+                    document.write(v + "<br>");
+                }
+            </script>
+        </div>
+    </body>
+</html>

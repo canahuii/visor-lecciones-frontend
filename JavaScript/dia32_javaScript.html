@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dia 32 aprendiendo a usar javaScript</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>Leccion 1 de dia: metodo slice</h1>
+        <div>
+            <p>
+                <em>Para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=50&cod=53" target="_blank"> Array: metodo slice</a></em>
+            </p>
+            <p>
+                El metodo <em>slice</em> retorna un trozo del vector:
+                <br>
+                la sintaxis es: <br>
+                vec.slice(2,4);
+                <br>
+                <br>
+                el primer paramtro del slice indica desde que elemento se deve de devolver y el desgundo
+                paramtro hasta que elemento se retornará. no se toma e cuanta el elemento de la posicion 
+                del segundo parametro al evolver el valor:
+                <pre>
+                    let vec = [10, 20, 30, 40, 50, 60];
+                    document.write('Vector original< br>');
+                    for (let f = 0; f < vec.length; f++) {
+                        document.write(vec[f] + '-');
+                    }
+                    document.write('< br>');
+                    let vec2 = vec.slice(1, 4);
+                    document.write('Vector resultante de la llamada a slice< br>');
+                    for (let f = 0; f < vec2.length; f++) {
+                        document.write(vec2[f] + '-');
+                    }
+                </pre>
+            </p>
+            <script>
+                function iv(vector)
+                {
+                    for(let i = 0; i < vector.length; i++)
+                    {   
+                        document.write(vector[i]+" - ");
+                    }
+                    document.write("<br>");
+                }
+                 let vec = [10,20,30,40,50,60];
+                 iv(vec);
+
+                 let aux = vec.slice(1,4);
+
+                 document.write("Vector resultante de la extraccion: <br>");
+                 iv(aux)
+
+
+            </script>
+            <h2>Usar un solo parametro</h2>
+            <p>
+                si en el metodo slice solo colocas un parametro, te devolvera un vector
+                desde la posicion del paramtro hast el final:
+                <br><br>
+                let vec=[10,20,30,40,50,60]; <br>
+                let vec2=vec.slice(2); // vec2 almacena [30,40,50,60]
+                <br><br>
+                tambien podemos ingresarle parametros negativos:
+                <br>
+                let vec=[10,20,30,40,50,60]; <br>
+                let vec2=vec.slice(1,-1); // vec2 almacena [20,30,40,50] 
+            </p>
+        </div>
+
+        <h1>Leccion 2 del dia: Metodo join</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=50&cod=54" target="_blank">Metodo join</a></em>
+            </p>
+            <p>
+                el metodo <em>join</em> concatena todos los elementos de un array en un
+                solo String.
+                <br>
+                al metodo join es necesario darle como parametro el o los caracteres 
+                que usara como separacion entre elemento y elemento del array.
+                <br>
+                puedes llamar al metodo join sin parametro, y usara su valor por defecto,
+                la coma ","
+                <br> <br>
+
+                let vec=[10,20,30,40,50]; <br>
+                let cadena=vec.join();<br>
+                document.write(cadena);  //10,20,30,40,50 <br>
+                
+                <pre>
+                    let vec = [10, 20, 30, 40, 50];
+                    let cadena = vec.join('-');
+                    document.write(cadena);
+                </pre>
+            </p>
+            <script>
+                let vec2 = [10, 20, 30, 40, 50];
+                let cadena = vec2.join('-');
+                document.write(cadena);
+            </script>
+        </div>
+
+        <h1>Leccion 3 del dia: uso del metodo concat</h1>
+        <p>
+            <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=50&cod=55">Array metodo concat</a></em>
+        </p>
+        <p>
+            el metodo <em>concat</em> compia el vector originar y le agrega los datos que le 
+            estas pasando como parametro y te devuelve un vector nuevo, esto no afecta al vector originar
+            puedes pasarle datos separados vec1.concat(1,2,3,4) o puedes pasarle otro vector 
+            vec1.concat(vec2);
+        </p>
+        <h3>ejemplo de codigo</h3>
+        <pre>
+            let vec1 = [10, 20, 30, 40];
+                let vec2 = [100, 200, 300, 400];
+                let vecsuma = vec1.concat(vec2);
+                document.write('Primer vector:');
+                document.write(vec1.join() + '< br>');
+                document.write('Segundo vector:');
+                document.write(vec2.join() + '< br>');
+                document.write('vectores concatenados:');
+                document.write(vecsuma.join() + '< br>');
+        </pre>
+        <h3>resultando</h3>
+        <script>
+            let vec3 = [10,20,30,40];
+            let vec4 = [100,200,300,400];
+            let vecsuma = vec3.concat(vec4);
+
+            document.write("primer vector <br>");
+            document.write(vec3.join() + "<br>");
+            document.write("segundo vector <br>");
+            document.write(vec4.join() + "<br>");
+
+            document.write("vectores concatenados <br>");
+            document.write(vecsuma.join() + "<br>");
+        </script>
+    </body>
+</html>

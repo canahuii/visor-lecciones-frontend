@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> dia 16 aprendiendo javaScript </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>Leccion 1 del dia propiedad: location del window</h1>
+        <div>
+            <p>
+                <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=30&cod=34">Propiedad location del window</a></em>
+                <br><br>
+
+                <button onclick="verificar()">Ingresar al periodico</button>
+
+                <script>
+                    function verificar() 
+                    {
+                        if (window.confirm("desea salir del sitio e ingresar al periodico?"))
+                        {
+                                window.location="https://www.lanacion.com.ar";
+                        }
+                        else
+                        {
+                            window.alert("no hay problema");
+                        }
+                    }
+                </script>
+                
+            </p>
+        </div>
+    </body>
+</html>

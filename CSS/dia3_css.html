@@ -1,0 +1,55 @@
+<!doctype html> <html>
+    <head>
+        <title>Tercer dia intentando aprender css</title>
+        <meta Charset = "UTF-8">
+        <style>
+            h1{color: rgb(215, 255, 39);background-color: black;font-size: 40px;text-align: center;}
+            h2{color: aqua;background-color: black; text-align: center;}
+            body{color: rgb(255, 187, 0); font-family: Verdana, Geneva, Tahoma, sans-serif;}
+            em{color: blue;}
+            p{color: brown;}
+        </style>
+    </head>
+    <body>
+        <h1>hoy veremos mas propiedades de texto</h1>
+        <p>Ahora veremos el objetivo de las siguientes propiedades que nos faltan: <br><br>
+            letter-spacing----- permiten indicar el espacio que debe haber entre los caracteres . <br>
+            word-spacing ------  permiten indicar el espacio que debe haber entre las palabras.<br>
+            text-indent-------  indenta la primera linea de un texto. <br>
+            text-transform----- puede inicializarse con alguno de los siguientes valores: <br>
+      
+            text-identcapitalize: Dispone en mayúsculas el primer caracter de cada palabra. <br>
+            _____________________lowercase: Convierte a minúsculas todas las letras del texto. <br>
+            _____________________uppercase: Convierte a mayúsculas todas las letras del texto. <br>
+            _____________________none: No provoca cambios en el texto. <br>
+        
+        </p>
+
+        <h2>ejemplo</h2>
+        <p>
+            <h3 style="letter-spacing: 20px; word-spacing: 30px; text-transform: capitalize;"> en este texto se utilizo algunas propiedades vistas antes</h3>
+            <p style="text-indent: 20px;">
+                en este texto se uso la propiedad text - ident, eso significa que a la primera linea
+                le da un sangria establecida en el codigo en este cado es 20px
+            </p>
+        </p>
+
+        <h1>leccion 2 del dia : herencia de las propiedades de estilo</h1>
+        <p>Ahora veremos que el conjunto de elementos HTML forman en sí un
+            árbol que en su raiz podemos identificar el elemento body del
+            cual se desprenden otros elementos contenidas en esta sección,
+            como podrían ser los elementos h1,h2,h3,h4,h5,h6,p,div luego 
+            estas en su interior contienen otros elementos HTML como 
+            podrían ser em,strong,pre etc.
+        <br> <br>
+            Con ejemplos veamos que hay muchos estilos que se heredan 
+            (todos los vistos hasta el momento se heredan), es decir 
+            si definimos la propiedad color para el elemento h1, luego 
+            si dicho elemento incorpora un texto con el elemento "em" 
+            en su interior, la propiedad color del elemento "em" tendrá
+             el mismo valor que la propiedad h1 (es decir el elemento 
+             em hereda las propiedades del elemento h1)
+        </p>
+        <p><em>hola putos</em></p>
+    </body>
+</html>

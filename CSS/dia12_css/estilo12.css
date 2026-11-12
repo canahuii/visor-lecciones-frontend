@@ -1,0 +1,38 @@
+h1{color: orange;
+background-color:  black;
+text-align: center;
+cursor: pointer;
+}
+h2{
+    background-color: aqua;
+    color: brown;
+}
+em{
+    background-color: rgb(10, 255, 30);
+    color: rgb(0, 0, 0);
+}
+a{
+    cursor: help;
+}
+html{cursor: auto;}
+.contenedor
+{
+    width: 500px;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color: aqua;
+    border: 10px solid #ccc;
+    padding: 10px 0 10px 0;
+}
+.contenedor form label
+{
+    width: 200px;
+    float:left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.boton{
+    color: orange;
+    background-color: black;
+    border: 2px solid rgb(102, 255, 1);
+}

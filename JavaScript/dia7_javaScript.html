@@ -1,0 +1,119 @@
+<!doctype html> <html>
+<head>
+    <title>Dia 7 aprendiendo javaScript</title>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" href = "estilo_html.css" type="text/css">
+</head>
+    <body>
+        <h1>leccion 1 del dia: clase DATE</h1>
+        <p>
+            <em>te recomiendo que vallas a la pagina</em> <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=10&cod=19">CLase date</a> <br>
+            <pre>
+                Esta clase nos permitirá manejar fechas y horas. Se invoca así:
+
+                fecha = new Date();//creación de un objeto de la clase Date
+                fecha = new Date(año, mes, dia);
+                fecha = new Date(año, mes, dia, hora, minuto, segundo);
+
+                Si no utilizamos parámetros, el objeto fecha contendrá la fecha y hora actual, recuperadas del reloj de nuestra computadora. En caso contrario hay que tener en cuenta que los meses comienzan por cero. Así, por ejemplo:
+
+                navidad2020 = new Date(2020, 11, 25)
+                El objeto Date dispone, entre otros, de los siguientes métodos:
+
+                getFullYear()
+                setFullYear(año) 
+                getMonth()
+                setMonth(mes)
+                getDate()
+                setDate(dia)
+                getHours()
+                setHours(horas)
+                getMinutes()
+                setMinutes(minutos)
+                getSeconds()
+                setSeconds(segundos) 
+                    Obtienen y colocan, respectivamente, el mes, día, hora, 
+                    minuto y segundo de la fecha.
+                getDay() 
+                    Devuelve el día de la semana de la fecha en forma de 
+                    número que va del 0 (domingo) al 6 (sábado)
+            </pre>
+            <h2>ejemplo</h2>
+            <script>
+                function imp(dato)
+                {
+                    document.write(dato);
+                }
+                function mostrarFechaHora ()
+                {
+                    let fecha = new Date();
+                    imp("hoy es:");
+                    imp(fecha.getDate() + '/');
+                    imp(fecha.getMonth() + 1 +'/');
+                    imp(fecha.getFullYear() + '/')
+
+                    imp(" <br> ");
+
+                    imp("la hora es: ");
+                    imp(fecha.getHours() + ":" +
+                        fecha.getMinutes() + ":" +
+                        fecha.getSeconds() 
+                    );
+                }
+                mostrarFechaHora();
+            </script>
+        </p>
+
+        <h1>leccion 2 del dia: uso de la clase array</h1>
+        <p>
+            <em>para mayor informacion ve a la pagina: </em> <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=20&cod=20">uso de array</a> <br>
+            la sintaxis para crear un array de 5 posiciones es : <br>
+            let sueldos = new Array(5) <br>
+            <em>este es la declaracion de un array sin indicar cuantos elemntos contendra</em>
+             <br> let ingresos = []; <br>
+
+             <em>Podemos definir componentes del arreglo que sean otro arreglo (crear estructuras de datos tan complejas como necesitemos):</em>
+            <pre>
+                    let matrizIdentidad = 
+                [
+                    [1, 0, 0],
+                    [0, 1, 0],
+                    [0, 0, 1]
+                ];
+            </pre>
+            <h2>ejemplo</h2>
+            <script>
+                function cargarSueldo(sueldos)
+                {
+                    for (let i = 0; i < sueldos.length; i++)
+                    {
+                        let v = prompt("ingrese un sueldo: " , 2000)
+                        sueldos[i] = parseInt(v);
+                    }
+                }
+
+                function calcularGastos(sueldo)
+                {
+                    let total = 0;
+
+                    for(let i = 0; i < sueldos.length; i++)
+                    {
+                        total = total +sueldo[i];
+                    }
+
+                    imp("lista de sueldos: <br>");
+                    for(let i = 0; i < sueldo.length; i++)
+                    {
+                        imp(sueldo[i] + "<br>");
+
+                    }
+                    document.write("total de gastos de sueldo: " + total);
+                }
+
+                let sueldos = new Array(5);
+                cargarSueldo(sueldos);
+                calcularGastos(sueldos);
+            </script>
+        </p>
+    </body>
+</html>

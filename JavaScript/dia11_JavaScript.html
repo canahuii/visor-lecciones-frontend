@@ -1,0 +1,39 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 11 prendiendo java Script</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>leccion 1 del dia: </h1>
+        <a href="dia10_javaScript.html">repaso del dia anterior SELECT</a>
+        <p>es crear una pequña lista deplegable </p>
+
+        <form>
+            <select id="elegido"  onchange="cambiarColor()">
+                <option value="#ff0000">rojo</option>
+                <option value="#00ff00">verde</option>
+                <option value="#0000ff">azul</option>
+                <br><br>
+            </select>
+                <p>numero de indice seleccionado <input type="text" id="text1"></p> 
+                <p>texto seleccionado: <input type="text" id="text2"></p>
+                <p>valor asociado: <input type="text" id="text3"></p>
+            
+        </form>
+
+        <script>
+            function cambiarColor() 
+            {
+                let seleccion = document.getElementById("elegido");
+
+                document.getElementById("text1").value = seleccion.selectedIndex; 
+                document.getElementById("text2").value = seleccion.options[seleccion.selectedIndex].text
+                document.getElementById("text3").value= seleccion.options[seleccion.selectedIndex].value
+                document.body.style.backgroundColor = seleccion.options[seleccion.selectedIndex].value
+            }
+        </script>
+
+
+    </body>
+</html>

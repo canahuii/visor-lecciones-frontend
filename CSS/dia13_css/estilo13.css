@@ -1,0 +1,59 @@
+h1
+{
+    color: aqua;
+    background-color: black;
+    text-align: center;
+    border: 5px dotted purple;
+}
+h2{
+    color: antiquewhite;
+    background-color: violet;
+    text-align: center;
+}
+em{
+    background-color: greenyellow;
+    color: brown;
+}
+table
+{
+    border: 3px solid black;
+    border-collapse:collapse;
+    cursor:pointer;
+}
+caption{
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+th
+{
+    border-right: 2px solid blue;
+    border-bottom: 2px solid blueviolet; 
+    background-color: greenyellow;
+    color:blue;
+}
+
+thead th {
+    background-color: greenyellow;
+    color:blue;
+}
+tbody th
+{
+    background-color: rgb(255, 196, 0);
+    color:rgb(0, 0, 0);
+}
+td:hover
+{
+    background-color: rgb(136, 0, 57);
+}
+td
+{
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+}
+tr:hover
+{
+    background-color: rgb(182, 24, 174);
+    color: white;
+}   

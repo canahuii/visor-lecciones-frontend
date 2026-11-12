@@ -1,0 +1,108 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 11 aprendiendo HTML </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>Leccion 1 del dia: uso de checkbox</h1>
+        <div>
+            <em>para mayor informacion visita <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=16&cod=95&punto=30">uso de checkbox</a></em>
+            <br>
+            Un control checkbox no muestra texto, solo una casilla que el operador puede tildar o destildar.
+            <br>
+            Si queremos que aparezca un mensaje junto al checkbox solo lo agregamos seguido al elemento input.
+            <br>
+            Es importante hacer notar que los caracteres permitidos de la propiedad name son los caracteres alfabéticos y los números siempre y cuando no sea el primero.
+            <br><br>
+            <h2>ejemplo</h2>
+            <form action="ingresoDatos.php" method="post">
+                ingrese su nombre: <br>
+                <input type="text" size="20" placeholder="escribe aqui">
+                <br>
+                ingrese los lenguajes que conoce: <br>
+                <input type="checkbox" name="java">java <br>
+                <input type="checkbox" name="cmasmas">c++ <br>
+                <input type="checkbox" name="c"> c <br>
+                <input type="checkbox" name="csharp"> c# <br>
+                <input type="checkbox" name="phyton"> python <br>
+                <input type="submit" name="enviar" value="enviar"> <br>
+                <textarea name="comentario" id="comentario" cols="60" rows="5"></textarea> 
+            </form>
+            <h2>problema a resolver: </h2>
+            <p>
+                <strong>Problema:</strong> Confeccione un formulario que solicite el ingreso de un mail, 
+                una clave y luego muestre una serie de títulos de películas con su 
+                respectivo checkbox. Disponer también del botón de tipo submit para el 
+                envío de datos al servidor.
+            </p>
+            <h2>solucion</h2>
+            <form action="ingresoDatos.php" method="post">
+                <h3>hola bienvenido</h3> <br>
+                <input type="text" name="nombre" size="20" placeholder="ingree su nombre">
+                <br> <br> ingrese su email <br>
+                
+                <input type="text" name="email" size="20" placeholder="Ingrese su email"> <br><br>
+                Ingrese su clave: <br>
+                <input type="password" placeholder="ingrese su clave"> <br> <br>
+                seecciones las peliculas ya haya visto: <br>
+                <input type="checkbox" name="mario"> super mario bros la pelicula <br>
+                <input type="checkbox" name="mariogalaxi"> mario galaxi la pelicula <br>
+                <input type="checkbox" name="misionimposible"> Mision Imposible <br>
+                <input type="checkbox" name="saw"> Juegos del miedo <br>
+                <input type="submit"> 
+                <input type="reset"> 
+            </form>
+
+        </div>
+        <h1>Leccion 2 del dia: Radio</h1>
+        <p>
+            <em>para mayor informacion visita: <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=16&cod=96&punto=31">uso de input-radio</a></em>
+            <br><br>
+            Cuando tenemos un conjunto de opciones pero solo una puede ser seleccionada debemos emplear controles visuales de tipo radio.
+            <br><br>
+            Veamos como se definen los controles de tipo radio:
+            <br>
+            < input type="radio" name="estudios" value="1">Sin estudios<br>
+            < input type="radio" name="estudios" value="2">Primario<br>
+            < input type="radio" name="estudios" value="3">Secundario<br>
+            < nput type="radio" name="estudios" value="4">Universitario<br> <br>
+            Como podemos observar todos tienen el mismo valor en la propiedad name, con esto se logra que cuando seleccionamos uno se deseleccione el actual.
+            <br>
+            El valor que se rescata en el servidor es el dato almacenado en la propiedad value.
+            <br>
+            Si queremos disponer varios grupos de controles de tipo radio debemos definirles a cada grupo la propiedad name nombres distintos.
+<br><br>
+            <h2>ejemplo</h2>
+            <form action="ingresarDato.php" method="post">
+                ingrese su nombre: <br>
+                <input type="text" name="nombre" size ="30" placeholder="encribe tu nombre">
+                <br><br>
+                seleccione el maximo nive de estucios que tiene: <br>
+                <input type="radio" name="estudios" value="1"> sin estudios <br>
+                <input type="radio" name="estudios" value="2"> primaria <br>
+                <input type="radio" name="estudios" value="3"> secundaria <br>
+                <input type="radio" name="estudios" value="4"> universidad <br>
+                <input type="submit">
+                <input type="reset"> 
+            </form>
+            <h2>problema a resolver</h2>
+            <p>Confeccionar un formulario que solicite cual sistema operativo utiliza más (linux o window)</p>
+            <form action="queUsas.php" method="post">
+                Ingrese su correo <br>
+                <input type="text" size="20" name="correo" placeholder="ingrese su correo"> <br>
+                ingrese su clave <br>
+                <input type="password" name="clave" placeholder="Ingrese su clave" size="20">
+                <br><br>
+                selecciones cual es el sistema operativo que mas utiliza usted: <br>
+                <input type="radio" name="sistema" value="1"> linux <br>
+                <input type="radio" name="sistema" value="2">windows <br>
+                <input type="submit">
+                <input type="reset">
+                <br><br>
+                pede dejar un comentario: <br>
+                <textarea name="comentario" id="coment" cols="30" rows="5"></textarea>
+            </form>
+        </p>
+    </body>
+</html>

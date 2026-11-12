@@ -1,0 +1,67 @@
+<!DOCTYPE html> <!DOCTYPE html>
+<html>
+    <head>
+        <title>dia 14 aprendiendo html</title>
+        <meta charset="utf-8">
+        <meta name="keyword" content="html">
+        >
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+<body>
+    <h1>Leccion 1 del dia: uso de button mediante submit</h1>
+    
+    <form action="datos.php" method="post">
+        <h1>calculadora </h1>
+        <h2>resultado</h2>
+        <input type="button" name="b7" value=" 7 ">
+        <input type="button" name="b8" value =" 8 ">
+        <input type="button" name="b9" value = " 9 ">
+        <input type="button" name="div" value=" / ">
+        <br>
+        <input type="button" name="b4" value=" 4 ">
+        <input type="button"  name="b5" value=" 5 ">
+        <input type="button" name="b6" value=" 6 ">
+        <input type="button" name="mult" value =" * ">
+        <br>
+        <input type="button" name="b1" value=" 1 ">
+        <input type="button" name="b2" value=" 2 ">
+        <input type="button" name="b3" value=" 3 " >
+        <input type="button" name="suma" value=" + ">
+        <br>
+        <label>    &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;</label>
+        <input type="button" name="cero" value=" 0 ">
+        <input type="button" name="igual" value=" = ">
+        <input type="button" name="menos" value=" - ">
+    </form>
+    <h1>leccion 2 del dia: uso de  input tyoe="FILE"</h1>
+    <div>
+        <p><em>quieres mas informacion visitar: <a href="https://www.tutorialesprogramacionya.com/htmlya/temarios/descripcion.php?inicio=32&cod=100&punto=37">uso de type="file"</a></em></p>
+        <br><br>
+        <p>este elemento pertime enviar archivos al servidor
+            <br>sintaxis: <br>
+            < input type="file" name="archivo">
+            <br><br>
+            atravez del nombre que nosotros le asignamos lo recuperemos en en servidor
+            <br><br>
+            otra cosa muy importante es que cuando subamos archivos al servidor debemos de inicializar
+            la propiedada enctype="multipart/form-data>"
+            <br>Sintaxis: <br>
+            < form action="registrarDatos.php" enctype="multipart/form-data">< /form>
+            <br><br>
+            con esto le indicamos al navegador que el forulario contiene uno o mas
+            arvhivos que deben de ser enviados al servidor.
+        </p>
+        <h2>ejemplo</h2>
+        <form action="datos.php" method="post" enctype="multipart/form-data">
+            ingrese su nombre: <br>
+            <input type="text" name="nombre" size="30"> <br><br>
+            seleccione una foto: <br>
+            <input type="file" name="foto">
+            <br>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

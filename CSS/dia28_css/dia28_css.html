@@ -1,0 +1,60 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 28 aprendiendo a usar html</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo28.css.css">
+    </head>
+    <body>
+        <h1>Leccion 1 del dia: flex wrap aplicada al contenedor</h1>
+        <div>
+            <p>
+                <em>Para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=60&cod=68&punto=64" target="_blank">flex wrap aplicada al contenedor</a></em>
+            </p>
+            <p>
+                <em>flex wrap</em> esto hace que los items siempre esten en el eje principal en una misma linea 
+                idependientemente de la cantidad  de items que sipongamos.
+                <br><br>
+                podemos hacer que el contenedor muestre items en varias lineas cuando no entran en una misma fila
+                disponiendo la propiedad wrap,
+                <br>
+                algunos de los valor que puedes usar son:
+                <ol>
+                    <li><em>nowrap</em></li>
+                    <li><em>wrap</em></li>
+                    <li><em>wrap-reverse</em></li>
+                </ol>
+            </p>
+            <h2>ejemplo</h2>
+            <div id="contenedor1">
+                <div class="item">caja 1</div>
+                <div class="item">caja 2</div>
+                <div class="item">caja 3</div>
+                <div class="item">caja 4</div>
+                <div class="item">caja 5</div>
+                <div class="item">caja 6</div>
+                <div class="item">caja 7</div>
+            </div>
+        </div>
+
+        <h1>Leccion 2 del dia: ALign content aplicada al contenedor</h1>
+        <div>
+        <p>
+            <em>Para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/cssya/temarios/descripcion.php?inicio=60&cod=69&punto=65" target="_blank">align-content aplicada al contenedor</a></em>
+        </p>
+        <p>
+            la propiedad <em>align-content</em> solo es aplicable cuando disponemos de un flex box con varias lineas,
+            es decir que le allamos colocado el valor wrap al flex-wrap  
+            <br><br>
+            lod valores posibles de la propiedad align conten son:
+            <ol>
+                <li><em>stretch</em></li>
+                <li><em>flex-start</em></li>
+                <li><em>flex-end</em></li>
+                <li><em>center</em></li>
+                <li><em>space-between</em></li>
+                <li><em>space-around</em></li>
+            </ol>
+        </p>    
+        </div>
+    </body>
+</html>

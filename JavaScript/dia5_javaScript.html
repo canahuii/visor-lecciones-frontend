@@ -1,0 +1,98 @@
+<!doctype html> <html>
+    <head>
+        <title>dia 5 aprendiendo java script</title>
+        <meta charset="utf-8">
+        <style>
+            h1{color: violet; background-color: black; text-align: center; border-color: orange; border-width: 10px; border-style: groove;}
+            h2{color: aliceblue; background-color:black; text-align: center;}
+            em{color: rgb(255, 0, 0);}
+            span{display: inline-block; width: 50px; border-width: 3px; border-color: blue; border-style: solid;}
+        </style>
+        <body>
+            <h1>leccion 1 del dia: </h1>
+            <p>esta seccion se hablaba del uso de while y Do While, 
+                no se coloco aqui porque la sintaxis es la misma de java
+                si quieres ir a verlo dejo el link: <br>
+                <a href="https://www.tutorialesprogramacionya.com/javascriptya/index.php?inicio=10" target="_blank">uso de while y do while, tambien de los acumuladores</a>
+            </p>
+            <h1>leccion 2 del dia: uso de for</h1>
+            <p>
+                el uso de for si lo incluimos aqui ya que la sintaxis si es un poco 
+                diferente de la de java. <br>
+                esta estructura se usa cuando se sabe de ante mano cuantas veces de debe
+                de repetir el ciclo <br>
+                el bucle se puede detener en cualquien punto de la iteracion usando la palabra 
+                <em>break</em> <br><br>
+                <pre>
+                    Sintaxis:
+                    for (<  Inicialización  > ; <   Condición   > ; <   Incremento o Decremento >)
+                    {
+                        < Instrucciones >
+                    }
+                </pre>
+                <pre>
+                    <em>sintaxis que usaremos en este ejemplo:</em>
+                    for(let i= 0; i <= 10 ; i++)
+                    {
+                        document.write( "< span >"+ i + "< /span >" )
+                    }
+                </pre>
+                <h3>resultado</h3>
+                <script>
+                    for(let i= 0; i <= 10 ; i++)
+                    {
+                        document.write( "<span>"+ i + "</span>" )
+                    }
+                </script>
+            </p>
+            <h1>leccion 3 del dia: como crear funciones</h1>
+            <p>
+                la sintaxis para crear funciones es:
+                <pre>
+                    function < nombre de función>(argumento1, argumento2, ..., argumento n) 
+                    { 
+                        < código de la función > 
+                    } 
+                </pre>
+                crearemos una funcion que imprima en pantalla "ingrese su documento conrrectamete"
+                y la mandaremos a llamr tres veces
+                <br>
+                <script>
+                    function mensaje()
+                    {
+                        document.write("cuidado <br>");
+                        document.write("ingrese su documento correctamente <br> <br>")
+                    }
+                    mensaje();
+                    mensaje();
+                    mensaje();
+                </script>
+                <h2>crearemos una tabla de multiplicar, el usuario debera de ingresar un 
+                    numero entero: <br>
+                    <script>
+                        let m = 0;
+                        function tabla()
+                        {
+                            let columna =0;
+                            m = parseInt(prompt("ingrese un valor entero: ", 10));
+                            if (m !=0 )
+                            {
+
+                                    for(let i = 1; i <= 10 ; i++)
+                                    {   
+                                        columna++;
+                                        document.write("<br>")
+                                        document.write(" <span>" + i + "</span>" + "<span> * </span>" + "<span>" + m + "</span>" + "<span> = </span>" + "<span>" + (m*i) + "</span>"  );
+                                        if (columna == 6){columna = 1}
+                                    }
+                                
+                            }
+                        }
+
+                        tabla();
+                    </script>
+                </h2>
+            </p>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Dia 33 aprendiendo a usar javaScript</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>leccion del dia: metodo toString</h1>
+        <div>
+            <p>
+                <em>Para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=50&cod=56" target="_blank">Uso del metodo toString</a></em>
+            </p>
+            <p>
+                EL metodo <em>toString</em> del objeto array devuelve un string con todos los
+                elementos del array separados por una coma ",". 
+            </p>
+            <p>
+                <strong>Problema</strong> <br><br>
+                Crear un vector con 10 elementos con valores aleatorios comprendidos entre 0 y 1000. 
+                Luego copiar el contenido del vector a un string con los valores 
+                de las componentes separados por coma:
+            </p>
+            <pre>
+                let vec = new Array(10);
+                for (let f = 0; f < vec.length; f++) {
+                    vec[f] = parseInt(Math.random() * 1001);
+                }
+                let cadena = vec.toString();
+                document.write(cadena);
+            </pre>
+            <script>
+                let vec1 =  new Array(10);
+                for(let i = 0; i < vec1.length ; i ++)
+                {
+                    vec1[i] = Math.floor(Math.random()*101);
+                }
+
+                let cadena = vec1.toString();
+                document.write(cadena);
+            </script>
+        </div>
+
+        <h1>Leccion 2 del dia: diferentes formas de recorrer un array</h1>
+        <div>
+            <p>
+                <em>Para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=50&cod=57" target="_blank">Distintas formas de recorrerlo</a></em>
+            </p>
+            <h1>for in</h1>
+            <pre>
+                let vec = [10, 20, 30, 40, 50];
+                 for (let indice in vec) {
+                document.write('indice:' + indice);
+                document.write(' valor=' + vec[indice] + '< br>');
+                 }
+            </pre>  
+            <script>
+                let vec2 = [10,20,30,40,50];
+
+                for (let indice in vec2)
+                {
+                    document.write('indice: '  +  indice);
+                    document.write(' valor del elemento: ' + vec2[indice] + "< br>");
+                }
+            </script>
+            <h3>for in en un aray no denso</h3>
+            <pre>
+                let vec = [10, , 30, , 50];
+                document.write('Recorredo del vector con un for clásico< br>');
+                for (let f = 0; f < vec.length; f++) {
+                    document.write(vec[f] + '-');
+                }
+                document.write('< br>');
+                document.write('Recorredo del vector con un for in< br>');
+                for (let indice in vec) {
+                    document.write(vec[indice] + '-');
+                }
+            </pre>
+            <script>
+                let vec3 = [10,,30,,50];
+                document.write("Recorrifo del vector clasico: ");
+                document.write(vec3.join(" - ") + "<br>");
+
+                document.write("Recorrido cdel vector con for in <br>");
+                for(let indice in vec3)
+                {
+                    document.write(vec3[indice] + "-");
+                }
+            </script>
+
+            <h3>metodo foreach del objeto array</h3>
+            <pre>
+                let vec = [10, 20, 30, 40, 50];
+                vec.forEach(function(componente, indice) {
+                    document.write('Posición:' + indice + ' = ');
+                    document.write(componente + '< br>');
+                })
+            </pre>
+            <script>
+                let vec4 = [10,20,30,40,50];
+                vec4.forEach(function(componente, indice)
+                {
+                    document.write("posicion " + indice + " = ");
+                    document.write(componente + "<br>");
+                });
+            </script>
+        </div>
+
+        <h1>Leccion 3 del dia: uso de arguments</h1>
+        <p>
+            <em>para mas informacion visita: <a href="https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=50&cod=58" target="_blank">uso de arguments</a></em>
+        </p>
+        <pre>
+            function sumar() {
+            let s = 0;
+            for (let f = 0; f < arguments.length; f++) {
+                s = s + arguments[f];
+            }
+            return s;
+            }
+
+        document.write(sumar(2, 4));
+        document.write('< br>');
+        document.write(sumar(1, 2, 3, 4, 5));
+        document.write('< br>');
+        document.write(sumar(100, 200, 300)); ..
+        </pre>
+        <script>
+            function sumar()
+            {
+                let s = 0;
+
+                for(let i = 0; i < arguments.length; i++)
+                {
+                    s += arguments[i]; 
+                }
+                return s;
+            }
+                document.write(sumar(2, 4));
+                document.write('<br>');
+                document.write(sumar(1, 2, 3, 4, 5));
+                document.write('<br>');
+                document.write(sumar(100, 200, 300));
+            
+        </script>
+    </body>
+</html>

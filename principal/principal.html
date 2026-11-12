@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Pantalla principal</title>
+        <meta charset="utf-8">
+        <meta name="keyword" content="practica">
+        <link rel="stylesheet" href="division.css" type="text/css">
+        <link rel="stylesheet" href="animaciones.css" type="text/css">
+    </head>
+    <body>
+        <a href="../CSS/dia10_css/dia10_css.html"></a>
+        <script src="script.js">
+        </script>
+        <header>
+            <h1 class="cambio1">Hola Eduardo es un placer que hayas vuelto por aca.</h1>
+        </header>
+        <div id="opciones">
+            <table>
+                <tr>
+                    <td class="activo" onclick="html() ; seleccionarPestania(this)">HTML</td>
+                    <td onclick="css() ; seleccionarPestania(this)">CSS</td>
+                    <td onclick="javaScript() ; seleccionarPestania(this)">JavaScript</td>
+                    <td onclick="mensaje(); seleccionarPestania(this)">opcion 4</td>
+                    <td onclick="mensaje(); seleccionarPestania(this)">opcion 5</td>
+
+                </tr>
+            </table>
+            <script>
+                function mensaje()
+                {
+                    alert("Proximamente, aun estamos trabajando en ello!!");
+                }
+            </script>
+        </div>
+        <a href="../../CSS/dia2_css.html"></a>
+        <main>
+            <div id="izquierdo">
+                <table>
+                    <tr>
+                        <td onclick="retroceder()">retroceder a la pagina anterior</td>
+                        <td> <input type="text" name="saltar" id="saltar" size="10" placeholder="saltar a la pagina No." onblur="saltar()" oninput="revisarEntrada(this)"></td>
+                        <td onclick="avanzar(5)">avanzar a la siguiente pagina</td>
+                    </tr>
+                </table>
+                <br>
+                <div class="contenedorF">
+                    <iframe id="visor" src="../HTML/dia1_HTML.html" frameborder="1"></iframe>
+                </div>
+            </div>
+            <div id="derecho">Proximamente, barra de opciones </div>
+        </main>
+    </body>
+</html>

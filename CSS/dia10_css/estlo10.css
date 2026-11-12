@@ -1,0 +1,75 @@
+h1{
+    color: violet;
+    background-color: black;
+    text-align: center;
+    border-color: orange;
+    border-style: dotted;
+}
+h2{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+em{
+    color: rgb(100, 2, 62);
+    background-color: rgba(255, 209, 6, 0.945);
+}
+
+#menu
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#menu p 
+{
+    margin: 0px;
+    padding: 0px;
+}
+#menu a
+{
+    display: block;
+    padding: 3px;
+    width: 160px;
+    text-align: center;
+    border-bottom: 1px solid violet;
+    background-color: black;
+    color: white;
+}
+#menu a:link, #menu a:visited
+{
+    color:red;
+    text-decoration: none;
+}
+#menu a:hover
+{
+    background-color: yellow;
+    color: black;
+}
+
+/*______________aqui comienza el codigo de la seccion 2_____________________*/
+#menuhorizontal
+{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+#menuhorizontal a
+{
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    color: violet;
+    background-color: black;
+    padding: 3px 5px;
+    border-right: 1px solid blue;
+    display: block;
+}
+#menuhorizontal li
+{
+    float: left;
+}
+#menuhorizontal a:hover 
+{
+    background-color: aqua;
+}
+
+

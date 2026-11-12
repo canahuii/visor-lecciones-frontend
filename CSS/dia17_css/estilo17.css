@@ -1,0 +1,52 @@
+h1
+{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+h2
+{
+    background-color: black;
+    color: violet;
+}
+em
+{
+    background-color: greenyellow;
+}
+img{
+    float: right;
+}
+.letra
+{
+    float: left;
+    font-size: 3rem;
+}
+#caja1
+{
+    float: left;
+    width: 250px;
+    background-color: #ffc;
+    margin: 10px;
+}
+#caja2
+{
+    float: left;
+    width: 250px;
+    background-color: #ffcfff;
+    margin: 10px;
+}
+#caja3
+{
+    float: left;
+    width: 250px;
+    background-color: #cff;
+    margin: 10px;
+}
+#caja4
+{
+    float: left;
+    clear: left;
+    width: 250px;
+    background-color: #ccf;
+    margin: 10px;
+}

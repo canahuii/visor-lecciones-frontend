@@ -1,0 +1,45 @@
+h1
+{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2
+{
+    background-color: violet;
+    text-transform: capitalize;
+}
+em
+{
+    background-color: greenyellow;
+}
+
+h1+p{
+    background-color: red;
+}
+h2~p{
+    background-color: skyblue;
+}
+a[target]
+{
+    color: blue;
+}
+a[href="#"]
+{
+    color: red;
+    text-decoration: line-through;
+}
+
+a[href^="http"]
+{
+    color: #f00;
+}
+a[href$= ".ar"]
+{
+    color: #0f0;
+}
+a[href*= "yahoo"]
+{
+    color:#00f;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Dia 15 aprendiendo a usar javaScript</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo_html.css" type="text/css">
+    </head>
+    <body>
+        <h1>Leccion 1 del dia: repaso de window.open</h1>
+        <div class="contenedor1">
+            <form action="enviar.php" method="post" enctype="multipart/form-data">
+                <input type="button" value="open()" onclick="abrir()">
+                <br>
+                <input type="button" value="open con parametros" onclick="abrirParametros()">
+                <br>
+                <input type="button" value="alert" onclick="alerta()">
+                <br>
+                <input type="button" value="confirmar" onclick="confirmar()">
+                <br>
+                <input type="button" name="cadena" value="Cargar cadena" onclick="cargar()">
+            </form>
+        </div>
+        <script>
+            function abrir() 
+            {
+                let ventana = open()
+                ventana.document.write("estoy escribiendo en la otra ventana <br> ");
+                ventana.document.write("esto es muy divertido yahoo :) ");
+            }
+            function abrirParametros()
+            {
+                let ventana = open("https://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?inicio=30&cod=33","uso de ventanas","status = yes, width = 500, height =400"  );
+
+            }
+            function alerta()
+            {
+                alert(" Esta es una alerta de ejemplo")
+            }
+            function confirmar()
+            {
+                let respuesta = confirm("presione alguna de las opciones ");
+                if (respuesta == true)
+                {
+                    alert("presiono aceptar")   
+                }
+                else
+                {
+                    alert(" presiono  cancelar");
+                }
+            }
+            function cargar() 
+            {
+                let cad = prompt("ingrese una cadena: ", "hola mi nombre no es juan");
+                alert("usted a ingresado el valor " + cad);
+            }
+        </script>
+
+
+
+
+    </body>
+</html>
